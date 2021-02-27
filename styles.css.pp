@@ -65,8 +65,11 @@ pre, code {
 }
 
 p {
-    text-indent: 1em;
     margin: 0.25rem 0;
+}
+
+p + p {
+    text-indent: 1em;
 }
 
 p, li {
