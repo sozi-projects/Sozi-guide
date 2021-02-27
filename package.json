@@ -1,0 +1,24 @@
+{
+  "name": "sozi-book",
+  "version": "1.0.0",
+  "description": "Sozi Book",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aumouvantsillage/Sozi-book.git"
+  },
+  "author": "Guillaume Savaton",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/aumouvantsillage/Sozi-book/issues"
+  },
+  "homepage": "https://github.com/aumouvantsillage/Sozi-book#readme",
+  "devDependencies": {
+    "@fontsource/arsenal": "^4.2.1",
+    "@fontsource/jetbrains-mono": "^4.2.1",
+    "@fontsource/pt-serif": "^4.2.1"
+  }
+}
