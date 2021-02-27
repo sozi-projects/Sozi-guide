@@ -37,6 +37,9 @@
 (define chapter    (default-tag-function 'h1 #:class "chapter"))
 (define section    (default-tag-function 'h2 #:class "section"))
 (define subsection (default-tag-function 'h3 #:class "subsection"))
+(define itemize    (default-tag-function 'ul #:class "itemize"))
+(define enumerate  (default-tag-function 'ol #:class "enumerate"))
+(define item       (default-tag-function 'li))
 
 (define (link href . body)
   (txexpr 'a `((href ,href)) body))

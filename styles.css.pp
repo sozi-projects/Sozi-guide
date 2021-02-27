@@ -65,7 +65,26 @@ pre, code {
 }
 
 p {
+    text-indent: 1em;
     margin: 0.25rem 0;
+}
+
+p, li {
+    line-height: 1.4;
+}
+
+ul.itemize {
+    list-style: none;
+    padding-left: 1.5em;
+}
+
+ul.itemize li {
+    text-indent: -1.5em;
+    padding-left: 1em;
+}
+
+ul.itemize li:before {
+    content: "\2014\2002";
 }
 
 footer {
