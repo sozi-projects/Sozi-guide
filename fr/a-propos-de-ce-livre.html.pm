@@ -6,7 +6,7 @@
 
 ◊section{Un livre libre}
 
-Le document que vous êtes en train de lire est un livre ◊em{libre}. Vous êtes autorisé à le partager ou à en créer des adaptations selon les termes de la ◊link["http://creativecommons.org/licenses/by-sa/4.0/deed.fr"]{Licence Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 International (CC-BY-SA 4.0)}.
+Le document que vous êtes en train de lire est un livre ◊em{libre}. Vous êtes autorisé à le partager ou à en créer des adaptations selon les termes de la ◊link["http://creativecommons.org/licenses/by-sa/4.0/deed.fr"]{Licence Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 International (CC-BY-SA 4.0)}. Sauf indication contraire, le texte, les illustrations et la mise en page ont été réalisés par Guillaume Savaton.
 
 Le code source de ce livre est disponible ◊link["https://github.com/sozi-projects/Sozi-book"]{dans un dépot public chez GitHub}. Si vous remarquez une erreur ou si vous souhaitez proposer des améliorations, vous pouvez le faire sur ◊link["https://github.com/sozi-projects/Sozi-book/issues"]{la page "Issues" du projet}.
 
