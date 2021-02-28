@@ -11,10 +11,12 @@
 @import "/node_modules/@fontsource/arsenal/latin-400-italic.css";
 @import "/node_modules/@fontsource/arsenal/latin-700.css";
 @import "/node_modules/@fontsource/arsenal/latin-700-italic.css";
+
 @import "/node_modules/@fontsource/pt-serif/latin-400.css";
 @import "/node_modules/@fontsource/pt-serif/latin-400-italic.css";
 @import "/node_modules/@fontsource/pt-serif/latin-700.css";
 @import "/node_modules/@fontsource/pt-serif/latin-700-italic.css";
+
 @import "/node_modules/@fontsource/jetbrains-mono/latin-400.css";
 @import "/node_modules/@fontsource/jetbrains-mono/latin-400-italic.css";
 @import "/node_modules/@fontsource/jetbrains-mono/latin-700.css";
@@ -23,7 +25,7 @@
 body {
     font-family: ◊text-font;
     font-size: 14pt;
-    /* font-variant-ligatures: none; */
+    font-variant-ligatures: none;
 
     text-align: justify;
     word-wrap: break-word;
@@ -37,7 +39,7 @@ body {
 		repeating-linear-gradient(to right, transparent, transparent 4rem, rgba(204, 255, 0, 0.5) 4rem, rgba(204, 255, 0, 0.5) 10rem, transparent 10rem, transparent 11rem),
 		repeating-linear-gradient(to right, transparent, transparent 0.5rem, rgba(221, 175, 233, 0.5) 0.5rem, rgba(221, 175, 233, 0.5) 4.5rem, transparent 4.5rem, transparent 7rem),
 		repeating-linear-gradient(to right, rgb(128, 230, 255), rgb(128, 230, 255) 1rem, rgb(255, 230, 128) 1rem, rgb(255, 230, 128) 3rem);
-
+    background-repeat: no-repeat;
 }
 
 @media (min-width: 60rem) {

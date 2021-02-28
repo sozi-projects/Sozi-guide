@@ -8,7 +8,7 @@
 
 Sozi est un logiciel de création de présentations animées. Il est généralement utilisé pour réaliser des supports visuels pour des cours, des conférences, des réunions. Avec Sozi, une présentation n'est pas organisée comme une séquence de diapos indépendantes, mais plutôt comme un ◊em{parcours} dans un plan qui contient le texte et les éléments graphiques à afficher.
 
-Sozi est assez polyvalent. Vous serez peut-être tentés de l'utiliser pour d'autres usages, par exemple pour créer des ◊em{infographies} animées ou des sites web. Mais avant de vous lancer dans un tel projet, assurez-vous que vous êtes conscients des limites de Sozi.
+Sozi est assez polyvalent. Vous serez peut-être tentés de l'utiliser pour d'autres usages, par exemple pour créer des ◊em{infographies} animées ou des sites web. Mais avant de vous lancer dans un tel projet, prenez le temps d'explorer les possibilités de Sozi et de connaître ses limites.
 
 ◊subsection{Sozi n'est pas un logiciel de dessin}
 
@@ -77,10 +77,10 @@ Sozi ne respecte pas les principes de ◊link["https://semver.org/lang/fr/"]{ges
 Sozi est un ◊link["https://fr.wikipedia.org/wiki/Logiciel_libre"]{logiciel libre}. Cela signifie que sa licence vous offre les quatre libertés suivantes :
 
 ◊enumerate{
-    ◊item{Vous êtes libres d'utiliser Sozi sans limite d'usage.}
-    ◊item{Vous êtes libres d'étudier son fonctionnement. Le code source de Sozi est disponible ◊link["https://github.com/sozi-projects/Sozi"]{dans un dépôt public}.}
-    ◊item{Vous êtes libres de le redistribuer.}
-    ◊item{Vous êtes libres de le modifier et de partager vos modifications.}
+    ◊item{La liberté d'utiliser Sozi sans limite d'usage.}
+    ◊item{La liberté d'étudier son fonctionnement. Le code source de Sozi est disponible ◊link["https://github.com/sozi-projects/Sozi"]{dans un dépôt public chez GitHub}.}
+    ◊item{La liberté de le redistribuer.}
+    ◊item{La liberté de le modifier et de partager vos modifications.}
 }
 
 La plupart des gens seront surtout intéressés pas la première de ces quatre libertés mais il est important de savoir que les trois autres existent. Elles permettent à toute personne qui a les compétences nécessaires de corriger des problèmes ou d'ajouter de nouvelles fonctionnalités sans me demander la permission. Elles permettent également au projet Sozi de continuer à ◊em{vivre} même si je cesse de le développer.
