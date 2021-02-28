@@ -4,6 +4,27 @@
 
 ◊chapter{À propos de Sozi}
 
+◊section{Que peut-on faire avec Sozi ?}
+
+Sozi est un logiciel de création de présentations animées. Il est généralement utilisé pour réaliser des supports visuels pour des cours, des conférences, des réunions. Avec Sozi, une présentation n'est pas organisée comme une séquence de diapos indépendantes, mais plutôt comme un ◊em{parcours} dans un plan qui contient le texte et les éléments graphiques à afficher.
+
+Sozi est assez polyvalent. Vous serez peut-être tentés de l'utiliser pour d'autres usages, par exemple pour créer des ◊em{infographies} animées ou des sites web. Mais avant de vous lancer dans un tel projet, assurez-vous que vous êtes conscients des limites de Sozi.
+
+◊subsection{Sozi n'est pas un logiciel de dessin}
+
+Ou plus généralement, l'éditeur de présentations Sozi ne propose aucun outil pour créer du contenu. Le point de départ d'une présentation Sozi est un document graphique que vous devez créer avec un autre logiciel, typiquement un logiciel de dessin vectoriel comme ◊link["https://inkscape.org/"]{Inkscape} ou un éditeur de ◊em{cartes mentales} (◊em{mind maps}). Consultez le chapitre ◊link["notions.html"]{Notions de base} pour plus d'explications.
+
+◊subsection{Sozi n'est pas un logiciel d'animation généraliste}
+
+Son interface n'est pas conçue pour gérer facilement l'animation d'un grand nombre d'objets indépendants. Les seuls mouvements autorisés sont des transformations géométriques simples (translations, rotations, zooms) et la gestion du temps ne propose qu'un nombre limité d'options. Selon les cas, un logiciel d'animation comme ◊link["https://www.synfig.org/"]{Synfig Studio} pourra être plus adapté.
+
+◊subsection{Sozi n'est pas un éditeur de sites web}
+
+Sozi autorise la création de présentations ◊em{non linéaires}, dans lesquelles vous pouvez insérer des liens pour naviguer entre les vues. C'est donc un moyen très efficace pour créer des pages web animées que l'on pourra héberger en lieu et place d'un site web traditionnel. Il y a quelques années, on aurait utilisé la technologie ◊link["https://fr.wikipedia.org/wiki/Adobe_Flash"]{Flash} pour atteindre un tel résultat.
+
+Cependant, un tel site a toutes les chances d'être peu accessible aux déficients visuels. Jusqu'à présent, aucun effort n'a été fait pour faciliter le respect des ◊link["https://www.w3.org/WAI/standards-guidelines/wcag/"]{recommandations du W3C pour l'accessibilité} dans les présentations Sozi, et la prise en charge des lecteurs d'écrans n'a pas été étudiée.
+
+
 ◊section{Qui développe Sozi ?}
 
 Je m'appelle Guillaume Savaton. Je travaille comme ingénieur et enseignant-chercheur dans les domaines de l'électronique numérique, des systèmes embarqués et du traitement numérique du signal. J'utilise Sozi régulièrement dans le cadre de mes activités professionnelles mais son développement ne fait pas partie de mes missions. Il s'agit d'un projet personnel que je développe sur mon temps libre.
@@ -49,3 +70,19 @@ Les numéros de versions suivent une logique purement chronologique. Ils se pré
 }
 
 Sozi ne respecte pas les principes de ◊link["https://semver.org/lang/fr/"]{gestion sémantique de version}. Le passage d'un numéro de version à un autre ne reflète pas l'importance des changements qui ont eu lieu entre ces versions.
+
+
+◊section{Quelles sont les conditions d'utilisation de Sozi ?}
+
+Sozi est un ◊link["https://fr.wikipedia.org/wiki/Logiciel_libre"]{logiciel libre}. Cela signifie que sa licence vous offre les quatre libertés suivantes :
+
+◊enumerate{
+    ◊item{Vous êtes libres d'utiliser Sozi sans limite d'usage.}
+    ◊item{Vous êtes libres d'étudier son fonctionnement. Le code source de Sozi est disponible ◊link["https://github.com/sozi-projects/Sozi"]{dans un dépôt public}.}
+    ◊item{Vous êtes libres de le redistribuer.}
+    ◊item{Vous êtes libres de le modifier et de partager vos modifications.}
+}
+
+La plupart des gens seront surtout intéressés pas la première de ces quatre libertés mais il est important de savoir que les trois autres existent. Elles permettent à toute personne qui a les compétences nécessaires de corriger des problèmes ou d'ajouter de nouvelles fonctionnalités sans me demander la permission. Elles permettent également au projet Sozi de continuer à ◊em{vivre} même si je cesse de le développer.
+
+Le code source de Sozi est publié selon les termes de la ◊link["https://www.mozilla.org/en-US/MPL/2.0/"]{Mozilla Public License 2.0}. Sozi intègre également des bibliothèques logicielles et des fichiers (comme par exemple les icônes et les fontes) soumis à d'autres licences libres.

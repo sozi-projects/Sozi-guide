@@ -7,13 +7,23 @@
 ◊(define hr-color   "#aaa")
 ◊(define link-color "#26a")
 
-@import "/node_modules/@fontsource/arsenal/index.css";
-@import "/node_modules/@fontsource/pt-serif/index.css";
-@import "/node_modules/@fontsource/jetbrains-mono/index.css";
+@import "/node_modules/@fontsource/arsenal/latin-400.css";
+@import "/node_modules/@fontsource/arsenal/latin-400-italic.css";
+@import "/node_modules/@fontsource/arsenal/latin-700.css";
+@import "/node_modules/@fontsource/arsenal/latin-700-italic.css";
+@import "/node_modules/@fontsource/pt-serif/latin-400.css";
+@import "/node_modules/@fontsource/pt-serif/latin-400-italic.css";
+@import "/node_modules/@fontsource/pt-serif/latin-700.css";
+@import "/node_modules/@fontsource/pt-serif/latin-700-italic.css";
+@import "/node_modules/@fontsource/jetbrains-mono/latin-400.css";
+@import "/node_modules/@fontsource/jetbrains-mono/latin-400-italic.css";
+@import "/node_modules/@fontsource/jetbrains-mono/latin-700.css";
+@import "/node_modules/@fontsource/jetbrains-mono/latin-700-italic.css";
 
 body {
     font-family: ◊text-font;
     font-size: 14pt;
+    /* font-variant-ligatures: none; */
 
     text-align: justify;
     word-wrap: break-word;
