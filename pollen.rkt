@@ -32,12 +32,16 @@
   (println res)
   res)
 
-(define chapter    (default-tag-function 'h1 #:class "chapter"))
-(define section    (default-tag-function 'h2 #:class "section"))
-(define subsection (default-tag-function 'h3 #:class "subsection"))
-(define itemize    (default-tag-function 'ul #:class "itemize"))
-(define enumerate  (default-tag-function 'ol #:class "enumerate"))
-(define item       (default-tag-function 'li))
+(define-syntax-rule (define-custom-markup fn tag)
+  (define fn (default-tag-function tag #:class (symbol->string 'fn))))
+
+(define-custom-markup chapter    'h1)
+(define-custom-markup section    'h2)
+(define-custom-markup subsection 'h3)
+(define-custom-markup itemize    'ul)
+(define-custom-markup enumerate  'ol)
+
+(define item (default-tag-function 'li))
 
 (define-syntax-rule (filter-attrs item ...)
   (filter identity (list item ...)))
