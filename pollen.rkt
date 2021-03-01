@@ -10,15 +10,13 @@
 (provide (all-defined-out))
 
 (define (root . body)
-  (define sq (case (select-from-metas 'lang (current-metas))
-               [("fr") smart-quotes-fr]
-               [else smart-quotes]))
-  (define punct (case (select-from-metas 'lang (current-metas))
-                  [("fr") punctuation-fr]
-                  [else identity]))
+  (define-values (smq pct)
+    (case (select-from-metas 'lang (current-metas))
+      [("fr") (values smart-quotes-fr punctuation-fr)]
+      [else   (values smart-quotes    identity)]))
   (decode (txexpr 'div empty body)
     #:txexpr-elements-proc decode-paragraphs
-    #:string-proc (compose1 punct sq smart-dashes smart-ellipses)))
+    #:string-proc (compose1 pct smq smart-dashes smart-ellipses)))
 
 (define (smart-quotes-fr xexpr)
   (smart-quotes xexpr
@@ -41,5 +39,10 @@
 (define enumerate  (default-tag-function 'ol #:class "enumerate"))
 (define item       (default-tag-function 'li))
 
-(define (link href . body)
-  (txexpr 'a `((href ,href)) body))
+(define-syntax-rule (filter-attrs item ...)
+  (filter identity (list item ...)))
+
+(define (link url #:class [class-name #f] . body)
+  (txexpr 'a
+    (filter-attrs `(href ,url) (and class-name `(class ,class-name)))
+    (if (empty? body) (list url) body)))

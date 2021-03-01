@@ -13,6 +13,7 @@ Le code source de ce livre est disponible ◊link["https://github.com/sozi-proje
 ◊section{Crédits}
 
 Ce livre a été réalisé avec le système de publication ◊link["https://docs.racket-lang.org/pollen/"]{Pollen} de Matthew Butterick.
+
 Il utilise les fontes suivantes, toutes sous licence ◊link["https://scripts.sil.org/OFL"]{SIL Open Font License Version 1.1} :
 
 ◊itemize{
