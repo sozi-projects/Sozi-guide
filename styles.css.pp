@@ -102,16 +102,33 @@ ul.itemize li:before {
     content: "\2014\2002";
 }
 
+header, footer {
+    text-align: center;
+}
+
+header {
+    margin-top: 2rem;
+}
+
 footer {
     margin-top: 1rem;
-    text-align: center;
+}
+
+footer .license {
     font-size: 80%;
 }
 
-footer hr {
+header hr, footer hr {
     max-width: 30rem;
     height: 1px;
     border: none;
     background: ◊hr-color;
+}
+
+header hr {
+    margin-top: 0.5rem;
+}
+
+footer hr {
     margin-bottom: 0.5rem;
 }

@@ -1,0 +1,3 @@
+#lang pollen
+
+◊(dynamic-require "fr/index.ptree" 'doc)

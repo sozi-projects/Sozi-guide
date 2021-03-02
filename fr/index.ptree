@@ -1,4 +1,6 @@
 #lang pollen
 
-a-propos-de-ce-livre.html
-a-propos-de-sozi.html
+◊fr/index.html{
+    fr/a-propos-de-ce-livre.html
+    fr/a-propos-de-sozi.html
+}
