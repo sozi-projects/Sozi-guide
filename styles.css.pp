@@ -51,15 +51,27 @@ body {
 h1, h2, h3 {
     font-family: ◊title-font;
     font-weight: normal;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 h1.chapter {
+    font-size: 3rem;
     text-align: center;
-    margin: 4rem 0 3rem 0;
+    margin: 5rem 0 7rem 0;
 }
 
 h2.section {
+    font-size: 2rem;
     margin: 2.5rem 0 1.5rem 0;
+}
+
+h3.subsection {
+    font-size: 1.5rem;
+}
+
+h3.subsection:before {
+    content: "\203a\2002";
+    color: #aaa;
 }
 
 a {
@@ -107,28 +119,44 @@ header, footer {
 }
 
 header {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 footer {
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 footer .license {
     font-size: 80%;
 }
 
-header hr, footer hr {
+nav {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav a {
+    display: table-cell;
+    width: 50%;
+}
+
+nav a.previous {
+    text-align: left;
+}
+
+nav a.next {
+    text-align: right;
+}
+
+hr {
     max-width: 30rem;
     height: 1px;
     border: none;
     background: ◊hr-color;
 }
 
-header hr {
-    margin-top: 0.5rem;
-}
-
 footer hr {
+    margin-top: 2rem;
     margin-bottom: 0.5rem;
 }

@@ -15,17 +15,15 @@
 <body>
     <header>
         <nav>
-            ◊when/splice[prev-page]{<a href="/◊prev-page">&larr;&nbsp;◊|prev-page-title|</a>}
-            ◊when/splice[next-page]{<a href="/◊next-page">◊|next-page-title|&nbsp;&rarr;</a>}
+            ◊when/splice[prev-page]{<a class="previous" href="/◊prev-page">&larr;&nbsp;◊|prev-page-title|</a>}
+            ◊when/splice[next-page]{<a class="next" href="/◊next-page">◊|next-page-title|&nbsp;&rarr;</a>}
         </nav>
-        <hr>
     </header>
     ◊(->html doc)
     <footer>
-        <hr>
         <nav>
-            ◊when/splice[prev-page]{<a href="/◊prev-page">&larr;&nbsp;◊|prev-page-title|</a>}
-            ◊when/splice[next-page]{<a href="/◊next-page">◊|next-page-title|&nbsp;&rarr;</a>}
+            ◊when/splice[prev-page]{<a class="previous" href="/◊prev-page">&larr;&nbsp;◊|prev-page-title|</a>}
+            ◊when/splice[next-page]{<a class="next" href="/◊next-page">◊|next-page-title|&nbsp;&rarr;</a>}
         </nav>
         <hr>
         <div class="license">
