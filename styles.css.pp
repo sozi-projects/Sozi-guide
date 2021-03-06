@@ -135,7 +135,7 @@ nav a {
 
 nav a.previous {
     text-align: left;
-}    width: 50%;
+}
 
 
 nav a.next {
