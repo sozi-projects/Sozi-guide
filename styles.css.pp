@@ -1,31 +1,21 @@
 #lang pollen
 
+◊(define chapter-font "PT Sans")
+◊(define heading-font "PT Sans Narrow")
 ◊(define text-font "PT Serif")
-◊(define title-font "Arsenal")
 ◊(define mono-font "JetBrains Mono")
 
 ◊(define hr-color   "#aaa")
 ◊(define link-color "#26a")
 
-@import "/node_modules/@fontsource/arsenal/latin-400.css";
-@import "/node_modules/@fontsource/arsenal/latin-400-italic.css";
-@import "/node_modules/@fontsource/arsenal/latin-700.css";
-@import "/node_modules/@fontsource/arsenal/latin-700-italic.css";
-
-@import "/node_modules/@fontsource/pt-serif/latin-400.css";
-@import "/node_modules/@fontsource/pt-serif/latin-400-italic.css";
-@import "/node_modules/@fontsource/pt-serif/latin-700.css";
-@import "/node_modules/@fontsource/pt-serif/latin-700-italic.css";
-
-@import "/node_modules/@fontsource/jetbrains-mono/latin-400.css";
-@import "/node_modules/@fontsource/jetbrains-mono/latin-400-italic.css";
-@import "/node_modules/@fontsource/jetbrains-mono/latin-700.css";
-@import "/node_modules/@fontsource/jetbrains-mono/latin-700-italic.css";
+@import "/fonts/PT-Sans/stylesheet.css";
+@import "/fonts/PT-Sans-Narrow/stylesheet.css";
+@import "/fonts/PT-Serif/stylesheet.css";
+@import "/fonts/JetBrains-Mono/stylesheet.css";
 
 body {
     font-family: ◊text-font;
     font-size: 14pt;
-    font-variant-ligatures: none;
 
     text-align: justify;
     word-wrap: break-word;
@@ -42,22 +32,24 @@ body {
     background-repeat: no-repeat;
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 62rem) {
     body {
         margin: 1rem calc(50vw - 30rem);
     }
 }
 
 h1, h2, h3 {
-    font-family: ◊title-font;
+    font-family: ◊heading-font;
     font-weight: normal;
 	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 h1.chapter {
-    font-size: 3rem;
+    font-family: ◊chapter-font;
+    font-size: 3.2rem;
     text-align: center;
     margin: 5rem 0 7rem 0;
+    letter-spacing: 0.05rem;
 }
 
 h2.section {
@@ -143,7 +135,8 @@ nav a {
 
 nav a.previous {
     text-align: left;
-}
+}    width: 50%;
+
 
 nav a.next {
     text-align: right;
