@@ -24,7 +24,7 @@ body {
     margin: 1rem 1rem;
 
     background:
-	    linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 0.5rem, rgba(255, 255, 255, 0.6) 0.7rem, white 5rem),
+	    linear-gradient(to bottom, transparent, transparent 0.7rem, rgba(255, 255, 255, 0.6) 0.7rem, white 23rem),
 		repeating-linear-gradient(to right, transparent, transparent 2rem, rgba(255, 102, 0, 0.1) 2rem, rgba(255, 102, 0, 0.1) 3.5rem, transparent 3.5rem, transparent 13rem),
 		repeating-linear-gradient(to right, transparent, transparent 4rem, rgba(204, 255, 0, 0.5) 4rem, rgba(204, 255, 0, 0.5) 10rem, transparent 10rem, transparent 11rem),
 		repeating-linear-gradient(to right, transparent, transparent 0.5rem, rgba(221, 175, 233, 0.5) 0.5rem, rgba(221, 175, 233, 0.5) 4.5rem, transparent 4.5rem, transparent 7rem),
