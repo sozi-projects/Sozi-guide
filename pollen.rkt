@@ -6,86 +6,160 @@
   pollen/core
   pollen/tag
   pollen/decode
-  pollen/unstable/typography)
+  (prefix-in typo/ pollen/unstable/typography))
 
-(provide (all-defined-out))
+(provide
+  root
+  chapter
+  section
+  subsection
+  itemize
+  itemize-icons
+  enumerate
+  link
+  link-image
+  icon
+  item-icon)
 
+
+; ------------------------------------------------------------------------------
+; Root element and document-level transformations
+; ------------------------------------------------------------------------------
+
+; Extract the current language code from the document metadata.
+(define (current-lang)
+  (select-from-metas 'lang (current-metas)))
+
+; Transform a document root into an HTML div.
+; Apply typographical transformations to the document body.
 (define (root . body)
-  (define-values (smq pct)
-    (case (select-from-metas 'lang (current-metas))
-      [("fr") (values smart-quotes-fr punctuation-fr)]
-      [else   (values smart-quotes    identity)]))
   (decode (txexpr 'div empty body)
     #:txexpr-elements-proc decode-paragraphs
-    #:string-proc (compose1 pct smq smart-dashes smart-ellipses)))
+    #:string-proc          (compose1 punctuation smart-quotes typo/smart-dashes typo/smart-ellipses)))
 
-(define (smart-quotes-fr xexpr)
-  (smart-quotes xexpr
-    #:double-open  "«\u202F"
-    #:double-close "\u202F»"))
+; Language-specific smart quotes.
+; This currently supports French double quotes, and English simple and double quotes.
+(define (smart-quotes xexpr)
+  (case (current-lang)
+    [("fr") (typo/smart-quotes xexpr #:double-open  "«\u202F" #:double-close "\u202F»")]
+    [else   (typo/smart-quotes xexpr)]))
 
-(define (punctuation-fr str)
-  (println str)
-  (define res (regexp-replaces str '([#px"[[:space:]]*\\?" "\u202F?"]
-                                     [#px"[[:space:]]*\\!" "\u202F!"]
-                                     [#px"[[:space:]]*\\:" "\u202F:"]
-                                     [#px"[[:space:]]*\\;" "\u202F;"])))
-  (println res)
-  res)
+; Language-specific punctuation transformations.
+; In French, double punctuation marks are preceded by a thin non-breaking space.
+(define (punctuation str)
+  (case (current-lang)
+    [("fr") (regexp-replaces str '([#px"[[:space:]]*\\?" "\u202F?"]
+                                   [#px"[[:space:]]*\\!" "\u202F!"]
+                                   [#px"[[:space:]]*\\:" "\u202F:"]
+                                   [#px"[[:space:]]*\\;" "\u202F;"]))]
+    [else str]))
 
-(define-syntax-rule (define-custom-markup fn tag)
+; ------------------------------------------------------------------------------
+; Headings
+; ------------------------------------------------------------------------------
+
+; Helper that defines an alias for a given HTML tag, setting the
+; class attribute to the original markup name.
+(define-syntax-rule (define-simple-tag-function fn tag)
   (define fn (default-tag-function tag #:class (symbol->string 'fn))))
 
-(define-custom-markup chapter    'h1)
-(define-custom-markup section    'h2)
-(define-custom-markup subsection 'h3)
+; ◊chapter:    h1
+; ◊section:    h2
+; ◊subsection: h3
+(define-simple-tag-function chapter    'h1)
+(define-simple-tag-function section    'h2)
+(define-simple-tag-function subsection 'h3)
 
+; ------------------------------------------------------------------------------
+; Lists
+; ------------------------------------------------------------------------------
+
+; Detect a list item separator as a string of two or more newlines.
 (define (list-item-sep? elt)
   (and (string? elt) (regexp-match #rx"\n\n+" elt)))
 
+; Detect an element that is not a list item separator.
 (define (not-list-item-sep? elt)
   (not (list-item-sep? elt)))
 
+; Define custom markup for a given HTML list tag.
+; with a given optional list of class names.
+; The given function name is automatically added as a class name to the result.
 (define-syntax-rule (define-list-function name tag class-name ...)
   (define-tag-function (name attrs body)
-    ; Merge newlines and remove head newlines.
-    (define mbody (~> (merge-newlines body)
-                      (dropf       list-item-sep?)
-                      (dropf-right list-item-sep?)))
-    ; Detect item separators.
-    (define sbody (let loop ([acc empty] [lst mbody])
-                        (if (empty? lst)
-                          acc
-                          (let-values ([(l r) (splitf-at-right lst not-list-item-sep?)])
-                            (loop (cons r acc) (dropf-right l list-item-sep?))))))
-    ; Return a new HTML list element with list items.
-    (define tx (txexpr tag attrs (for/list ([it (in-list sbody)])
-                                   (txexpr 'li empty it))))
-    ; Set the custom markup name as a class name, and join the given other class names.
-    (attr-set tx 'class (string-join (list (symbol->string 'name) class-name ...) " "))))
+    ; Merge newlines and remove list item separators at the beginning.
+    (define body-merged (~> body
+                            (merge-newlines)
+                            (dropf list-item-sep?)))
+    ; Detect item separators and group elements that belong to each list item.
+    ; Each iteration processes a list of remaining elements lst that is
+    ; split with respect to the last list item separator.
+    ; The right sublist is accumulated in acc, and the left sublist is
+    ; processed in the next iteration until it is empty.
+    (define item-bodies (let loop ([acc empty] [lst body-merged])
+                          ; Remove list item separators at the end.
+                          (define lst^ (dropf-right lst list-item-sep?))
+                          ; If there is no other child to process, terminate.
+                          ; Else, split lst^ at the first list item separator
+                          ; from the right, and add the right part to the result.
+                          (if (empty? lst^)
+                            acc
+                            (let-values ([(l r) (splitf-at-right lst^ not-list-item-sep?)])
+                              (loop (cons r acc) l)))))
+        ; Wrap each item body in an HTML list item element.
+    (~> (for/list ([it (in-list item-bodies)])
+          (txexpr 'li empty it))
+        ; Wrap all list items in an HTML list element with the given tag.
+        (txexpr tag attrs _)
+        ; Add class names to the list element.
+        (attr-join 'class (symbol->string 'name))
+        (attr-join 'class class-name)
+        ...)))
 
+; ◊itemize:       unordered list
+; ◊itemize-icons: unordered list with icons instead of bullets
+; ◊enumerate:     ordered list
 (define-list-function itemize       'ul)
 (define-list-function itemize-icons 'ul "fa-ul")
 (define-list-function enumerate     'ol)
 
-(define-syntax-rule (filter* item ...)
-  (filter identity (list item ...)))
+; ------------------------------------------------------------------------------
+; Links
+; ------------------------------------------------------------------------------
 
-(define-syntax-rule (make-style-attr item ...)
-  (list 'style (string-join (for/list ([it (in-list (filter* item ...))])
-                              (format "~a:~a;" (first it) (second it))))))
+; Like attr-join but ignores falsy values.
+(define (attr-join* tx key value)
+  (if value
+    (attr-join tx key value)
+    tx))
+
+; Helper that adds, or appends to, a style attribute of an element.
+; Ignore falsy values.
+(define (style-join tx key value)
+  (if value
+    (attr-join tx 'style (format "~a:~a;" key value))
+    tx))
 
 (define (link url #:class [class-name #f] . body)
-  (txexpr 'a
-    (filter* `(href ,url) (and class-name `(class ,class-name)))
-    (if (empty? body) (list url) body)))
+      ; Use the URL as the body if it is missing.
+  (~> (if (empty? body) (list url) body)
+      ; Create an HTML link.
+      (txexpr 'a `((href ,url)) _)
+      ; Add the given class name if it is defined.
+      (attr-join* 'class class-name)))
 
 (define (link-image url #:src src-url #:alt [alt-text #f] #:width [width #f])
-  (txexpr 'a `((href ,url))
-    (list (txexpr 'img
-            (filter* `(src ,src-url)
-                      (and alt-text `(alt ,alt-text))
-                      (make-style-attr (and width `(width ,width))))))))
+      ; Create an HTML image element.
+  (~> (txexpr 'img `((src ,src-url)))
+      ; Add the given alt and width attributes if set.
+      (attr-join* 'alt   alt-text)
+      (style-join 'width width)
+      ; Wrap the image in an HTML link.
+      (txexpr 'a `((href ,url)) _)))
+
+; ------------------------------------------------------------------------------
+; Icons (using Fork-Awesome)
+; ------------------------------------------------------------------------------
 
 (define (icon id)
   (define cls (format "fa fa-~a" id))

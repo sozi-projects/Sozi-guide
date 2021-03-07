@@ -85,7 +85,7 @@ Sozi est un ◊link["https://fr.wikipedia.org/wiki/Logiciel_libre"]{logiciel lib
     La liberté d'étudier son fonctionnement. Le code source de Sozi est disponible ◊link["https://github.com/sozi-projects/Sozi"]{dans un dépôt public chez GitHub}.
 
     La liberté de le redistribuer.
-    
+
     La liberté de le modifier et de partager vos modifications.
 }
 
