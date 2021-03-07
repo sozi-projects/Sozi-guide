@@ -2,6 +2,7 @@
 
 (require
   txexpr
+  threading
   pollen/core
   pollen/tag
   pollen/decode
@@ -38,15 +39,58 @@
 (define-custom-markup chapter    'h1)
 (define-custom-markup section    'h2)
 (define-custom-markup subsection 'h3)
-(define-custom-markup itemize    'ul)
-(define-custom-markup enumerate  'ol)
 
-(define item (default-tag-function 'li))
+(define (list-item-sep? elt)
+  (and (string? elt) (regexp-match #rx"\n\n+" elt)))
 
-(define-syntax-rule (filter-attrs item ...)
+(define (not-list-item-sep? elt)
+  (not (list-item-sep? elt)))
+
+(define-syntax-rule (define-list-function name tag class-name ...)
+  (define-tag-function (name attrs body)
+    ; Merge newlines and remove head newlines.
+    (define mbody (~> (merge-newlines body)
+                      (dropf       list-item-sep?)
+                      (dropf-right list-item-sep?)))
+    ; Detect item separators.
+    (define sbody (let loop ([acc empty] [lst mbody])
+                        (if (empty? lst)
+                          acc
+                          (let-values ([(l r) (splitf-at-right lst not-list-item-sep?)])
+                            (loop (cons r acc) (dropf-right l list-item-sep?))))))
+    ; Return a new HTML list element with list items.
+    (define tx (txexpr tag attrs (for/list ([it (in-list sbody)])
+                                   (txexpr 'li empty it))))
+    ; Set the custom markup name as a class name, and join the given other class names.
+    (attr-set tx 'class (string-join (list (symbol->string 'name) class-name ...) " "))))
+
+(define-list-function itemize       'ul)
+(define-list-function itemize-icons 'ul "fa-ul")
+(define-list-function enumerate     'ol)
+
+(define-syntax-rule (filter* item ...)
   (filter identity (list item ...)))
+
+(define-syntax-rule (make-style-attr item ...)
+  (list 'style (string-join (for/list ([it (in-list (filter* item ...))])
+                              (format "~a:~a;" (first it) (second it))))))
 
 (define (link url #:class [class-name #f] . body)
   (txexpr 'a
-    (filter-attrs `(href ,url) (and class-name `(class ,class-name)))
+    (filter* `(href ,url) (and class-name `(class ,class-name)))
     (if (empty? body) (list url) body)))
+
+(define (link-image url #:src src-url #:alt [alt-text #f] #:width [width #f])
+  (txexpr 'a `((href ,url))
+    (list (txexpr 'img
+            (filter* `(src ,src-url)
+                      (and alt-text `(alt ,alt-text))
+                      (make-style-attr (and width `(width ,width))))))))
+
+(define (icon id)
+  (define cls (format "fa fa-~a" id))
+  (txexpr 'i `((class ,cls)) empty))
+
+(define (item-icon id)
+  (define cls (format "fa-li fa fa-~a" id))
+  (txexpr 'i `((class ,cls)) empty))

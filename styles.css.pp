@@ -12,6 +12,7 @@
 @import "/fonts/PT-Sans-Narrow/stylesheet.css";
 @import "/fonts/PT-Serif/stylesheet.css";
 @import "/fonts/JetBrains-Mono/stylesheet.css";
+@import "/fonts/Fork-Awesome-1.1.7/css/fork-awesome.min.css";
 
 body {
     font-family: ◊text-font;
@@ -49,7 +50,6 @@ h1.chapter {
     font-size: 3.2rem;
     text-align: center;
     margin: 5rem 0 7rem 0;
-    letter-spacing: 0.05rem;
 }
 
 h2.section {

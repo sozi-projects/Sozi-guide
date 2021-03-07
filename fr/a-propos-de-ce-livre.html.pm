@@ -10,13 +10,33 @@ Le document que vous êtes en train de lire est un livre ◊em{libre}. Vous ête
 
 Le code source de ce livre est disponible ◊link["https://github.com/sozi-projects/Sozi-book"]{dans un dépot public chez GitHub}. Si vous remarquez une erreur ou si vous souhaitez proposer des améliorations, vous pouvez le faire sur ◊link["https://github.com/sozi-projects/Sozi-book/issues"]{la page "Issues" du projet}.
 
+
+◊section{Un livre à prix libre}
+
+Si vous trouvez ce livre utile, vous pouvez soutenir mon travail en versant la somme de votre choix sur l'un des services suivants :
+
+◊itemize-icons{
+    ◊link["https://www.buymeacoffee.com/THtbNvnqE"]{◊item-icon["coffee"]Buy me a coffee}
+
+    ◊link["https://www.paypal.me/guillaumesavaton"]{◊item-icon["paypal"]Paypal}
+
+    ◊link["https://liberapay.com/aumouvantsillage/donate"]{◊item-icon["liberapay"]Liberapay}
+}
+
+Si vous préférez lire ce livre sans payer, personne ne viendra vous le reprocher ◊icon["smile-o"]. Et si vous changez d'avis, vous êtes libre de revenir sur cette page à tout moment pour cliquer sur l'un des liens ci-dessus.
+
+
 ◊section{Crédits}
 
 Ce livre a été réalisé avec le système de publication ◊link["https://docs.racket-lang.org/pollen/"]{Pollen} de Matthew Butterick.
 Il utilise les fontes suivantes, toutes sous licence ◊link["https://scripts.sil.org/OFL"]{SIL Open Font License Version 1.1} :
 
 ◊itemize{
-    ◊item{◊link["https://www.paratype.com/fonts/pt/pt-serif"]{PT Serif} de la fonderie ◊link["https://www.paratype.com/"]{ParaType},}
-    ◊item{◊link["https://fonts.google.com/specimen/Arsenal"]{Arsenal} d'◊link["https://andrij.com.ua/eng/"]{Andrij Shevchenko},}
-    ◊item{◊link["https://www.jetbrains.com/lp/mono/"]{JetBrains Mono} de Philipp Nurullin et Konstantin Bulenkov pour ◊link["https://www.jetbrains.com"]{JetBrains}.}
+    ◊link["https://www.paratype.com/fonts/pt/pt-serif"]{PT Serif} de la fonderie ◊link["https://www.paratype.com/"]{ParaType},
+
+    ◊link["https://fonts.google.com/specimen/Arsenal"]{Arsenal} d'◊link["https://andrij.com.ua/eng/"]{Andrij Shevchenko},
+
+    ◊link["https://www.jetbrains.com/lp/mono/"]{JetBrains Mono} de Philipp Nurullin et Konstantin Bulenkov pour ◊link["https://www.jetbrains.com"]{JetBrains}.
+
+    ◊link["https://forkaweso.me/Fork-Awesome/"]{Fork Awesome}, dont les feuilles de style sont publiées sous licence ◊link["https://github.com/ForkAwesome/Fork-Awesome/blob/master/LICENSES"]{MIT}.
 }

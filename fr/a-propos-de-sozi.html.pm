@@ -63,10 +63,13 @@ En choisissant ce nom, j'ai également négligé le sens qu'il pouvait prendre d
 Les numéros de versions suivent une logique purement chronologique. Ils se présentent sous la forme "AA.MM.JJ-T" où :
 
 ◊itemize{
-    ◊item{"AA" correspond aux chiffres des dizaines et unités de l'année de publication,}
-    ◊item{"MM" est le numéro du mois (01 à 12),}
-    ◊item{"JJ" est le numéro du jour du mois (01 à 31),}
-    ◊item{"T" identifie la révision du code source qui a été utilisée pour construire cette version (techniquement, il s'agit du ◊em{timestamp} du ◊em{commit} correspondant à cette révision, mais si vous ne savez pas de quoi il s'agit, ce n'est pas important).}
+    "AA" correspond aux chiffres des dizaines et unités de l'année de publication,
+
+    "MM" est le numéro du mois (01 à 12),
+
+    "JJ" est le numéro du jour du mois (01 à 31),
+
+    "T" identifie la révision du code source qui a été utilisée pour construire cette version (techniquement, il s'agit du ◊em{timestamp} du ◊em{commit} correspondant à cette révision, mais si vous ne savez pas de quoi il s'agit, ce n'est pas important).
 }
 
 Sozi ne respecte pas les principes de ◊link["https://semver.org/lang/fr/"]{gestion sémantique de version}. Le passage d'un numéro de version à un autre ne reflète pas l'importance des changements qui ont eu lieu entre ces versions.
@@ -77,10 +80,13 @@ Sozi ne respecte pas les principes de ◊link["https://semver.org/lang/fr/"]{ges
 Sozi est un ◊link["https://fr.wikipedia.org/wiki/Logiciel_libre"]{logiciel libre}. Cela signifie que sa licence vous offre les quatre libertés suivantes :
 
 ◊enumerate{
-    ◊item{La liberté d'utiliser Sozi sans limite d'usage.}
-    ◊item{La liberté d'étudier son fonctionnement. Le code source de Sozi est disponible ◊link["https://github.com/sozi-projects/Sozi"]{dans un dépôt public chez GitHub}.}
-    ◊item{La liberté de le redistribuer.}
-    ◊item{La liberté de le modifier et de partager vos modifications.}
+    La liberté d'utiliser Sozi sans limite d'usage.
+
+    La liberté d'étudier son fonctionnement. Le code source de Sozi est disponible ◊link["https://github.com/sozi-projects/Sozi"]{dans un dépôt public chez GitHub}.
+
+    La liberté de le redistribuer.
+    
+    La liberté de le modifier et de partager vos modifications.
 }
 
 La plupart des gens seront surtout intéressés pas la première de ces quatre libertés mais il est important de savoir que les trois autres existent. Elles permettent à toute personne qui a les compétences nécessaires de corriger des problèmes ou d'ajouter de nouvelles fonctionnalités sans me demander la permission. Elles permettent également au projet Sozi de continuer à ◊em{vivre} même si je cesse de le développer.
