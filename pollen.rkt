@@ -134,10 +134,13 @@
     tx))
 
 ; Helper that adds, or appends to, a style attribute of an element.
-; Ignore falsy values.
 (define (style-join tx key value)
+  (attr-join tx 'style (format "~a:~a;" key value)))
+
+; Like style-join but ignores falsy values.
+(define (style-join* tx key value)
   (if value
-    (attr-join tx 'style (format "~a:~a;" key value))
+    (style-join tx key value)
     tx))
 
 (define (link url #:class [class-name #f] . body)
@@ -152,8 +155,8 @@
       ; Create an HTML image element.
   (~> (txexpr 'img `((src ,src-url)))
       ; Add the given alt and width attributes if set.
-      (attr-join* 'alt   alt-text)
-      (style-join 'width width)
+      (attr-join*  'alt   alt-text)
+      (style-join* 'width width)
       ; Wrap the image in an HTML link.
       (txexpr 'a `((href ,url)) _)))
 
