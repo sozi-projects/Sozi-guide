@@ -14,10 +14,12 @@
 @import "/fonts/JetBrains-Mono/stylesheet.css";
 @import "/fonts/Fork-Awesome-1.1.7/css/fork-awesome.min.css";
 
-body {
+html {
     font-family: ◊text-font;
-    font-size: 14pt;
+    font-size: large;
+}
 
+body {
     text-align: justify;
     word-wrap: break-word;
     hyphens: auto;
@@ -33,9 +35,9 @@ body {
     background-repeat: no-repeat;
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 58.5rem) { /* 52rem when root font size is applied */
     body {
-        margin: 1rem calc(50vw - 30rem);
+        margin: 1rem calc(50vw - 25rem);
     }
 }
 
@@ -47,18 +49,18 @@ h1, h2, h3 {
 
 h1.chapter {
     font-family: ◊chapter-font;
-    font-size: 3.2rem;
+    font-size: 270%;
     text-align: center;
     margin: 5rem 0 7rem 0;
 }
 
 h2.section {
-    font-size: 2rem;
+    font-size: 170%;
     margin: 2.5rem 0 1.5rem 0;
 }
 
 h3.subsection {
-    font-size: 1.5rem;
+    font-size: 130%;
 }
 
 h3.subsection:before {
