@@ -86,7 +86,7 @@ p {
     margin: 0.25rem 0;
 }
 
-p + p {
+main p + p {
     text-indent: 1em;
 }
 
@@ -139,9 +139,16 @@ nav a.previous {
     text-align: left;
 }
 
+nav a.previous:before {
+    content: "←\00A0";
+}
 
 nav a.next {
     text-align: right;
+}
+
+nav a.next:after {
+    content: "\00A0→"
 }
 
 hr {
