@@ -13,6 +13,7 @@
   chapter
   section
   subsection
+  heading
   itemize
   itemize-icons
   enumerate
@@ -70,6 +71,9 @@
 (define-simple-tag-function chapter    'h1)
 (define-simple-tag-function section    'h2)
 (define-simple-tag-function subsection 'h3)
+
+(define (heading sym)
+  ((eval sym) (select-from-metas 'title (current-metas))))
 
 ; ------------------------------------------------------------------------------
 ; Lists

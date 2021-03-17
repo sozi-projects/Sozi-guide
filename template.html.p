@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 
-◊(define lang (select-from-metas 'lang metas))
+◊(define lang  (select-from-metas 'lang  metas))
+◊(define title (select-from-metas 'title metas))
 ◊(define prev-page (previous here))
 ◊(define next-page (next here))
-◊(define prev-page-title (and prev-page (select 'h1 prev-page)))
-◊(define next-page-title (and next-page (select 'h1 next-page)))
+◊(define prev-page-title (and prev-page (select-from-metas 'title prev-page)))
+◊(define next-page-title (and next-page (select-from-metas 'title next-page)))
 
 ◊(define (make-nav)
     ◊nav{
@@ -27,7 +28,7 @@
 <html lang="◊lang">
 <head>
   <meta charset="UTF-8">
-  <title>◊(select 'h1 doc)</title>
+  <title>◊|title|</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>

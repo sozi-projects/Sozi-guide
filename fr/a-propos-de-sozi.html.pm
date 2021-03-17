@@ -1,8 +1,9 @@
 #lang pollen
 
 ◊define-meta[lang]{fr}
+◊define-meta[title]{À propos de Sozi}
 
-◊chapter{À propos de Sozi}
+◊heading[chapter]
 
 ◊section{Que peut-on faire avec Sozi ?}
 
