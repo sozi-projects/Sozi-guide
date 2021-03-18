@@ -37,9 +37,11 @@
 ; Transform a document root into an HTML main element.
 ; Apply typographical transformations to the document body.
 (define (root . body)
-  (decode (txexpr 'main empty body)
-    #:txexpr-elements-proc decode-paragraphs
-    #:string-proc          (compose1 punctuation smart-quotes typo/smart-dashes typo/smart-ellipses)))
+  (~> `(main ,@body)
+      (insert-toc)
+      (decode
+        #:txexpr-elements-proc decode-paragraphs
+        #:string-proc          (compose1 punctuation smart-quotes typo/smart-dashes typo/smart-ellipses))))
 
 ; Language-specific smart quotes.
 ; This currently supports French double quotes, and English simple and double quotes.
@@ -58,6 +60,35 @@
                                    [#px"[[:space:]]*\\;" "\u202F;"]))]
     [else str]))
 
+(define (insert-toc tx)
+  (cond
+    [(chapter-page? tx)
+     (define sec-counter 0)
+     ; Find all section headings and insert an anchor inside.
+     (define-values (tx/a sec-lst) (splitf-txexpr tx section?
+                                     (λ (sec)
+                                       (set! sec-counter (add1 sec-counter))
+                                       (txexpr (get-tag sec)
+                                               (get-attrs sec)
+                                               (cons (txexpr 'a `((name ,(format "sec-~a" sec-counter))))
+                                                     (get-elements sec))))))
+     ; If sections were found, insert a table of contents
+     ; after the chapter heading.
+     (if (empty? sec-lst)
+       tx
+       (let ([toc (txexpr 'ul `((class "chapter-toc"))
+                    (for/list ([(sec i) (in-indexed sec-lst)])
+                      (~>> sec
+                           (get-elements)
+                           (txexpr 'a `((href ,(format "#sec-~a" (add1 i)))))
+                           (txexpr* 'li empty))))])
+         (match-define-values (tx/t _) (splitf-txexpr tx/a chapter?
+                                         (λ (heading)
+                                            (@ heading toc))))
+         tx/t))]
+
+    [else tx]))
+
 ; ------------------------------------------------------------------------------
 ; Headings
 ; ------------------------------------------------------------------------------
@@ -70,7 +101,7 @@
   (begin
     (define name (default-tag-function 'tag #:class class-name))
     (define (pred-name xexpr)
-      (and (txexpr? xexpr) (eq? 'tag (get-tag xexpr)) (eq? class-name (attr-ref xexpr 'class))))))
+      (and (txexpr? xexpr) (eq? 'tag (get-tag xexpr)) (equal? class-name (attr-ref xexpr 'class #f))))))
 
 ; ◊book:       h1
 ; ◊part:       h1
@@ -85,6 +116,15 @@
 
 (define (get-title page)
   (select 'h1 page))
+
+(define (book-page? tx)
+  (findf-txexpr tx book?))
+
+(define (part-page? tx)
+  (findf-txexpr tx part?))
+
+(define (chapter-page? tx)
+  (findf-txexpr tx chapter?))
 
 ; ------------------------------------------------------------------------------
 ; Lists
@@ -175,7 +215,7 @@
       (attr-join*  'alt   alt-text)
       (style-join* 'width width)
       ; Wrap the image in an HTML link.
-      (txexpr 'a `((href ,url)) _)))
+      (txexpr* 'a `((href ,url)) _)))
 
 ; ------------------------------------------------------------------------------
 ; Icons (using Fork-Awesome)
@@ -183,11 +223,11 @@
 
 (define (icon id)
   (define cls (format "fa fa-~a" id))
-  (txexpr 'i `((class ,cls)) empty))
+  (txexpr 'i `((class ,cls))))
 
 (define (item-icon id)
   (define cls (format "fa-li fa fa-~a" id))
-  (txexpr 'i `((class ,cls)) empty))
+  (txexpr 'i `((class ,cls))))
 
 ; ------------------------------------------------------------------------------
 ; Navigation
