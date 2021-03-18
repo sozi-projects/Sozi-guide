@@ -1,9 +1,8 @@
 #lang pollen
 
 ◊define-meta[lang]{fr}
-◊define-meta[title]{À propos de ce livre}
 
-◊heading[chapter]
+◊chapter{À propos de ce livre}
 
 ◊section{Un livre libre}
 

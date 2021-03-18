@@ -1,6 +1,8 @@
 #lang racket
 
 (require
+  (for-syntax racket/syntax)
+  syntax/parse/define
   txexpr
   threading
   pollen/core
@@ -13,7 +15,7 @@
   chapter
   section
   subsection
-  heading
+  get-title
   itemize
   itemize-icons
   enumerate
@@ -32,10 +34,10 @@
 (define (current-lang)
   (select-from-metas 'lang (current-metas)))
 
-; Transform a document root into an HTML div.
+; Transform a document root into an HTML main element.
 ; Apply typographical transformations to the document body.
 (define (root . body)
-  (decode (txexpr 'div empty body)
+  (decode (txexpr 'main empty body)
     #:txexpr-elements-proc decode-paragraphs
     #:string-proc          (compose1 punctuation smart-quotes typo/smart-dashes typo/smart-ellipses)))
 
@@ -62,18 +64,27 @@
 
 ; Helper that defines an alias for a given HTML tag, setting the
 ; class attribute to the original markup name.
-(define-syntax-rule (define-simple-tag-function fn tag)
-  (define fn (default-tag-function tag #:class (symbol->string 'fn))))
+(define-simple-macro (define-simple-tag-function name tag)
+  #:with pred-name  (format-id #'name "~a?" #'name)
+  #:with class-name #'(symbol->string 'name)
+  (begin
+    (define name (default-tag-function 'tag #:class class-name))
+    (define (pred-name xexpr)
+      (and (txexpr? xexpr) (eq? 'tag (get-tag xexpr)) (eq? class-name (attr-ref xexpr 'class))))))
 
+; ◊book:       h1
+; ◊part:       h1
 ; ◊chapter:    h1
 ; ◊section:    h2
 ; ◊subsection: h3
-(define-simple-tag-function chapter    'h1)
-(define-simple-tag-function section    'h2)
-(define-simple-tag-function subsection 'h3)
+(define-simple-tag-function book       h1)
+(define-simple-tag-function part       h1)
+(define-simple-tag-function chapter    h1)
+(define-simple-tag-function section    h2)
+(define-simple-tag-function subsection h3)
 
-(define (heading sym)
-  ((eval sym) (select-from-metas 'title (current-metas))))
+(define (get-title page)
+  (select 'h1 page))
 
 ; ------------------------------------------------------------------------------
 ; Lists

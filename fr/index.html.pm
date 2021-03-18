@@ -1,3 +1,3 @@
 #lang pollen
 
-◊define-meta[title]{Ceci n'est pas un diaporama}
+◊h1{Ceci n'est pas un diaporama}
