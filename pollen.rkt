@@ -64,13 +64,14 @@
   (cond
     [(chapter-page? tx)
      (define sec-counter 0)
-     ; Find all section headings and insert an anchor inside.
+     ; Find all section headings and insert an empty anchor inside.
+     ; This will prevent replacing the section ID if it exists.
      (define-values (tx/a sec-lst) (splitf-txexpr tx section?
                                      (λ (sec)
                                        (set! sec-counter (add1 sec-counter))
                                        (txexpr (get-tag sec)
                                                (get-attrs sec)
-                                               (cons (txexpr 'a `((name ,(format "sec-~a" sec-counter))))
+                                               (cons (txexpr 'a `((id ,(format "sec-~a" sec-counter))))
                                                      (get-elements sec))))))
      ; If sections were found, insert a table of contents
      ; after the chapter heading.
