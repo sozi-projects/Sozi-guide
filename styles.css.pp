@@ -8,6 +8,7 @@
 ◊(define hr-color   "#aaa")
 ◊(define link-color "#26a")
 
+@import "/assets/normalize.css";
 @import "/fonts/PT-Sans/stylesheet.css";
 @import "/fonts/PT-Sans-Narrow/stylesheet.css";
 @import "/fonts/PT-Serif/stylesheet.css";
@@ -51,7 +52,7 @@ h1.chapter {
     font-family: ◊chapter-font;
     font-size: 270%;
     text-align: center;
-    margin: 5rem 0 7rem 0;
+    margin: 5rem 0 5rem 0;
 }
 
 h2.section {
@@ -106,6 +107,25 @@ ul.itemize li {
 
 ul.itemize li:before {
     content: "\2014\2002";
+}
+
+nav.chapter {
+    margin: 0 auto 5rem auto;
+}
+
+nav.chapter > div {
+    text-align: center;
+}
+
+nav.chapter ul {
+    display: table;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0.5rem 0;
+}
+
+nav.chapter li {
+    margin: 0.5rem 0;
 }
 
 header, footer {

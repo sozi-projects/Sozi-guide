@@ -3,3 +3,4 @@ compiled
 *.html
 *.css
 !fonts/**/*
+!assets/**/*

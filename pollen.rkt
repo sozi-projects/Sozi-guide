@@ -38,10 +38,10 @@
 ; Apply typographical transformations to the document body.
 (define (root . body)
   (~> `(main ,@body)
-      (insert-toc)
-      (decode
-        #:txexpr-elements-proc decode-paragraphs
-        #:string-proc          (compose1 punctuation smart-quotes typo/smart-dashes typo/smart-ellipses))))
+       (decode
+         #:txexpr-elements-proc decode-paragraphs
+         #:string-proc          (compose1 punctuation smart-quotes typo/smart-dashes typo/smart-ellipses))
+       (insert-toc)))
 
 ; Language-specific smart quotes.
 ; This currently supports French double quotes, and English simple and double quotes.
@@ -60,6 +60,7 @@
                                    [#px"[[:space:]]*\\;" "\u202F;"]))]
     [else str]))
 
+; Insert a table of contents in the current page.
 (define (insert-toc tx)
   (cond
     [(chapter-page? tx)
@@ -77,18 +78,24 @@
      ; after the chapter heading.
      (if (empty? sec-lst)
        tx
-       (let ([toc (txexpr 'ul `((class "chapter-toc"))
-                    (for/list ([(sec i) (in-indexed sec-lst)])
-                      (~>> sec
-                           (get-elements)
-                           (txexpr 'a `((href ,(format "#sec-~a" (add1 i)))))
-                           (txexpr* 'li empty))))])
+       (let ([toc (txexpr* 'nav '((class "chapter"))
+                    toc-start
+                    (txexpr 'ul empty
+                      (for/list ([(sec i) (in-indexed sec-lst)])
+                        (~>> sec
+                             (get-elements)
+                             (txexpr 'a `((href ,(format "#sec-~a" (add1 i)))))
+                             (txexpr* 'li empty))))
+                    toc-end)])
          (match-define-values (tx/t _) (splitf-txexpr tx/a chapter?
                                          (λ (heading)
                                             (@ heading toc))))
          tx/t))]
 
     [else tx]))
+
+(define toc-start '(div #x2234))
+(define toc-end   '(div #x2235))
 
 ; ------------------------------------------------------------------------------
 ; Headings
