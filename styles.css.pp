@@ -1,12 +1,17 @@
 #lang pollen
 
+◊(define book-font    "PT Sans")
 ◊(define chapter-font "PT Sans")
 ◊(define heading-font "PT Sans Narrow")
-◊(define text-font "PT Serif")
-◊(define mono-font "JetBrains Mono")
+◊(define text-font    "PT Serif")
+◊(define mono-font    "JetBrains Mono")
 
-◊(define hr-color   "#aaa")
-◊(define link-color "#26a")
+◊(define hr-color         "#aaa")
+◊(define link-color       "rgb(0, 120, 150)")
+◊(define chapter-color    "rgb(0, 204, 255)")
+◊(define section-color    "rgb(255, 102, 0)")
+◊(define subsection-color "rgb(255, 204, 0)")
+◊(define block-color      "rgb(221, 175, 233)")
 
 @import "/assets/normalize.css";
 @import "/fonts/PT-Sans/stylesheet.css";
@@ -42,31 +47,43 @@ body {
     }
 }
 
+.book-cover {
+    text-align: center;
+}
+
+.book-cover img {
+    max-height: 50vh;
+}
+
 h1, h2, h3 {
     font-family: ◊heading-font;
     font-weight: normal;
 	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
+h1.book  {
+    font-family: ◊book-font;
+    font-size: 270%;
+}
+
 h1.chapter {
     font-family: ◊chapter-font;
     font-size: 270%;
-    text-align: center;
-    margin: 5rem 0 5rem 0;
+    margin: 0 0 2rem 0;
 }
 
 h2.section {
     font-size: 170%;
-    margin: 2.5rem 0 1.5rem 0;
+    margin: 2.5rem 0 1.5rem -1rem;
+    padding-left: 0.5rem;
+    border-left: 0.5rem solid ◊section-color;
 }
 
 h3.subsection {
     font-size: 130%;
-}
-
-h3.subsection:before {
-    content: "\203a\2002";
-    color: #aaa;
+    margin-left: -1rem;
+    padding-left: 0.5rem;
+    border-left: 0.5rem solid ◊subsection-color;
 }
 
 a {
@@ -88,7 +105,7 @@ p {
 }
 
 main p + p {
-    text-indent: 1em;
+    text-indent: 1rem;
 }
 
 p, li {
@@ -97,12 +114,12 @@ p, li {
 
 ul.itemize {
     list-style: none;
-    padding-left: 1.5em;
+    padding-left: 1.5rem;
 }
 
 ul.itemize li {
-    text-indent: -1.5em;
-    padding-left: 1em;
+    text-indent: -1.5rem;
+    padding-left: 1rem;
 }
 
 ul.itemize li:before {
@@ -110,22 +127,23 @@ ul.itemize li:before {
 }
 
 nav.chapter {
-    margin: 0 auto 5rem auto;
-}
-
-nav.chapter > div {
-    text-align: center;
+    margin: 5rem 0 5rem -1rem;
+    padding-left: 1.5rem;
+    border-left: 0.5rem solid ◊chapter-color;
 }
 
 nav.chapter ul {
-    display: table;
-    margin: 0 auto;
     list-style: none;
-    padding: 0.5rem 0;
+    padding: 0;
+    margin: 0 0 0 1rem;
 }
 
 nav.chapter li {
     margin: 0.5rem 0;
+}
+
+nav.chapter li:last-child {
+    margin: 0;
 }
 
 header, footer {

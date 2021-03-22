@@ -12,6 +12,9 @@
 
 (provide
   root
+  book-cover
+  book
+  book-subtitle
   chapter
   section
   subsection
@@ -78,24 +81,19 @@
      ; after the chapter heading.
      (if (empty? sec-lst)
        tx
-       (let ([toc (txexpr* 'nav '((class "chapter"))
-                    toc-start
-                    (txexpr 'ul empty
-                      (for/list ([(sec i) (in-indexed sec-lst)])
-                        (~>> sec
-                             (get-elements)
-                             (txexpr 'a `((href ,(format "#sec-~a" (add1 i)))))
-                             (txexpr* 'li empty))))
-                    toc-end)])
+       (let ([toc (txexpr 'ul empty
+                    (for/list ([(sec i) (in-indexed sec-lst)])
+                      (~>> sec
+                           (get-elements)
+                           (txexpr 'a `((href ,(format "#sec-~a" (add1 i)))))
+                           (txexpr* 'li empty))))])
          (match-define-values (tx/t _) (splitf-txexpr tx/a chapter?
                                          (λ (heading)
-                                            (@ heading toc))))
+                                           (txexpr* 'nav '((class "chapter"))
+                                             heading toc))))
          tx/t))]
 
     [else tx]))
-
-(define toc-start '(div #x2234))
-(define toc-end   '(div #x2235))
 
 ; ------------------------------------------------------------------------------
 ; Headings
@@ -111,16 +109,18 @@
     (define (pred-name xexpr)
       (and (txexpr? xexpr) (eq? 'tag (get-tag xexpr)) (equal? class-name (attr-ref xexpr 'class #f))))))
 
-; ◊book:       h1
-; ◊part:       h1
-; ◊chapter:    h1
-; ◊section:    h2
-; ◊subsection: h3
-(define-simple-tag-function book       h1)
-(define-simple-tag-function part       h1)
-(define-simple-tag-function chapter    h1)
-(define-simple-tag-function section    h2)
-(define-simple-tag-function subsection h3)
+; ◊book:          h1
+; ◊book-subtitle: h2
+; ◊part:          h1
+; ◊chapter:       h1
+; ◊section:       h2
+; ◊subsection:    h3
+(define-simple-tag-function book          h1)
+(define-simple-tag-function book-subtitle h2)
+(define-simple-tag-function part          h1)
+(define-simple-tag-function chapter       h1)
+(define-simple-tag-function section       h2)
+(define-simple-tag-function subsection    h3)
 
 (define (get-title page)
   (select 'h1 page))
@@ -133,6 +133,12 @@
 
 (define (chapter-page? tx)
   (findf-txexpr tx chapter?))
+
+; ------------------------------------------------------------------------------
+; Book cover items
+; ------------------------------------------------------------------------------
+
+(define-simple-tag-function book-cover div)
 
 ; ------------------------------------------------------------------------------
 ; Lists
