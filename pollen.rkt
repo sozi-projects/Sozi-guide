@@ -18,6 +18,7 @@
   section
   subsection
   author
+  abbr
   get-title
   itemize
   itemize-icons
@@ -96,7 +97,7 @@
     [else tx]))
 
 ; ------------------------------------------------------------------------------
-; Headings
+; Simple tag functions
 ; ------------------------------------------------------------------------------
 
 ; Helper that defines an alias for a given HTML tag, setting the
@@ -134,11 +135,10 @@
 (define (chapter-page? tx)
   (findf-txexpr tx chapter?))
 
-; ------------------------------------------------------------------------------
-; Book cover items
-; ------------------------------------------------------------------------------
-
 (define-simple-tag-function author address)
+
+(define (abbr title . body)
+  (txexpr 'abbr `((title ,title)) body))
 
 ; ------------------------------------------------------------------------------
 ; Lists

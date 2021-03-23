@@ -26,15 +26,22 @@ Si vous trouvez ce livre utile, vous pouvez soutenir mon travail en versant la s
 Si vous préférez lire ce livre sans payer, personne ne viendra vous le reprocher ◊icon["smile-o"]. Et si vous changez d'avis, vous êtes libre de revenir sur cette page à tout moment pour cliquer sur l'un des liens ci-dessus.
 
 
+◊section{Un livre respectueux de votre vie privée}
+
+Comme vous l'avez sans doute remarqué en arrivant sur ce site pour la première fois, aucune bannière ◊abbr["Règlement Général sur la Protection des Données"]{RGPD} ne vous a demandé de consentir à la collecte d'informations personnelles.
+
+◊; TODO Ajouter une illustration
+
+La raison est simple : ce site n'utilise pas de cookies ; il ne contient pas de publicité ; il n'enregistre et ne partage aucune donnée personnelle à votre sujet, pas même à des fins de statistiques.
+
+
 ◊section{Crédits}
 
 Ce livre a été réalisé avec le système de publication ◊link["https://docs.racket-lang.org/pollen/"]{Pollen} de Matthew Butterick.
 Il utilise les fontes suivantes, toutes sous licence ◊link["https://scripts.sil.org/OFL"]{SIL Open Font License Version 1.1} :
 
 ◊itemize{
-    ◊link["https://www.paratype.com/fonts/pt/pt-serif"]{PT Serif} de la fonderie ◊link["https://www.paratype.com/"]{ParaType},
-
-    ◊link["https://fonts.google.com/specimen/Arsenal"]{Arsenal} d'◊link["https://andrij.com.ua/eng/"]{Andrij Shevchenko},
+    ◊link["https://www.paratype.com/fonts/pt/pt-serif"]{PT Serif} et ◊link["https://www.paratype.com/fonts/pt/pt-sans"]{PT Sans} de la fonderie ◊link["https://www.paratype.com/"]{ParaType},
 
     ◊link["https://www.jetbrains.com/lp/mono/"]{JetBrains Mono} de Philipp Nurullin et Konstantin Bulenkov pour ◊link["https://www.jetbrains.com"]{JetBrains}.
 
