@@ -12,12 +12,12 @@
 
 (provide
   root
-  book-cover
   book
   book-subtitle
   chapter
   section
   subsection
+  author
   get-title
   itemize
   itemize-icons
@@ -138,7 +138,7 @@
 ; Book cover items
 ; ------------------------------------------------------------------------------
 
-(define-simple-tag-function book-cover div)
+(define-simple-tag-function author address)
 
 ; ------------------------------------------------------------------------------
 ; Lists

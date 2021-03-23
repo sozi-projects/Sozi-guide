@@ -1,9 +1,9 @@
 #lang pollen
 
-◊book-cover{
-    ◊book{Ceci n'est pas un diaporama}
+◊define-meta[lang]{fr}
+◊define-meta[template]{../cover.html}
 
-    ◊img[#:src "/assets/sozi-logo.svg"]
-
-    ◊book-subtitle{Le guide ultime pour réaliser vos présentations avec Sozi}
-}
+◊author{Guillaume Savaton}
+◊book{Ceci n'est pas un diaporama}
+◊img[#:src "/assets/sozi-logo.svg"]
+◊book-subtitle{Le guide ultime pour réaliser vos présentations avec Sozi}

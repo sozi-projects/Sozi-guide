@@ -47,14 +47,6 @@ body {
     }
 }
 
-.book-cover {
-    text-align: center;
-}
-
-.book-cover img {
-    max-height: 50vh;
-}
-
 h1, h2, h3 {
     font-family: ◊heading-font;
     font-weight: normal;
@@ -199,4 +191,14 @@ hr {
 footer hr {
     margin-top: 2rem;
     margin-bottom: 0.5rem;
+}
+
+.cover {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.cover .author {
+    font-style: normal;
+    font-size: 120%;
 }
