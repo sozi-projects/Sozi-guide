@@ -91,4 +91,4 @@ Sozi est un ◊link["https://fr.wikipedia.org/wiki/Logiciel_libre"]{logiciel lib
 
 La plupart des gens seront surtout intéressés pas la première de ces quatre libertés mais il est important de savoir que les trois autres existent. Elles permettent à toute personne qui a les compétences nécessaires de corriger des problèmes ou d'ajouter de nouvelles fonctionnalités sans me demander la permission. Elles permettent également au projet Sozi de continuer à ◊em{vivre} même si je cesse de le développer.
 
-Le code source de Sozi est publié selon les termes de la ◊link["https://www.mozilla.org/en-US/MPL/2.0/"]{Mozilla Public License 2.0}. Sozi intègre également des bibliothèques logicielles et des fichiers (comme par exemple les icônes et les fontes) soumis à d'autres licences libres.
+Le code source de Sozi est publié selon les termes de la ◊link["https://www.mozilla.org/en-US/MPL/2.0/"]{Mozilla Public License 2.0}. Sozi intègre également des bibliothèques logicielles et des ressources (comme par exemple les icônes et les fontes) soumises à d'autres licences libres.
