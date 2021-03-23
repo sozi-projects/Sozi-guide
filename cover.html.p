@@ -12,8 +12,19 @@
         [("fr") "Commencer"]
         [else   "Start"]))
 
+◊(define other-lang-url
+    ◊(case lang
+        [("fr") "/en"]
+        [else   "/fr"]))
+
+◊(define other-lang-link-text
+    ◊(case lang
+        [("fr") "Lire ce livre en anglais"]
+        [else   "Read this book in French"]))
+
 ◊(define (make-nav)
     ◊nav{
+        ◊link[◊other-lang-url]{◊other-lang-link-text}
         ◊when/splice[next-page]{◊link[(to-url ◊next-page) #:class "next"]{◊start-link-text}}
     }
 )

@@ -162,11 +162,8 @@ nav {
 
 nav a {
     display: table-cell;
-    width: 50%;
-}
-
-nav a.previous {
     text-align: left;
+    width: 50%;
 }
 
 nav a.previous:before {
