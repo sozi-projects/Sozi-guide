@@ -6,7 +6,9 @@
 
 ◊section{Que peut-on faire avec Sozi ?}
 
-Sozi est un logiciel de création de présentations animées. Il est généralement utilisé pour réaliser des supports visuels pour des cours, des conférences, des réunions. Avec Sozi, une présentation n'est pas organisée comme une séquence de diapos indépendantes, mais plutôt comme un ◊em{parcours} dans un plan qui contient le texte et les éléments graphiques à afficher.
+Sozi est un logiciel de création de présentations animées. Il est généralement utilisé pour réaliser des supports visuels pour des cours, des conférences, des réunions. Avec Sozi, une présentation n'est pas organisée comme une séquence de diapos, mais plutôt comme une succession de ◊em{points de vues} sur une ◊em{carte} que l'on ◊em{explore}.
+
+◊; TODO Ajouter un exemple de carte
 
 Sozi est assez polyvalent. Certains l'ont déjà utilisé pour d'autres usages, par exemple pour créer des ◊em{infographies} animées ou des sites web. Mais avant de vous lancer dans un tel projet, prenez le temps d'explorer les possibilités de Sozi et de connaître ses limites. Voici quelques indications :
 
@@ -48,23 +50,23 @@ La réponse courte tient en trois points :
 
 Et voici une réponse plus détaillée et chronologique, un cheminement en trois étapes :
 
-◊subsection{Le diaporama comme un document à montrer et à imprimer}
+◊subsection{Une présentation qui serait aussi un document de référence}
 
-Mon métier m'amène à réaliser de nombreuses présentations, aussi bien pour l'enseignement que pour la recherche : cours, conférences scientifiques, réunions diverses. Des années 1990 aux années 2000, j'ai ainsi eu l'occasion d'utiliser différents outils, commerciaux ou libres, pour créer des diaporamas : Microsoft PowerPoint, ◊link["https://www.openoffice.org/"]{OpenOffice}/◊link["https://fr.libreoffice.org/"]{LibreOffice} ◊link["https://fr.libreoffice.org/discover/impress/"]{Impress}, ◊link["http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/doc/beameruserguide.pdf"]{Beamer}.
+Mon métier m'amène à réaliser de nombreuses présentations, aussi bien pour l'enseignement que pour la recherche : cours, conférences scientifiques, réunions d'avancement de projets... Des années 1990 à la fin des années 2000, j'ai ainsi eu l'occasion d'utiliser différents outils, commerciaux ou libres, pour créer des diaporamas : Microsoft PowerPoint, ◊link["https://www.openoffice.org/"]{OpenOffice}/◊link["https://fr.libreoffice.org/"]{LibreOffice} ◊link["https://fr.libreoffice.org/discover/impress/"]{Impress}, ◊link["http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/doc/beameruserguide.pdf"]{Beamer}.
 
-Pendant ces dix années, le style de mes présentations a profondément évolué. J'ai commencé par adopter une pratique fréquente dans l'enseignement, qui consiste à projeter un diaporama pendant le cours et à en distribuer une version imprimée aux élèves. Il est alors tentant d'inclure beaucoup de texte dans les diapos pour que le document reste compréhensible à la lecture.
+Au cours de cette période, le style de mes présentations a profondément évolué. J'ai commencé par adopter une pratique fréquente dans l'enseignement, qui consiste à projeter un diaporama pendant le cours et à en distribuer une version imprimée aux élèves. Ce document, éventuellement annoté par les élèves, devait contenir assez d'informations pour être utilisable en autonomie après la séance de cours, par exemple pendant des activités pratiques ou des révisions.
 
-◊subsection{Le diaporama pour illustrer un discours}
+◊subsection{Une présentation pour illustrer un discours}
 
-Au fil du temps, j'ai réalisé que mes diaporamas ne constituaient ni de bons supports de présentation, car trop verbeux, ni de bons ◊em{manuels de référence}, par manque de structure. Pour chacune des matières que j'enseigne, j'ai donc décidé de créer deux sortes de documents : des présentations, où les diapos servent uniquement à illustrer un discours oral, et des ◊em{manuels} (PDF ou web) structurés comme des livres, auquels les élèves peuvent se référer pendant les activités pratiques.
+Au fil du temps, j'ai réalisé que mes diaporamas ne constituaient ni de bons supports de présentation, car trop denses, ni de bons ◊em{manuels de référence}, par manque de structure. Pour chacune des matières que j'enseignais, j'ai donc décidé de créer deux sortes de documents : des présentations, où les diapos servaient uniquement à illustrer un discours oral, et des ◊em{manuels} (PDF ou web) structurés comme des livres, auquels les élèves pouvaient se référer pendant les activités pratiques.
 
 C'est là que j'ai commencé à percevoir les limites du format diaporama. Comme j'enseigne des matières techniques, j'ai besoin de présenter des figures parfois complexes, par exemple des diagrammes décrivant le fonctionnement ou l'architecture de systèmes électroniques ou informatiques. Et pour ne pas perdre mon auditoire, je me suis souvent efforcé de présenter ces schémas de manière progressive, en passant alternativement d'une vue d'ensemble à une vue détaillée de chaque partie. On peut le faire dans un diaporama mais cela demande beaucoup de travail.
 
-◊subsection{La présentation comme une carte à explorer}
+◊subsection{Une présentation comme une carte à explorer}
 
-En 2009, ◊link["https://prezi.com/"]{Prezi} m'a été recommandé par un collègue qui comptait l'utiliser pour sa soutenance de thèse. J'ai tout de suite vu ce que je pourrais faire avec un tel outil, mais ses conditions d'utilisation ne me convenaient pas. En effet, à l'époque, Prezi proposait une plate-forme fermée dans laquelle l'édition, le stockage, la publication et le visionnage des présentations devaient obligatoirement passer par leurs services en ligne.
+En 2009, la société ◊link["https://prezi.com/"]{Prezi} a lancé un nouvel outil de présentation en ligne. Rompant avec le modèle du diaporama, Prezi proposait d'organiser une présentation comme une succession de vues dans un plan infini, où l'utilisateur était libre de disposer les éléments graphiques de son choix. J'ai tout de suite vu ce que je pourrais faire avec un tel outil, mais ses conditions d'utilisation ne me convenaient pas. En effet, à l'époque, Prezi proposait une plate-forme fermée dans laquelle l'édition, le stockage, la publication et le visionnage des présentations devaient obligatoirement passer par leurs services en ligne.
 
-La première version de Sozi a été écrite en un week-end. Ce n'était pas un projet sérieux. Il s'agissait juste de relever un défi : montrer qu'il est possible de créer des documents animés sur le même principe que Prezi, mais en utilisant uniquement des formats ouverts et des logiciels libres. Après avoir développé un prototype très rudimentaire, il s'est écoulé presqu'un an avant que je me décide à en faire un véritable outil utilisable au quotidien.
+La première version de Sozi a été écrite en un week-end. Ce n'était pas un projet sérieux. Il s'agissait juste de relever un défi : montrer qu'il était possible de créer des documents animés sur le même principe que Prezi, mais en utilisant uniquement des formats ouverts et des logiciels libres. Après avoir développé un prototype très rudimentaire, il s'est écoulé presqu'un an avant que je me décide à en faire un véritable outil utilisable au quotidien.
 
 
 ◊section{Pourquoi ce nom "Sozi" ?}
