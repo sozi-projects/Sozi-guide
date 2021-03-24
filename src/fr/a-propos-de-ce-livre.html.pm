@@ -28,11 +28,11 @@ Si vous préférez lire ce livre sans payer, personne ne viendra vous le reproch
 
 ◊section{Un livre respectueux de votre vie privée}
 
-Comme vous l'avez sans doute remarqué en arrivant sur ce site pour la première fois, aucune bannière ◊abbr["Règlement Général sur la Protection des Données"]{RGPD} ne vous a demandé de consentir à la collecte d'informations personnelles.
+Consentez-vous à ce que ce site utilise des cookies afin d'optimiser votre expérience de lecture ? Acceptez-vous de participer anonymement à des mesures d'audience ? Souhaitez-vous recevoir des recommandations personnalisées et des offres promotionnelles de nos partenaires ?
 
 ◊; TODO Ajouter une illustration
 
-La raison est simple : ce site n'utilise pas de cookies ; il ne contient pas de publicité ; il n'enregistre et ne partage aucune donnée personnelle à votre sujet, pas même à des fins de statistiques.
+Non ? Alors c'est parfait car ce site n'utilise pas de cookies. Il ne contient pas de publicité. Il n'enregistre et ne partage aucune information à votre sujet, pas même à des fins statistiques. Vous pouvez continuer votre lecture en toute sérénité.
 
 
 ◊section{Crédits}
