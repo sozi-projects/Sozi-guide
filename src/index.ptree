@@ -1,4 +1,0 @@
-#lang pollen
-
-◊(dynamic-require "fr/index.ptree" 'doc)
-◊(dynamic-require "en/index.ptree" 'doc)

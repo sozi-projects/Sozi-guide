@@ -7,6 +7,9 @@ SSH_TARGET_DIR=/var/www/sozi.guide/
 start:
 	raco pollen start src
 
+reset:
+	raco pollen reset src
+
 render:
 	raco pollen render src
 
