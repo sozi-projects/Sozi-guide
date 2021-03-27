@@ -58,10 +58,10 @@ h1.book  {
     font-size: 270%;
 }
 
-h1.chapter {
+h1.chapter, h1.toc {
     font-family: ◊chapter-font;
     font-size: 270%;
-    margin: 0 0 2rem 0;
+    margin: 0;
 }
 
 h2.section {
@@ -118,23 +118,27 @@ ul.itemize li:before {
     content: "\2014\2002";
 }
 
-nav.chapter {
+nav.toc {
     margin: 5rem 0 5rem -1rem;
     padding-left: 1.5rem;
     border-left: 0.5rem solid ◊chapter-color;
 }
 
-nav.chapter ul {
+nav.toc ul {
     list-style: none;
     padding: 0;
     margin: 0 0 0 1rem;
 }
 
-nav.chapter li {
+nav.toc > ul {
+    margin-top: 2rem;
+}
+
+nav.toc li {
     margin: 0.5rem 0;
 }
 
-nav.chapter li:last-child {
+nav.toc li:last-child {
     margin: 0;
 }
 

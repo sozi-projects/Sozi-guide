@@ -13,6 +13,7 @@
 
 (provide
   root
+  toc
   make-toc
   book
   book-subtitle
@@ -82,19 +83,19 @@
                                                      (get-elements sec))))))
      ; If sections were found, insert a table of contents
      ; after the chapter heading.
-     (if (empty? sec-lst)
-       tx
-       (let ([toc (txexpr 'ul empty
-                    (for/list ([(sec i) (in-indexed sec-lst)])
-                      (~>> sec
-                           (get-elements)
-                           (txexpr 'a `((href ,(format "#sec-~a" (add1 i)))))
-                           (txexpr* 'li empty))))])
-         (match-define-values (tx/t _) (splitf-txexpr tx/a chapter?
-                                         (λ (heading)
-                                           (txexpr* 'nav '((class "chapter"))
-                                             heading toc))))
-         tx/t))]
+     (define toc (if (empty? sec-lst)
+                   empty
+                   (list (txexpr 'ul empty
+                           (for/list ([(sec i) (in-indexed sec-lst)])
+                             (~>> sec
+                                  (get-elements)
+                                  (txexpr 'a `((href ,(format "#sec-~a" (add1 i)))))
+                                  (txexpr* 'li empty)))))))
+     (match-define-values (tx/t _) (splitf-txexpr tx/a chapter?
+                                     (λ (heading)
+                                       (txexpr 'nav '((class "toc"))
+                                         (cons heading toc)))))
+     tx/t]
 
     [else tx]))
 
@@ -118,7 +119,7 @@
               (make-toc-item n)))))))
 
   (txexpr* 'main empty
-    (txexpr* 'nav '((class "chapter"))
+    (txexpr* 'nav '((class "toc"))
       (apply @ (get-elements doc))
       (make-toc-tree (~>> "index.ptree"
                           (get-pagetree)
@@ -144,6 +145,7 @@
 ; ◊chapter:       h1
 ; ◊section:       h2
 ; ◊subsection:    h3
+(define-simple-tag-function toc           h1)
 (define-simple-tag-function book          h1)
 (define-simple-tag-function book-subtitle h2)
 (define-simple-tag-function part          h1)

@@ -3,4 +3,4 @@
 ◊define-meta[lang]{fr}
 ◊define-meta[toc #t]
 
-◊chapter{Table des matières}
+◊toc{Table des matières}
