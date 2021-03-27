@@ -8,10 +8,12 @@
   pollen/core
   pollen/tag
   pollen/decode
+  pollen/pagetree
   (prefix-in typo/ pollen/unstable/typography))
 
 (provide
   root
+  make-toc
   book
   book-subtitle
   chapter
@@ -95,6 +97,32 @@
          tx/t))]
 
     [else tx]))
+
+; ------------------------------------------------------------------------------
+; Book table of contents
+; ------------------------------------------------------------------------------
+
+(define (make-toc doc)
+  (define (make-toc-item node)
+    (txexpr* 'a `((href ,(to-url node))) (get-title node)))
+
+  (define (make-toc-tree nodes)
+    (txexpr 'ul empty
+      (for/list ([n (in-list nodes)])
+        (txexpr 'li empty
+          (if (txexpr? n)
+            (list
+              (make-toc-item (get-tag n))
+              (make-toc-tree (get-elements n)))
+            (list
+              (make-toc-item n)))))))
+
+  (txexpr* 'main empty
+    (txexpr* 'nav '((class "chapter"))
+      (apply @ (get-elements doc))
+      (make-toc-tree (~>> "index.ptree"
+                          (get-pagetree)
+                          (get-elements))))))
 
 ; ------------------------------------------------------------------------------
 ; Simple tag functions
