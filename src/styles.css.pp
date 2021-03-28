@@ -11,7 +11,12 @@
 ◊(define chapter-color    "rgb(0, 204, 255)")
 ◊(define section-color    "rgb(255, 102, 0)")
 ◊(define subsection-color "rgb(255, 204, 0)")
-◊(define block-color      "rgb(221, 175, 233)")
+◊(define warning-color    "rgb(221, 175, 233)")
+◊(define warning-bg-color "rgb(247, 235, 250)")
+◊(define quote-color      "rgb(204, 204, 204)")
+
+◊(define (with-border color)
+    (format "margin-left: -1rem; padding-left: 0.5rem; border-left: 0.5rem solid ~a;" color))
 
 @import "/assets/normalize.css";
 @import "/fonts/PT-Sans/stylesheet.css";
@@ -66,16 +71,14 @@ h1.chapter, h1.toc {
 
 h2.section {
     font-size: 170%;
-    margin: 2.5rem 0 1.5rem -1rem;
-    padding-left: 0.5rem;
-    border-left: 0.5rem solid ◊section-color;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    ◊with-border[◊section-color]
 }
 
 h3.subsection {
     font-size: 130%;
-    margin-left: -1rem;
-    padding-left: 0.5rem;
-    border-left: 0.5rem solid ◊subsection-color;
+    ◊with-border[◊subsection-color]
 }
 
 a {
@@ -104,6 +107,10 @@ p, li {
     line-height: 1.4;
 }
 
+br {
+    margin-bottom: 0.25rem;
+}
+
 ul.itemize {
     list-style: none;
     padding-left: 1.5rem;
@@ -119,9 +126,10 @@ ul.itemize li:before {
 }
 
 nav.toc {
-    margin: 5rem 0 5rem -1rem;
-    padding-left: 1.5rem;
-    border-left: 0.5rem solid ◊chapter-color;
+    margin-top: 5rem;
+    margin-bottom:  5rem;
+    ◊with-border[◊chapter-color]
+    padding-left: 1.5rem; /* Overrides with-border */
 }
 
 nav.toc ul {
@@ -202,4 +210,15 @@ footer hr {
 .cover .author {
     font-style: normal;
     font-size: 120%;
+}
+
+blockquote {
+    font-style: italic;
+    ◊with-border[◊quote-color]
+}
+
+aside.warning {
+    background: ◊warning-bg-color;
+    padding: 0.5rem;
+    ◊with-border[◊warning-color]
 }

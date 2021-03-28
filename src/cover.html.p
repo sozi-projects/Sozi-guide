@@ -19,8 +19,8 @@
 
 ◊(define other-lang-link-text
     ◊(case lang
-        [("fr") "Lire ce livre en anglais"]
-        [else   "Read this book in French"]))
+        [("fr") "Read this book in English"]
+        [else   "Lire ce livre en français"]))
 
 ◊(define (make-nav)
     ◊nav{

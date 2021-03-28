@@ -4,6 +4,9 @@
 
 ◊chapter{À propos de ce livre}
 
+◊warning{Ce livre est en cours de rédaction. De nouveaux chapitres sont ajoutés dès qu'ils sont prêts, sans suivre un calendrier précis. En attendant, la documentation officielle de Sozi reste consultable sur ◊link["https://sozi.baierouge.fr/"]{le site du projet}.
+Merci pour votre patience et pour votre soutien.}
+
 ◊section{Un livre libre}
 
 Le document que vous êtes en train de lire est un livre ◊em{libre}. Vous êtes autorisé à le partager ou à en créer des adaptations selon les termes de la ◊link["http://creativecommons.org/licenses/by-sa/4.0/deed.fr"]{Licence Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 International (CC-BY-SA 4.0)}. Sauf indication contraire, le texte, les illustrations et la mise en page ont été réalisés par Guillaume Savaton.

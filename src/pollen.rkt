@@ -21,6 +21,8 @@
   section
   subsection
   author
+  warning
+  block-quote
   abbr
   get-title
   itemize
@@ -139,12 +141,6 @@
     (define (pred-name xexpr)
       (and (txexpr? xexpr) (eq? 'tag (get-tag xexpr)) (equal? class-name (attr-ref xexpr 'class #f))))))
 
-; ◊book:          h1
-; ◊book-subtitle: h2
-; ◊part:          h1
-; ◊chapter:       h1
-; ◊section:       h2
-; ◊subsection:    h3
 (define-simple-tag-function toc           h1)
 (define-simple-tag-function book          h1)
 (define-simple-tag-function book-subtitle h2)
@@ -152,6 +148,9 @@
 (define-simple-tag-function chapter       h1)
 (define-simple-tag-function section       h2)
 (define-simple-tag-function subsection    h3)
+(define-simple-tag-function author        address)
+(define-simple-tag-function warning       aside)
+(define-simple-tag-function block-quote   blockquote)
 
 (define (get-title page)
   (select 'h1 page))
@@ -164,8 +163,6 @@
 
 (define (chapter-page? tx)
   (findf-txexpr tx chapter?))
-
-(define-simple-tag-function author address)
 
 (define (abbr title . body)
   (txexpr 'abbr `((title ,title)) body))
