@@ -204,6 +204,9 @@ footer hr {
 
 .cover {
     margin-top: 2rem;
+}
+
+.cover h1, .cover h2, .cover p, .cover address {
     text-align: center;
 }
 
