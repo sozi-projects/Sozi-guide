@@ -12,7 +12,7 @@ Thanks for your patience and your support.}
 
 This document is a ◊em{free} book, ◊em{free} as in "free speech". You are allowed to read it, share it or adapt it under the terms of the ◊link["http://creativecommons.org/licenses/by-sa/4.0/" #:rel "license"]{Creative Commons Attribution-ShareAlike 4.0 International License (CC-BY-SA 4.0)}. Unless otherwise stated, the text, illustrations and layout have been made by Guillaume Savaton.
 
-The source code of this book is available in a ◊link["https://github.com/sozi-projects/Sozi-book"]{public GitHub repository}. If you notice a mistake or if you want to suggest improvements, you can do it on the ◊link["https://github.com/sozi-projects/Sozi-book/issues"]{◊em{Issues} page of the du projet}.
+The source code of this book is available in a ◊link["https://github.com/sozi-projects/Sozi-guide"]{public GitHub repository}. If you notice a mistake or if you want to suggest improvements, you can do it on the ◊link["https://github.com/sozi-projects/Sozi-guide/issues"]{◊em{Issues} page of the du projet}.
 
 
 ◊section{A pay-what-you-want book}
