@@ -10,7 +10,7 @@ Sozi est un logiciel de création de présentations animées. Il est généralem
 
 ◊; TODO Ajouter un exemple de carte
 
-Sozi est assez polyvalent. Certains l'ont déjà utilisé pour d'autres usages, par exemple pour créer des ◊em{infographies} animées ou des sites web. Mais avant de vous lancer dans un tel projet, prenez le temps d'explorer les possibilités de Sozi et de connaître ses limites. Voici quelques indications :
+Sozi est assez polyvalent. Certains l'ont déjà utilisé pour d'autres usages, par exemple pour créer des ◊em{infographies} animées, des sites web ou des histoires interactives. Mais avant de vous lancer dans un tel projet, prenez le temps d'explorer les possibilités de Sozi et de connaître ses limites. Voici quelques indications :
 
 ◊subsection{Sozi n'est pas un logiciel de dessin}
 
@@ -22,18 +22,18 @@ Son interface n'est pas conçue pour gérer facilement l'animation d'un grand no
 
 ◊subsection{Sozi n'est pas un éditeur de sites web}
 
-Sozi autorise la création de présentations ◊em{non linéaires}, dans lesquelles vous pouvez insérer des liens pour naviguer entre les vues. C'est donc un moyen très efficace pour créer des pages web animées que l'on pourra héberger en lieu et place d'un site web traditionnel. Il y a quelques années, on aurait utilisé la technologie ◊link["https://fr.wikipedia.org/wiki/Adobe_Flash"]{Flash} pour atteindre un résultat similaire.
+Sozi autorise la création de présentations ◊em{non linéaires}, dans lesquelles vous pouvez insérer des liens pour naviguer entre les vues. C'est donc un moyen très efficace pour créer des pages web animées que l'on pourra héberger en lieu et place d'un site web traditionnel. Il y a quelques années, on aurait utilisé ◊link["https://fr.wikipedia.org/wiki/Adobe_Flash"]{Adobe Flash} pour atteindre un résultat similaire.
 
 Cependant, un tel site a toutes les chances d'être peu accessible aux déficients visuels. Jusqu'à présent, aucun effort n'a été fait pour faciliter le respect des ◊link["https://www.w3.org/WAI/standards-guidelines/wcag/"]{recommandations du W3C pour l'accessibilité} dans les présentations Sozi, et la prise en charge des lecteurs d'écrans n'a pas été étudiée.
 
 
 ◊section{Qui développe Sozi ?}
 
-Je m'appelle Guillaume Savaton. Je travaille comme ingénieur et enseignant-chercheur dans les domaines de l'électronique numérique, des systèmes embarqués et du traitement numérique du signal. J'utilise Sozi régulièrement dans le cadre de mes activités professionnelles mais son développement ne fait pas partie de mes missions. Il s'agit d'un projet personnel que je développe sur mon temps libre.
+Je m'appelle Guillaume Savaton. Je travaille comme ingénieur et enseignant-chercheur dans les domaines de l'électronique numérique, des systèmes embarqués et du traitement numérique du signal. J'utilise Sozi régulièrement dans le cadre de mes activités professionnelles mais son développement ne fait pas partie de mes missions. Il s'agit d'un projet personnel que je mène sur mon temps libre.
 
 Sozi n'est donc pas un ◊em{produit} commercial. Il n'est développé ni par une entreprise, ni par une équipe organisée. Il n'existe ni ◊em{feuille de route}, ni ◊em{stratégie} de domination mondiale. Gagner des ◊em{parts de marché} ne fait pas non plus partie de mes préoccupations.
 
-Même si j'en suis le principal auteur, de nombreuses personnes ont contribué à l'amélioration et à la promotion de Sozi, chacune à sa manière : ◊link["https://github.com/sozi-projects/Sozi/issues"]{en signalant des problèmes} et en m'aidant à les résoudre ; en proposant, et parfois en réalisant de nouvelles fonctionnalités ; ◊link["https://hosted.weblate.org/projects/sozi/translations/"]{en traduisant le logiciel} ou sa documentation dans différentes langues ; en répondant à des questions sur ◊link["https://sozi.baierouge.fr/community/"]{le forum des utilisateurs} ; en publiant des articles et des tutoriels.
+Même si j'en suis le principal auteur, de nombreuses personnes ont contribué à l'amélioration et à la promotion de Sozi, chacune à sa manière : ◊link["https://github.com/sozi-projects/Sozi/issues"]{en signalant des problèmes} et en m'aidant à les résoudre ; en proposant, et parfois en réalisant de nouvelles fonctionnalités ; ◊link["https://hosted.weblate.org/projects/sozi/translations/"]{en traduisant l'interface utilisateur de l'éditeur} et sa documentation dans différentes langues ; en répondant à des questions sur ◊link["https://sozi.baierouge.fr/community/"]{le forum des utilisateurs} ; en publiant des articles et des tutoriels.
 
 
 ◊section{Pourquoi avoir développé Sozi ?}
@@ -60,11 +60,11 @@ Au cours de cette période, le style de mes présentations a profondément évol
 
 Au fil du temps, j'ai réalisé que mes diaporamas ne constituaient ni de bons supports de présentation, car trop denses, ni de bons ◊em{manuels de référence}, par manque de structure. Pour chacune des matières que j'enseignais, j'ai donc décidé de créer deux sortes de documents : des présentations, où les diapos servaient uniquement à illustrer un discours oral, et des ◊em{manuels} (PDF ou web) structurés comme des livres, auquels les élèves pouvaient se référer pendant les activités pratiques.
 
-C'est là que j'ai commencé à percevoir les limites du format diaporama. Comme j'enseigne des matières techniques, j'ai besoin de présenter des figures parfois complexes, par exemple des diagrammes décrivant le fonctionnement ou l'architecture de systèmes électroniques ou informatiques. Et pour ne pas perdre mon auditoire, je me suis souvent efforcé de présenter ces schémas de manière progressive, en passant alternativement d'une vue d'ensemble à une vue détaillée de chaque partie. On peut le faire dans un diaporama mais cela demande beaucoup de travail.
+C'est là que j'ai commencé à percevoir les limites du format diaporama. Comme j'enseigne des matières techniques, j'ai besoin de présenter des figures parfois complexes, par exemple des diagrammes expliquant le fonctionnement ou l'architecture de systèmes électroniques ou informatiques. Et pour ne pas perdre mon auditoire, je me suis souvent efforcé de présenter ces schémas de manière progressive, en passant alternativement d'une vue d'ensemble à une vue détaillée de chaque partie. On peut le faire dans un diaporama mais cela demande beaucoup de travail.
 
 ◊subsection{Une présentation comme une carte à explorer}
 
-En 2009, la société ◊link["https://prezi.com/"]{Prezi} a lancé un nouvel outil de présentation en ligne. Rompant avec le modèle du diaporama, Prezi proposait d'organiser une présentation comme une succession de vues dans un plan infini, où l'utilisateur était libre de disposer les éléments graphiques de son choix. J'ai tout de suite vu ce que je pourrais faire avec un tel outil, mais ses conditions d'utilisation ne me convenaient pas. En effet, à l'époque, Prezi proposait une plate-forme fermée dans laquelle l'édition, le stockage, la publication et le visionnage des présentations devaient obligatoirement passer par leurs services en ligne.
+En 2009, une société appelée ◊link["https://prezi.com/"]{Prezi} a lancé un nouvel outil de présentation en ligne. Rompant avec le modèle du diaporama, Prezi proposait d'organiser une présentation comme une succession de vues dans un plan infini où l'utilisateur était libre de disposer les éléments graphiques de son choix. J'ai tout de suite vu ce que je pourrais faire avec un tel outil, mais ses conditions d'utilisation ne me convenaient pas. En effet, à l'époque, Prezi proposait une plate-forme fermée dans laquelle l'édition, le stockage, la publication et le visionnage des présentations devaient obligatoirement passer par leurs services en ligne.
 
 La première version de Sozi a été écrite en un week-end. Ce n'était pas un projet sérieux. Il s'agissait juste de relever un défi : montrer qu'il était possible de créer des documents animés sur le même principe que Prezi, mais en utilisant uniquement des formats ouverts et des logiciels libres. Après avoir développé un prototype très rudimentaire, il s'est écoulé presqu'un an avant que je me décide à en faire un véritable outil utilisable au quotidien.
 
