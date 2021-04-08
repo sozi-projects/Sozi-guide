@@ -62,7 +62,7 @@ During this period, the style of my presentations has changed significantly. I b
 
 Over time, I realized that my slideshows were neither good lecture material, because they were too dense, nor good ◊em{reference manuals}, for lack of structure. For each of the subjects I was teaching, I therefore decided to create two kinds of documents: presentations, where the slides were used only to illustrate an oral speech, and ◊em{manuals} (PDF or web) structured like books, that students could refer to during hands-on activities.
 
-At this point, I started to see the limits of the slideshow format. As I teach technical subjects, I need to show diagrams with varying degrees of detail. Many of these diagrams explain the operation, or the architecture, of electronic or computing systems. And so as not to lose my audience, I have tried to display these diagrams in a progressive way, alternating between the ◊em{big picture}, and detailed views of each part. You can do it in a slideshow but it takes a lot of work.
+At this point, I started to see the limits of the slideshow format. As I teach technical subjects, I need to show diagrams with varying degrees of detail. Many of these diagrams explain how electronic or computing systems work, or how they are structured. And so as not to lose my audience, I have tried to display these diagrams in a progressive way, alternating between the ◊em{big picture}, and detailed views of each part. You can do it in a slideshow but it takes a lot of work.
 
 ◊subsection{A presentation as a map to explore}
 
@@ -73,14 +73,44 @@ I wrote the first version of Sozi in a week-end. It was not a serious project. I
 
 ◊section{Why the name "Sozi"?}
 
-◊; TODO
+The name "Sozi" comes from the French word "Sosie", which designates a person having a strong resemblance to another, to the point that one can be mistaken for the other. An English word for that is "doppelganger". Choosing that name seems to suggest that Sozi is a faithful replica of Prezi, but it is not.
+
+Admittedly, Sozi borrows Prezi's basic concept: a presentation is composed as as a succession of views in a plane rather than a succession of slides. But the imitation stops here. Having never used Prezi myself, I am unfamiliar with its other features, so I have never sought to replicate them. Today, I have no clear idea of the similarities and differences between both tools.
+
+When I chose that name, I also neglected its possible meanings in other languages. For example, in German, "Sozi" is a colloquial, even derogatory, term for a supporter of socialism or social democracy. I figured it out by chance when I discovered that the hashtag ◊link["https://twitter.com/hashtag/sozi"]{# Sozi} on Twitter gave a lot of results in German, obviously unrelated to my software. For German-speaking readers of this book, I want to point out that the choice of the name "Sozi" has no political connotation.
 
 
 ◊section{What do the Sozi version numbers mean?}
 
-◊; TODO
+Version numbers follow a purely chronological pattern. They take the form "YY.MM.DD-T" where:
+
+◊itemize{
+    "YY" is the last two digits of the publication year,
+
+    "MM" is the month number (01 the 12),
+
+    "DD" is the day of the month (01 à 31),
+
+    "T" identifies the source code revision that was used to build this version (technically, it is the ◊em{timestamp} of the ◊em{commit} for this revision, but it is not important if you don't know what it is).
+}
+
+Sozi does not comply with the ◊link["https://semver.org/"]{semantic versioning} convention. Changing from one version number to another does not reflect the significance of the changes that happened between those versions.
 
 
 ◊section{What are the terms of use for Sozi?}
 
-◊; TODO
+Sozi is ◊link["https://en.wikipedia.org/wiki/Free_software"]{free software}. It means that its license guarantees the following freedoms to its users:
+
+◊enumerate{
+    The freedom to use Sozi for any purpose.
+
+    The freedom to study how it works.
+
+    The freedom to share it.
+
+    The freedom to modify it and share your modifications.
+}
+
+Most people will feel especially concerned by the first of these four freedoms, but it is important to know that the other three exist. They allow anyone with the appropriate skills to fix issues or add new features without asking my permission. They also allow the Sozi project to continue to ◊em{live} even if I stop maintaining it.
+
+The source code of Sozi is available ◊link["https://github.com/sozi-projects/Sozi"]{in a public GitHub repository}. It is released under the terms of the ◊link["https://www.mozilla.org/en-US/MPL/2.0/"]{Mozilla Public License 2.0}. Sozi also includes software libraries and resources (such as icons and fonts) subject to other free licences.

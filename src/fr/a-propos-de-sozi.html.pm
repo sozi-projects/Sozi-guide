@@ -71,7 +71,7 @@ La première version de Sozi a été écrite en un week-end. Ce n'était pas un 
 
 ◊section{Pourquoi ce nom "Sozi" ?}
 
-Le nom "Sozi" est une déformation du mot français "Sosie", qui désigne une personne ayant une forte ressemblance avec une autre personne, au point qu'on peut les confondre. Le choix de ce nom semble suggérer que Sozi est une imitation fidèle de Prezi, mais ce n'est pas le cas.
+Le nom "Sozi" vient du mot français "Sosie", qui désigne une personne ayant une forte ressemblance avec une autre, au point qu'on peut les confondre. Le choix de ce nom semble suggérer que Sozi est une imitation fidèle de Prezi, mais ce n'est pas le cas.
 
 Certes, Sozi emprunte l'idée de base de Prezi : une présentation se déroule comme une succession de vues dans un plan plutôt que comme une succession de diapos. Mais l'imitation s'arrête là. N'ayant moi-même jamais utilisé Prezi, je ne connais pas ses autres fonctionnalités et je n'ai donc jamais cherché à les reproduire. Aujourd'hui, je n'ai aucune idée précise des points communs et des différences entre les deux outils.
 
@@ -102,13 +102,13 @@ Sozi est un ◊link["https://fr.wikipedia.org/wiki/Logiciel_libre"]{logiciel lib
 ◊enumerate{
     La liberté d'utiliser Sozi sans limite d'usage.
 
-    La liberté d'étudier son fonctionnement. Le code source de Sozi est disponible ◊link["https://github.com/sozi-projects/Sozi"]{dans un dépôt public chez GitHub}.
+    La liberté d'étudier son fonctionnement.
 
     La liberté de le redistribuer.
 
     La liberté de le modifier et de partager vos modifications.
 }
 
-La plupart des gens seront surtout intéressés pas la première de ces quatre libertés mais il est important de savoir que les trois autres existent. Elles permettent à toute personne qui a les compétences nécessaires de corriger des problèmes ou d'ajouter de nouvelles fonctionnalités sans me demander la permission. Elles permettent également au projet Sozi de continuer à ◊em{vivre} même si je cesse de le développer.
+La plupart des gens seront surtout intéressés pas la première de ces quatre libertés mais il est important de savoir que les trois autres existent. Elles permettent à toute personne qui a les compétences nécessaires de corriger des problèmes ou d'ajouter de nouvelles fonctionnalités sans me demander la permission. Elles permettent également au projet Sozi de continuer à ◊em{vivre} même si je cesse de m'en occuper.
 
-Le code source de Sozi est publié selon les termes de la ◊link["https://www.mozilla.org/en-US/MPL/2.0/"]{Licence Publique Mozilla 2.0}. Sozi intègre également des bibliothèques logicielles et des ressources (comme par exemple les icônes et les fontes) soumises à d'autres licences libres.
+Le code source de Sozi est disponible ◊link["https://github.com/sozi-projects/Sozi"]{dans un dépôt public chez GitHub}. Il est publié selon les termes de la ◊link["https://www.mozilla.org/en-US/MPL/2.0/"]{Licence Publique Mozilla 2.0}. Sozi intègre également des bibliothèques logicielles et des ressources (comme par exemple les icônes et les fontes) soumises à d'autres licences libres.
