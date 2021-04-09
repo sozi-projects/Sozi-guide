@@ -4,8 +4,6 @@
 
 ◊chapter{About Sozi}
 
-◊warning{This chapter is still a draft. Please come back in a few days to read a more complete version.}
-
 ◊section{What can you do with Sozi?}
 
 Sozi is a piece of software for creating animated presentations. It is generally used to make visual aids for lectures or meetings. With Sozi, a presentation is not organized as a sequence of slides, but rather as a succession of ◊em{viewpoints} on a ◊em{map} that you ◊em{explore}.
