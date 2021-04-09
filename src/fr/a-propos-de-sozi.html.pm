@@ -78,23 +78,6 @@ Certes, Sozi emprunte l'idée de base de Prezi : une présentation se déroule c
 En choisissant ce nom, j'ai également négligé le sens qu'il pouvait prendre dans d'autres langues. Par exemple, en allemand, "Sozi" est un terme familier, voire désobligeant, qui désigne un partisan du socialisme ou de la social-démocratie. Je l'ai compris par hasard en découvrant que le hashtag ◊link["https://twitter.com/hashtag/sozi"]{#Sozi} sur Twitter donnait de très nombreux résultats en allemand, visiblement sans rapport avec mon logiciel. Pour les éventuels lecteurs germanophones de ce livre, je tiens donc à préciser que le choix du nom "Sozi" n'a pas de connotation politique.
 
 
-◊section{Que signifient les numéros de version de Sozi ?}
-
-Les numéros de versions suivent une logique purement chronologique. Ils se présentent sous la forme "AA.MM.JJ-T" où :
-
-◊itemize{
-    "AA" correspond aux chiffres des dizaines et unités de l'année de publication,
-
-    "MM" est le numéro du mois (01 à 12),
-
-    "JJ" est le numéro du jour du mois (01 à 31),
-
-    "T" identifie la révision du code source qui a été utilisée pour construire cette version (techniquement, il s'agit du ◊em{timestamp} du ◊em{commit} correspondant à cette révision, mais si vous ne savez pas de quoi il s'agit, ce n'est pas important).
-}
-
-Sozi ne respecte pas les principes de ◊link["https://semver.org/lang/fr/"]{gestion sémantique de version}. Le passage d'un numéro de version à un autre ne reflète pas l'importance des changements qui ont eu lieu entre ces versions.
-
-
 ◊section{Quelles sont les conditions d'utilisation de Sozi ?}
 
 Sozi est un ◊link["https://fr.wikipedia.org/wiki/Logiciel_libre"]{logiciel libre}. Cela signifie que sa licence vous offre les quatre libertés suivantes :
@@ -112,3 +95,20 @@ Sozi est un ◊link["https://fr.wikipedia.org/wiki/Logiciel_libre"]{logiciel lib
 La plupart des gens seront surtout intéressés pas la première de ces quatre libertés mais il est important de savoir que les trois autres existent. Elles permettent à toute personne qui a les compétences nécessaires de corriger des problèmes ou d'ajouter de nouvelles fonctionnalités sans me demander la permission. Elles permettent également au projet Sozi de continuer à ◊em{vivre} même si je cesse de m'en occuper.
 
 Le code source de Sozi est disponible ◊link["https://github.com/sozi-projects/Sozi"]{dans un dépôt public chez GitHub}. Il est publié selon les termes de la ◊link["https://www.mozilla.org/en-US/MPL/2.0/"]{Licence Publique Mozilla 2.0}. Sozi intègre également des bibliothèques logicielles et des ressources (comme par exemple les icônes et les fontes) soumises à d'autres licences libres.
+
+
+◊section{Que signifient les numéros de version de Sozi ?}
+
+Les numéros de versions suivent une logique purement chronologique. Ils se présentent sous la forme "AA.MM.JJ-T" où :
+
+◊itemize{
+    "AA" correspond aux chiffres des dizaines et unités de l'année de publication,
+
+    "MM" est le numéro du mois (01 à 12),
+
+    "JJ" est le numéro du jour du mois (01 à 31),
+
+    "T" identifie la révision du code source qui a été utilisée pour construire cette version (techniquement, il s'agit du ◊em{timestamp} du ◊em{commit} correspondant à cette révision, mais si vous ne savez pas de quoi il s'agit, ce n'est pas important).
+}
+
+Sozi ne respecte pas les principes de ◊link["https://semver.org/lang/fr/"]{gestion sémantique de version}. Le passage d'un numéro de version à un autre ne reflète pas l'importance des changements qui ont eu lieu entre ces versions.
