@@ -225,3 +225,7 @@ aside.warning {
     padding: 0.5rem;
     ◊with-border[◊warning-color]
 }
+
+aside.warning p {
+    text-align: justify;
+}
