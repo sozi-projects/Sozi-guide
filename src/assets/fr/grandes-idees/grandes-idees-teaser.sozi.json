@@ -17,7 +17,7 @@
   "exportToPPTXSlideSize": "screen4x3",
   "exportToPPTXInclude": "",
   "exportToPPTXExclude": "",
-  "exportToVideoFormat": "webm",
+  "exportToVideoFormat": "mp4",
   "exportToVideoWidth": 1152,
   "exportToVideoHeight": 720,
   "exportToVideoFrameRate": 30,
@@ -25,7 +25,7 @@
   "frames": [
     {
       "frameId": "frame9427",
-      "title": "Fun fact",
+      "title": "Fait amusant",
       "titleLevel": 0,
       "notes": "",
       "timeoutMs": 3000,
@@ -126,7 +126,7 @@
     },
     {
       "frameId": "frame2765",
-      "title": "Controversial Statement",
+      "title": "Déclaration controversée",
       "titleLevel": 0,
       "notes": "",
       "timeoutMs": 3000,
@@ -145,7 +145,7 @@
         },
         "layer2": {
           "link": true,
-          "referenceElementId": "path3794",
+          "referenceElementId": "path3792",
           "outlineElementId": "path3846",
           "transitionTimingFunction": "linear",
           "transitionRelativeZoom": 0,
@@ -210,10 +210,10 @@
           "deltaAngle": 179.9447560262705
         },
         "layer2": {
-          "deltaX": -20.59449791788279,
-          "deltaY": -21.528535699856548,
-          "widthFactor": 2.2161856033715766,
-          "heightFactor": 0.9754217082295322,
+          "deltaX": 26.18180823446096,
+          "deltaY": 18.659330511080952,
+          "widthFactor": 2.250277799562221,
+          "heightFactor": 0.6475066858942751,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
@@ -227,7 +227,7 @@
     },
     {
       "frameId": "frame2323",
-      "title": "Important Point",
+      "title": "Point important",
       "titleLevel": 0,
       "notes": "",
       "timeoutMs": 3000,
@@ -246,7 +246,7 @@
         },
         "layer2": {
           "link": true,
-          "referenceElementId": "path3794",
+          "referenceElementId": "path3792",
           "outlineElementId": "path3846",
           "transitionTimingFunction": "linear",
           "transitionRelativeZoom": 0,
@@ -311,10 +311,10 @@
           "deltaAngle": 90.20679150334229
         },
         "layer2": {
-          "deltaX": -20.59449791788279,
-          "deltaY": -21.528535699856548,
-          "widthFactor": 2.2161856033715766,
-          "heightFactor": 0.9754217082295322,
+          "deltaX": 26.18180823446096,
+          "deltaY": 18.659330511080952,
+          "widthFactor": 2.250277799562221,
+          "heightFactor": 0.6475066858942751,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
@@ -328,7 +328,7 @@
     },
     {
       "frameId": "frame8348",
-      "title": "The Big Picture",
+      "title": "Vue d'ensemble",
       "titleLevel": 0,
       "notes": "",
       "timeoutMs": 3000,
@@ -347,7 +347,7 @@
         },
         "layer2": {
           "link": true,
-          "referenceElementId": "path3794",
+          "referenceElementId": "path3792",
           "outlineElementId": "path3846",
           "transitionTimingFunction": "ease",
           "transitionRelativeZoom": 0,
@@ -412,10 +412,10 @@
           "deltaAngle": 0
         },
         "layer2": {
-          "deltaX": -20.59449791788279,
-          "deltaY": -21.528535699856548,
-          "widthFactor": 2.2161856033715766,
-          "heightFactor": 0.9754217082295322,
+          "deltaX": 26.18180823446096,
+          "deltaY": 18.659330511080952,
+          "widthFactor": 2.250277799562221,
+          "heightFactor": 0.6475066858942751,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
@@ -429,7 +429,7 @@
     },
     {
       "frameId": "frame9541",
-      "title": "Deep Thought",
+      "title": "Pensée profonde",
       "titleLevel": 0,
       "notes": "",
       "timeoutMs": 3000,
@@ -448,7 +448,7 @@
         },
         "layer2": {
           "link": true,
-          "referenceElementId": "path3794",
+          "referenceElementId": "path3792",
           "outlineElementId": "path3846",
           "transitionTimingFunction": "easeInOut",
           "transitionRelativeZoom": 0,
@@ -513,10 +513,10 @@
           "deltaAngle": 0
         },
         "layer2": {
-          "deltaX": -20.59449791788279,
-          "deltaY": -21.528535699856548,
-          "widthFactor": 2.2161856033715766,
-          "heightFactor": 0.9754217082295322,
+          "deltaX": 26.18180823446096,
+          "deltaY": 18.659330511080952,
+          "widthFactor": 2.250277799562221,
+          "heightFactor": 0.6475066858942751,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
@@ -530,7 +530,7 @@
     },
     {
       "frameId": "frame5833",
-      "title": "Disruptive Idea",
+      "title": "Idée lumineuse",
       "titleLevel": 0,
       "notes": "",
       "timeoutMs": 3000,
@@ -631,7 +631,7 @@
     },
     {
       "frameId": "frame2668",
-      "title": "Sozi Logo",
+      "title": "Logo Sozi",
       "titleLevel": 0,
       "notes": "",
       "timeoutMs": 5000,
@@ -658,7 +658,7 @@
         },
         "__sozi_auto__": {
           "link": false,
-          "referenceElementId": "path90337",
+          "referenceElementId": "path3846",
           "outlineElementId": "",
           "transitionTimingFunction": "easeOut",
           "transitionRelativeZoom": 0,
@@ -669,7 +669,7 @@
         "layer1": {
           "cx": 731.7653758936569,
           "cy": 2166.3304413340056,
-          "width": 252.7536608230524,
+          "width": 252.75366082305243,
           "height": 158.02922255879616,
           "opacity": 0,
           "angle": 0,
@@ -681,8 +681,8 @@
         },
         "layer2": {
           "cx": 630.8643643868047,
-          "cy": 1967.2285443782685,
-          "width": 285.29109341590316,
+          "cy": 1985.9576682319407,
+          "width": 285.3961730083215,
           "height": 178.37260813020094,
           "opacity": 1,
           "angle": 0,
@@ -694,15 +694,15 @@
         },
         "__sozi_auto__": {
           "cx": 530.7475156146672,
-          "cy": 95.51157816433813,
-          "width": 105.02436666534777,
+          "cy": 102.40634079915026,
+          "width": 105.06304967332765,
           "height": 65.66440604582978,
           "opacity": 1,
           "angle": 0,
           "clipped": true,
           "clipXOffset": 0.3784661861814333,
           "clipYOffset": 0.7055631022116378,
-          "clipWidthFactor": 1.022099447513812,
+          "clipWidthFactor": 1.0217231222385859,
           "clipHeightFactor": 1.0279823269513992
         }
       },
@@ -716,16 +716,16 @@
         },
         "layer2": {
           "deltaX": -0.9266512381952907,
-          "deltaY": 1.2927533626434524,
-          "widthFactor": 4.891064173968684,
+          "deltaY": 20.021877216315715,
+          "widthFactor": 4.892865670902005,
           "heightFactor": 1.8856491423232389,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
-          "deltaX": 3.747515614667236,
-          "deltaY": -45.08827535128687,
-          "widthFactor": 1.0716772108708956,
-          "heightFactor": 1.4592090232406618,
+          "deltaX": -101.04350001033276,
+          "deltaY": -1863.5294502164747,
+          "widthFactor": 1.8012133225483307,
+          "heightFactor": 0.6941650528039758,
           "deltaAngle": 0
         }
       }
@@ -751,7 +751,7 @@
         },
         "layer2": {
           "link": false,
-          "referenceElementId": "path3763",
+          "referenceElementId": "path3792",
           "outlineElementId": "path3846",
           "transitionTimingFunction": "easeOut",
           "transitionRelativeZoom": 0,
@@ -770,7 +770,7 @@
         "layer1": {
           "cx": 530.7475156146672,
           "cy": 95.51157816433813,
-          "width": 105.02436666534777,
+          "width": 105.02436666534776,
           "height": 65.66440604582978,
           "opacity": 0,
           "angle": 0,
@@ -782,8 +782,8 @@
         },
         "layer2": {
           "cx": 630.8643643868047,
-          "cy": 1967.2285443782685,
-          "width": 285.29109341590316,
+          "cy": 2042.1450397929545,
+          "width": 285.3961730083215,
           "height": 178.37260813020094,
           "opacity": 0,
           "angle": 0,
@@ -816,10 +816,10 @@
           "deltaAngle": 0
         },
         "layer2": {
-          "deltaX": -40.97084069132029,
-          "deltaY": 42.38345160483095,
-          "widthFactor": 47.258471786078054,
-          "heightFactor": 33.18349115236902,
+          "deltaX": 26.18180823446096,
+          "deltaY": 93.57582592576705,
+          "widthFactor": 15.378760865966612,
+          "heightFactor": 4.423535670690297,
           "deltaAngle": 0
         },
         "__sozi_auto__": {
@@ -835,7 +835,7 @@
   "elementsToHide": [],
   "customFiles": [],
   "selectedFrames": [
-    "frame9427"
+    "frame5833"
   ],
   "selectedLayers": [
     "layer1",

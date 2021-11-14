@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1.1 (1:1.1+202109281946+c3084ef5ed)"
-   sodipodi:docname="big-ideas.svg"
+   sodipodi:docname="grandes-idees.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -18,7 +18,7 @@
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <title
-     id="title109155">Big Ideas</title>
+     id="title151">Grandes idées</title>
   <sodipodi:namedview
      id="namedview7"
      pagecolor="#ffffff"
@@ -29,14 +29,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="1.28"
-     inkscape:cx="2757.8125"
-     inkscape:cy="8026.9531"
-     inkscape:window-width="1920"
-     inkscape:window-height="1021"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:zoom="1.5702144"
+     inkscape:cx="2797.3887"
+     inkscape:cy="8063.2301"
+     inkscape:window-width="1583"
+     inkscape:window-height="888"
+     inkscape:window-x="56"
+     inkscape:window-y="50"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
      inkscape:snap-text-baseline="true"
      inkscape:snap-smooth-nodes="true"
@@ -660,7 +660,7 @@
          id="tspan73518"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;stroke-width:0.264583px"
          x="305.58871"
-         y="983.43506">Bright Idea</tspan></text>
+         y="983.43506">Idée lumineuse</tspan></text>
     <g
        id="g94127"
        transform="translate(966,-540)"
@@ -693,43 +693,48 @@
          id="text9553"
          transform="rotate(90)"><tspan
            sodipodi:role="line"
-           id="tspan9551"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;stroke-width:0.264583px;stroke:none"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;stroke:none;stroke-width:0.264583px"
            x="-534.99988"
-           y="894.86578">Important</tspan><tspan
+           y="894.86578"
+           id="tspan89733">Point</tspan><tspan
            sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;stroke-width:0.264583px;stroke:none"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;stroke:none;stroke-width:0.264583px"
            x="-534.99988"
            y="903.68524"
-           id="tspan89733">Point</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;line-height:125%;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         x="-925"
-         y="-488.09097"
-         id="text73098"><tspan
-           sodipodi:role="line"
-           id="tspan73096"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:end;text-anchor:end;stroke-width:0.264583px;stroke:none"
-           x="-925"
-           y="-488.09097">Fun Fact</tspan></text>
+           id="tspan7558">important</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:125%;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         x="840"
+         x="-946"
+         y="-495.6626"
+         id="text73098"><tspan
+           sodipodi:role="line"
+           id="tspan73096"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;stroke:none;stroke-width:0.264583px"
+           x="-946"
+           y="-495.6626">Fait</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;stroke:none;stroke-width:0.264583px"
+           x="-946"
+           y="-482.43347"
+           id="tspan37980">amusant</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:125%;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="841"
          y="489.50537"
          id="text73204"
          transform="scale(-1)"><tspan
            sodipodi:role="line"
-           id="tspan73202"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;stroke-width:0.264583px;stroke:none"
-           x="840"
-           y="489.50537">Controversial</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;stroke:none;stroke-width:0.264583px"
+           x="841"
+           y="489.50537"
+           id="tspan73228">Déclaration</tspan><tspan
            sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;stroke-width:0.264583px;stroke:none"
-           x="840"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;stroke:none;stroke-width:0.264583px"
+           x="841"
            y="502.7345"
-           id="tspan73228">Statement</tspan></text>
+           id="tspan5758">controversée</tspan></text>
       <path
          style="fill:#f2f2f2;fill-rule:evenodd;stroke:none;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m -899,-495 -1,15 h 6 l -1,-15 z"
@@ -756,46 +761,44 @@
          id="path90337" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5778px;line-height:125%;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.57777778px;line-height:125%;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          x="-888.81256"
          y="-430"
          id="text73312"><tspan
            sodipodi:role="line"
            id="tspan73310"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5778px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.264583px;stroke:none"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.264583px;font-size:22.57777778px"
            x="-888.81256"
-           y="-430">The Big Picture</tspan></text>
+           y="-430">Vue d'ensemble</tspan></text>
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.1944px;line-height:125%;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-190"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70.5556px;line-height:125%;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-200"
        y="1270.0001"
        id="text9659"><tspan
          sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.1944px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:start;text-anchor:start;fill:#000000;stroke-width:0.264583px"
-         x="-190"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70.5556px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:start;text-anchor:start;fill:#000000;stroke-width:0.264583px"
+         x="-200"
          y="1270.0001"
-         dy="0 0 0 0"
-         id="tspan68569">Deep</tspan></text>
+         id="tspan68569">Pensée</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.1944px;line-height:125%;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="250"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70.5556px;line-height:125%;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="260"
        y="1270.0001"
        id="text97889"><tspan
          sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.1944px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:start;text-anchor:start;fill:#000000;stroke-width:0.264583px"
-         x="250"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70.5556px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:start;text-anchor:start;fill:#000000;stroke-width:0.264583px"
+         x="260"
          y="1270.0001"
-         id="tspan97887">Thought</tspan></text>
+         id="tspan97887">profonde</tspan></text>
   </g>
   <metadata
      id="metadata109153">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
-        <dc:title>Big Ideas</dc:title>
         <dc:date>2021-11-12</dc:date>
         <dc:creator>
           <cc:Agent>
@@ -805,6 +808,7 @@
         <dc:language>en</dc:language>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+        <dc:title>Grandes idées</dc:title>
       </cc:Work>
       <cc:License
          rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
