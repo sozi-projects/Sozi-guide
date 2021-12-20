@@ -20,6 +20,7 @@
   chapter
   section
   subsection
+  sozi
   author
   warning
   block-quote
@@ -256,6 +257,13 @@
       (style-join* 'width width)
       ; Wrap the image in an HTML link.
       (txexpr* 'a `((href ,url)) _)))
+
+; ------------------------------------------------------------------------------
+; Sozi
+; ------------------------------------------------------------------------------
+
+(define (sozi url)
+  (txexpr 'iframe `((src ,url) (class "sozi"))))
 
 ; ------------------------------------------------------------------------------
 ; Icons (using Fork-Awesome)

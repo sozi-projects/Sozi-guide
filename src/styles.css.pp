@@ -90,6 +90,12 @@ a:hover {
     text-decoration: underline;
 }
 
+iframe.sozi {
+    width: 100%;
+    height: 50vh;
+    border: none;
+}
+
 pre, code {
     font-family: ◊mono-font;
     font-variant-ligatures: none;
