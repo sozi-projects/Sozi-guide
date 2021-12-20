@@ -4,19 +4,19 @@
 
 ◊chapter{About this book}
 
-◊warning{This book is a work in progress. New chapters are added as soon as they are ready, without following a definite schedule. In the meantime, the official documentation for Sozi can still be found on the ◊link["https://sozi.baierouge.fr/"]{web site of the project}.
+◊warning{This book is work in progress. New chapters are added as soon as they are ready, without following a definite schedule. In the meantime, the official documentation for Sozi can still be found on the ◊link["https://sozi.baierouge.fr/"]{web site of the project}.
 Thanks for your patience and your support.}
 
 ◊warning{The English version of this book has been translated from French by the author himself. Please feel free to ◊link["https://github.com/sozi-projects/Sozi-guide/issues"]{report any errors} you may encounter while reading.}
 
-◊section{A freely licensed book}
+◊section{An "open" book}
 
 This document is a ◊em{free} book, ◊em{free} as in "free speech". You are allowed to read it, share it or adapt it under the terms of the ◊link["http://creativecommons.org/licenses/by-sa/4.0/" #:rel "license"]{Creative Commons Attribution-ShareAlike 4.0 International License (CC-BY-SA 4.0)}. Unless otherwise stated, the text, illustrations and layout have been made by Guillaume Savaton.
 
 The source code of this book is available in a ◊link["https://github.com/sozi-projects/Sozi-guide"]{public GitHub repository}. If you notice a mistake or if you want to suggest improvements, you can do it on the ◊link["https://github.com/sozi-projects/Sozi-guide/issues"]{◊em{Issues} page of the du projet}.
 
 
-◊section{A pay-what-you-want book}
+◊section{A "pay-what-you-want" book}
 
 If you find this book useful, you can support my work by paying an amount of your choice using one of the following services:
 

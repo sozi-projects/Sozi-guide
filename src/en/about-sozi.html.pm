@@ -24,7 +24,7 @@ Its interface is not designed to easily manage the animation of a large number o
 
 Sozi supports the creation of ◊em{non-linear} presentations, in which you can insert links to navigate between views. Therefore it is a very effective way to create animated web pages that you can host in place of a traditional website. A few years ago, ◊link["https://fr.wikipedia.org/wiki/Adobe_Flash"]{Adobe Flash} would have been used to achieve a similar effect.
 
-However, such a website is likely to have poor accessibility for visually impaired persons. So far, no effort has been made to facilitate the creation of Sozi presentations that would comply with the ◊link["https://www.w3.org/WAI/standards-guidelines/wcag/"]{W3C Web Content Accessibility Guidelines}, and screen reader support has not been studied.
+However, such a website is likely to have poor accessibility for visually impaired persons. So far, no effort has been made to facilitate the creation of Sozi presentations that would comply with the ◊link["https://www.w3.org/WAI/standards-guidelines/wcag/"]{W3C Web Content Accessibility Guidelines}, and screen reader support has not been considered.
 
 
 ◊section{Who develops Sozi?}
