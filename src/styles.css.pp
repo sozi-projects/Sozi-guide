@@ -94,6 +94,7 @@ iframe.sozi {
     width: 100%;
     height: 50vh;
     border: none;
+    margin: 1rem 0;
 }
 
 pre, code {
