@@ -6,5 +6,7 @@
     fr/a-propos-de-sozi.html
     ◊fr/premiers-pas.html{
         fr/notions.html
+        fr/installation.html
+        fr/premiere-presentation.html
     }
 }

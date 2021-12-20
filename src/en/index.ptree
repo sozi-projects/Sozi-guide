@@ -6,5 +6,7 @@
     en/about-sozi.html
     ◊en/first-steps.html{
         en/concepts.html
+        en/installation.html
+        en/first-presentation.html
     }
 }
