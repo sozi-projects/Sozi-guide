@@ -11,29 +11,25 @@ Source code of the Sozi book.
 raco pkg install pollen
 ```
 
-3. Install [Node.js](https://nodejs.org/)
-4. Install required npm packages:
-
-```
-npm install
-```
-
 ## Local project server
 
-Start the project server from the root folder of this repository:
+Start the project server from the source folder of this repository:
 
 ```
-raco pollen start
+raco pollen start src
 ```
 
-Then open a web browser at: http://localhost:8080
+Then open a web browser at:
+
+* http://localhost:8080/fr/ for the French version
+* http://localhost:8080/fr/ for the English version
 
 ## Publishing
 
-Generate a publishable version of the book:
+Generate a publishable version of the book into the `pub` folder:
 
 ```
-raco pollen publish . ../Sozi-book.dist
+raco pollen publish src pub
 ```
 
 ## License
