@@ -29,7 +29,7 @@
       "titleLevel": 0,
       "notes": "",
       "timeoutMs": 3000,
-      "timeoutEnable": true,
+      "timeoutEnable": false,
       "transitionDurationMs": 0,
       "showInFrameList": true,
       "showFrameNumber": true,
@@ -465,7 +465,7 @@
   "elementsToHide": [],
   "customFiles": [],
   "selectedFrames": [
-    "frame5833"
+    "frame9427"
   ],
   "selectedLayers": [
     "layer1",
