@@ -105,27 +105,26 @@
 ; Book table of contents
 ; ------------------------------------------------------------------------------
 
-(define (make-toc doc)
+(define (make-toc doc [root 'pagetree-root])
+  (define ptree (get-pagetree "index.ptree"))
+
   (define (make-toc-item node)
     (txexpr* 'a `((href ,(to-url node))) (get-title node)))
 
   (define (make-toc-tree nodes)
     (txexpr 'ul empty
       (for/list ([n (in-list nodes)])
+        (define ti (make-toc-item n))
+        (define cs (children n ptree))
         (txexpr 'li empty
-          (if (txexpr? n)
-            (list
-              (make-toc-item (get-tag n))
-              (make-toc-tree (get-elements n)))
-            (list
-              (make-toc-item n)))))))
+          (if (list? cs)
+            (list ti (make-toc-tree cs))
+            (list ti))))))
 
   (txexpr* 'main empty
     (txexpr* 'nav '((class "toc"))
       (apply @ (get-elements doc))
-      (make-toc-tree (~>> "index.ptree"
-                          (get-pagetree)
-                          (get-elements))))))
+      (make-toc-tree (children root ptree)))))
 
 ; ------------------------------------------------------------------------------
 ; Simple tag functions

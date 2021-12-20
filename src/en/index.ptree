@@ -4,4 +4,7 @@
     en/about-this-book.html
     en/table-of-contents.html
     en/about-sozi.html
+    ◊en/first-steps.html{
+        en/concepts.html
+    }
 }

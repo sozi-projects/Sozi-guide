@@ -35,9 +35,10 @@
     <header>
         ◊(->html (make-nav))
     </header>
-    ◊(if (select-from-metas 'toc metas)
-        (->html (make-toc doc))
-        (->html doc))
+    ◊(case (select-from-metas 'toc metas)
+        [("root") (->html (make-toc doc))]
+        [("here") (->html (make-toc doc here))]
+        [else     (->html doc)])
     <footer>
         ◊(->html (make-nav))
         <hr>

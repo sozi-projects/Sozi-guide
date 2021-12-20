@@ -147,7 +147,7 @@ nav.toc li {
 }
 
 nav.toc li:last-child {
-    margin: 0;
+    margin-bottom: 0;
 }
 
 header, footer {

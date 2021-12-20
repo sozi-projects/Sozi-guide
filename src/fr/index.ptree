@@ -4,4 +4,7 @@
     fr/a-propos-de-ce-livre.html
     fr/table-des-matieres.html
     fr/a-propos-de-sozi.html
+    ◊fr/premiers-pas.html{
+        fr/notions.html
+    }
 }
