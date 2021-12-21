@@ -6,6 +6,9 @@
 ◊(define text-font    "PT Serif")
 ◊(define mono-font    "JetBrains Mono")
 
+/* Adjust font size of JetBrains Mono to PT Serif */
+◊(define mono-font-size "90%")
+
 ◊(define hr-color         "#aaa")
 ◊(define link-color       "rgb(0, 120, 150)")
 ◊(define chapter-color    "rgb(0, 204, 255)")
@@ -14,6 +17,7 @@
 ◊(define warning-color    "rgb(221, 175, 233)")
 ◊(define warning-bg-color "rgb(247, 235, 250)")
 ◊(define quote-color      "rgb(204, 204, 204)")
+◊(define code-bg-color    "rgba(0, 0, 0, 7%)")
 
 ◊(define (with-border color)
     (format "margin-left: -1rem; padding-left: 0.5rem; border-left: 0.5rem solid ~a;" color))
@@ -100,6 +104,12 @@ iframe.sozi {
 pre, code {
     font-family: ◊mono-font;
     font-variant-ligatures: none;
+    font-size: ◊mono-font-size;
+}
+
+code {
+    background: ◊code-bg-color;
+    padding: 0 0.25rem;
 }
 
 p {
