@@ -14,7 +14,7 @@ Sozi est assez polyvalent. Certains l'ont déjà utilisé pour d'autres usages, 
 
 ◊subsection{Sozi n'est pas un logiciel de dessin}
 
-Ou plus généralement, l'éditeur de présentations Sozi ne propose aucun outil pour créer du contenu. Le point de départ d'une présentation Sozi est un document graphique que vous devez créer avec un autre logiciel, typiquement un logiciel de dessin vectoriel comme ◊link["https://inkscape.org/"]{Inkscape} ou un éditeur de ◊em{cartes mentales} (◊em{mind maps}). Consultez le chapitre ◊link["notions.html"]{Notions de base} pour plus d'explications.
+Ou plus généralement, l'éditeur de présentations Sozi ne propose aucun outil pour créer du contenu. Le point de départ d'une présentation Sozi est un document graphique que vous devez créer avec un autre logiciel, typiquement un logiciel de dessin vectoriel comme ◊link["https://inkscape.org/fr/"]{Inkscape} ou un éditeur de ◊em{cartes mentales} (◊em{mind maps}). Consultez le chapitre ◊link["notions.html"]{Notions de base} pour plus d'explications.
 
 ◊subsection{Sozi n'est pas un logiciel d'animation généraliste}
 
