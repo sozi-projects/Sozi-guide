@@ -18,6 +18,6 @@ publish: render
 
 upload: publish
 	rsync --rsh="ssh -p $(SSH_PORT)" --progress --verbose \
-		--archive --recursive --compress \
+		--archive --recursive --compress --delete \
 		--chown=www-data:www-data \
 		pub/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)

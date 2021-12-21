@@ -21,7 +21,7 @@ The source code of this book is available in a ◊link["https://github.com/sozi-
 If you find this book useful, you can support my work by paying an amount of your choice using one of the following services:
 
 ◊itemize-icons{
-    ◊link["https://www.buymeacoffee.com/THtbNvnqE"]{◊item-icon["coffee"]Buy me a coffee}
+    ◊link["https://www.buymeacoffee.com/THtbNvnqE"]{◊item-icon["buymeacoffee"]Buy me a coffee}
 
     ◊link["https://www.paypal.me/guillaumesavaton"]{◊item-icon["paypal"]Paypal}
 

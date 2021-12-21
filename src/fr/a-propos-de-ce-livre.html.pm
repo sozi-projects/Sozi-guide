@@ -19,7 +19,7 @@ Le code source de ce livre est disponible ◊link["https://github.com/sozi-proje
 Si vous trouvez ce livre utile, vous pouvez soutenir mon travail en versant la somme de votre choix sur l'un des services suivants :
 
 ◊itemize-icons{
-    ◊link["https://www.buymeacoffee.com/THtbNvnqE"]{◊item-icon["coffee"]Buy me a coffee}
+    ◊link["https://www.buymeacoffee.com/THtbNvnqE"]{◊item-icon["buymeacoffee"]Buy me a coffee}
 
     ◊link["https://www.paypal.me/guillaumesavaton"]{◊item-icon["paypal"]Paypal}
 

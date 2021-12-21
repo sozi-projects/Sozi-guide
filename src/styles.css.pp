@@ -27,7 +27,7 @@
 @import "/fonts/PT-Sans-Narrow/stylesheet.css";
 @import "/fonts/PT-Serif/stylesheet.css";
 @import "/fonts/JetBrains-Mono/stylesheet.css";
-@import "/fonts/Fork-Awesome-1.1.7/css/fork-awesome.min.css";
+@import "/fonts/Fork-Awesome/css/fork-awesome.min.css";
 
 html {
     font-family: ◊text-font;
