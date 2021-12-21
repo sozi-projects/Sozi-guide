@@ -240,13 +240,14 @@
     (style-join tx key value)
     tx))
 
-(define (link url #:class [class-name #f] #:rel [relation #f] . body)
+(define (link url #:class [class-name #f] #:rel [relation #f] #:download [download #f] . body)
       ; Use the URL as the body if it is missing.
   (~> (if (empty? body) (list url) body)
       ; Create an HTML link.
       (txexpr 'a `((href ,url)) _)
       ; Add the given class name if it is defined.
       (attr-join* 'class class-name)
+      (attr-join* 'download (and download (first (regexp-match #rx"[^/]+$" url))))
       (attr-join* 'rel   relation)))
 
 (define (link-image url #:src src-url #:alt [alt-text #f] #:width [width #f])
