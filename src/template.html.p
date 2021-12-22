@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 
+◊(define ptree (get-pagetree "index.ptree"))
 ◊(define lang  (select-from-metas 'lang  metas))
 ◊(define title (get-title doc))
-◊(define prev-page (previous here "index.ptree"))
-◊(define next-page (next     here "index.ptree"))
+◊(define prev-page (previous here ptree))
+◊(define next-page (next     here ptree))
+◊(define home-page (cadr (children (car (children 'pagetree-root ptree)) ptree)))
 ◊(define prev-page-title (and prev-page (get-title prev-page)))
 ◊(define next-page-title (and next-page (get-title next-page)))
+◊(define home-page-title (and home-page (not (memq home-page (list prev-page next-page here))) (get-title home-page)))
 
 ◊(define (make-nav)
     ◊nav{
         ◊when/splice[prev-page]{◊link[(to-url ◊prev-page) #:class "previous"]{◊prev-page-title}}
+        ◊when/splice[home-page-title]{◊link[(to-url ◊home-page) #:class "home"]{◊home-page-title}}
         ◊when/splice[next-page]{◊link[(to-url ◊next-page) #:class "next"]{◊next-page-title}}
     }
 )

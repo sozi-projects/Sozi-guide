@@ -200,11 +200,15 @@ nav {
 nav a {
     display: table-cell;
     text-align: left;
-    width: 50%;
+    width: 33%;
 }
 
 nav a.previous:before {
     content: "←\00A0";
+}
+
+nav a.home {
+    text-align: center;
 }
 
 nav a.next {
