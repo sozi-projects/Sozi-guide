@@ -250,7 +250,7 @@
       (attr-join* 'download (and download (first (regexp-match #rx"[^/]+$" url))))
       (attr-join* 'rel   relation)))
 
-(define (link-image url #:src src-url #:alt [alt-text #f] #:width [width #f])
+(define (link-image url src-url #:alt [alt-text #f] #:width [width #f])
       ; Create an HTML image element.
   (~> (txexpr 'img `((src ,src-url)))
       ; Add the given alt and width attributes if set.
