@@ -53,9 +53,7 @@ Dans la barre d'outils, le format par défaut est 4:3. Pour cette présentation,
 ◊subsection{Première vue : "Fait amusant"}
 
 Créez une nouvelle vue en pressant le bouton ◊key{+} à gauche de la chronologie de la présentation. Cette vue s'affiche comme une nouvelle colonne dans la chronologie avec le titre "New frame".
-
 Dans le panneau des propriétés, éditez le champ ◊em{Titre} et remplacez son contenu par "Fait amusant".
-
 Dans le panneau de prévisualisation, utilisez la souris pour positionner la caméra sur la région représentée ci-dessous. Les actions que vous pouvez effectuer sont :
 
 ◊itemize{

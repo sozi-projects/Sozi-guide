@@ -131,6 +131,10 @@ br {
     margin-bottom: 0.25rem;
 }
 
+ol, ul.itemize {
+    margin-top: 0.5rem;
+}
+
 ul.itemize {
     list-style: none;
     padding-left: 1.5rem;
