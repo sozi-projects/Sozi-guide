@@ -6,7 +6,7 @@
 
 ◊warning{Ce chapitre est encore à l'état de brouillon. Revenez dans quelques jours pour lire une version plus aboutie.}
 
-La première présentation que nous allons construire ensemble s'intitule "Grandes idées". Pour vous mettre en appétit, je vous montre tout de suite le résultat que vous devez obtenir si vous suivez mes instructions.
+La première présentation que nous allons construire ensemble s'intitule "Grandes idées". Pour vous mettre en appétit, je vous montre tout de suite le résultat que vous allez obtenir si vous suivez mes instructions.
 Cliquez n'importe où dans l'image ci-dessous et laissez la présentation se dérouler.
 
 ◊sozi["../assets/fr/grandes-idees/grandes-idees.sozi.html"]
