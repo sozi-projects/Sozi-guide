@@ -105,15 +105,20 @@ Créez une nouvelle vue et donnez-lui le titre "Point important". Positionnez la
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-point-important.png" #:alt "La troisième vue de la présentation : Point important"]
 
-
 ◊subsection{Quatrième vue : "Vue d'ensemble"}
 
 Créez une nouvelle vue et donnez-lui le titre "Vue d'ensemble".
+
+◊image["../assets/fr/grandes-idees-images/grandes-idees-vue-densemble.png" #:alt "La quatrième vue de la présentation : Vue d'ensemble"]
 
 ◊subsection{Cinquième vue : "Pensée profonde"}
 
 Créez une nouvelle vue et donnez-lui le titre "Pensée profonde".
 
+◊image["../assets/fr/grandes-idees-images/grandes-idees-pensee-profonde.png" #:alt "La cinquième vue de la présentation : Pensée profonde"]
+
 ◊subsection{Sixième vue : "Idée lumineuse"}
 
 Créez une dernière vue et donnez-lui le titre "Idée lumineuse".
+
+◊image["../assets/fr/grandes-idees-images/grandes-idees-idee-lumineuse.png" #:alt "La sixième vue de la présentation : Idée lumineuse"]
