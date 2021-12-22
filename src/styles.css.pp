@@ -18,6 +18,9 @@
 ◊(define warning-bg-color "rgb(247, 235, 250)")
 ◊(define quote-color      "rgb(204, 204, 204)")
 ◊(define code-bg-color    "rgba(0, 0, 0, 7%)")
+◊(define key-border-color "rgba(0, 0, 0, 50%)")
+◊(define key-bg-color     "rgba(0, 0, 0, 7%)")
+
 
 ◊(define (with-border color)
     (format "margin-left: -1rem; padding-left: 0.5rem; border-left: 0.5rem solid ~a;" color))
@@ -120,7 +123,7 @@ main p + p {
     text-indent: 1rem;
 }
 
-p, li {
+p, li, aside {
     line-height: 1.4;
 }
 
@@ -240,9 +243,25 @@ blockquote {
 aside.warning {
     background: ◊warning-bg-color;
     padding: 0.5rem;
+    margin-top: 0.5rem;
     ◊with-border[◊warning-color]
 }
 
 aside.warning p {
     text-align: justify;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    text-indent: 0;
+    margin: auto;
+}
+
+.key {
+    border: 1px solid ◊key-border-color;
+    background: ◊key-bg-color;
+    border-radius: 0.25rem;
+    padding: 0 0.3rem;
+    margin: 0 0.3rem;
 }

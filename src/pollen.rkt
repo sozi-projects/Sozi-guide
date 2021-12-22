@@ -25,11 +25,13 @@
   warning
   block-quote
   abbr
+  key
   get-title
   itemize
   itemize-icons
   enumerate
   link
+  image
   link-image
   icon
   item-icon
@@ -64,10 +66,10 @@
 ; In French, double punctuation marks are preceded by a thin non-breaking space.
 (define (punctuation str)
   (case (current-lang)
-    [("fr") (regexp-replaces str '([#px"[[:space:]]*\\?" "\u202F?"]
-                                   [#px"[[:space:]]*\\!" "\u202F!"]
-                                   [#px"[[:space:]]*\\:" "\u202F:"]
-                                   [#px"[[:space:]]*\\;" "\u202F;"]))]
+    [("fr") (regexp-replaces str '([#px"[[:space:]]+\\?" "\u202F?"]
+                                   [#px"[[:space:]]+\\!" "\u202F!"]
+                                   [#px"[[:space:]]+\\:" "\u202F:"]
+                                   [#px"[[:space:]]+\\;" "\u202F;"]))]
     [else str]))
 
 ; Insert a table of contents in the current page.
@@ -151,6 +153,7 @@
 (define-simple-tag-function author        address)
 (define-simple-tag-function warning       aside)
 (define-simple-tag-function block-quote   blockquote)
+(define-simple-tag-function key           span)
 
 (define (get-title page)
   (select 'h1 page))
@@ -221,7 +224,7 @@
 (define-list-function enumerate     'ol)
 
 ; ------------------------------------------------------------------------------
-; Links
+; Links, images and iframes
 ; ------------------------------------------------------------------------------
 
 ; Like attr-join but ignores falsy values.
@@ -250,7 +253,14 @@
       (attr-join* 'download (and download (first (regexp-match #rx"[^/]+$" url))))
       (attr-join* 'rel   relation)))
 
-(define (link-image url src-url #:alt [alt-text #f] #:width [width #f])
+(define (image src-url #:alt [alt-text #f] #:width [width #f])
+      ; Create an HTML image element.
+  (~> (txexpr 'img `((src ,src-url)))
+      ; Add the given alt and width attributes if set.
+      (attr-join*  'alt   alt-text)
+      (style-join* 'width width)))
+
+(define (link-image url [src-url url] #:alt [alt-text #f] #:width [width #f])
       ; Create an HTML image element.
   (~> (txexpr 'img `((src ,src-url)))
       ; Add the given alt and width attributes if set.
@@ -258,10 +268,6 @@
       (style-join* 'width width)
       ; Wrap the image in an HTML link.
       (txexpr* 'a `((href ,url)) _)))
-
-; ------------------------------------------------------------------------------
-; Sozi
-; ------------------------------------------------------------------------------
 
 (define (sozi url)
   (txexpr 'iframe `((src ,url) (class "sozi"))))
