@@ -5,6 +5,7 @@
 ◊(define heading-font "PT Sans Narrow")
 ◊(define text-font    "PT Serif")
 ◊(define mono-font    "JetBrains Mono")
+◊(define key-font     "PT Sans Narrow")
 
 /* Adjust font size of JetBrains Mono to PT Serif */
 ◊(define mono-font-size "90%")
@@ -263,6 +264,7 @@ img {
 }
 
 .key {
+    font-family: ◊key-font;
     border: 1px solid ◊key-border-color;
     background: ◊key-bg-color;
     border-radius: 0.25rem;
