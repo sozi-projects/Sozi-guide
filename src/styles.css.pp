@@ -124,7 +124,7 @@ main p + p {
     text-indent: 1rem;
 }
 
-p, li, aside {
+p, li, aside, blockquote {
     line-height: 1.4;
 }
 
@@ -247,6 +247,10 @@ footer hr {
 blockquote {
     font-style: italic;
     ◊with-border[◊quote-color]
+}
+
+blockquote em {
+    font-style: normal;
 }
 
 aside.warning {

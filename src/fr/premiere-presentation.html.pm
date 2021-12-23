@@ -11,7 +11,7 @@ Cliquez n'importe où dans l'image ci-dessous et laissez la présentation se dé
 
 ◊sozi["../assets/fr/grandes-idees/grandes-idees.sozi.html"]
 
-◊section{Télécharger et ouvrir le document de base}
+◊section{Découvrons le document de base}
 
 Cette présentation s'appuie sur un document SVG que j'ai créé pour vous avec le logiciel ◊link["https://inkscape.org/fr/"]{Inkscape}. Suivez le lien ci-dessous pour le télécharger et enregistrez-le à l'emplacement de votre choix. Je vous recommande de l'enregistrer dans un nouveau dossier ◊code{sozi-grandes-idees} qui regroupera tous les fichiers de cette présentation.
 
@@ -25,12 +25,12 @@ Une fois le téléchargement terminé, vous pouvez ouvrir le document ◊code{gr
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-inkscape.png" #:alt "Le document de base grandes-idees.svg ouvert dans Inkscape"]
 
-◊section{Se repérer dans l'interface de Sozi}
+◊section{Prenons nos repères dans l'interface de Sozi}
 
 Ouvrez à présent le document ◊code{grandes-idees.svg} avec Sozi. La figure ci-dessous met en évidence les principales régions de l'interface utilisateur.
 
 ◊itemize{
-    Le ◊em{panneau de prévisualisation} affiche la vue courante de la présentation. Lors de la première ouverture d'un document SVG, elle affiche le document entier.
+    Le ◊em{panneau de prévisualisation} affiche ce que voit la caméra. Lors de la première ouverture d'un document SVG, elle affiche le document entier.
 
     Le ◊em{panneau des propriétés} permet d'éditer les paramètres de la présentation, des vues sélectionnées et des transitions entre vues.
 
@@ -41,30 +41,30 @@ Ouvrez à présent le document ◊code{grandes-idees.svg} avec Sozi. La figure c
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-sozi-interface.svg" #:alt "Le document de base grandes-idees.svg ouvert dans Sozi"]
 
-◊section{Organiser la présentation}
+◊section{Mettons de l'ordre dans nos "grandes idées"}
 
-◊subsection{Choisir le format de l'écran}
+◊subsection{Délimitons le cadre}
 
-Par défaut, le format de la zone de prévisualisation est 4:3. Pour cette présentation, je vous propose de travailler avec un format de 16:10, plus "cinématographique".
+Par défaut, le format de la zone de prévisualisation est 4:3. C'est un format passe-partout qui convient à de nombreux usages. Mais pour que cette première présentation soit à la mesure de nos ◊em{grandes idées}, je vous propose d'élargir notre champ de vision avec un format de 16:10.
 Dans la barre d'outils, éditez le champ ◊em{Format} en saisissant "16" à gauche et "10" à droite.
 
-◊warning{Au moment de concevoir une nouvelle présentation, nous ne savons pas toujours à l'avance sur quel format d'écran elle sera affichée. Le champ ◊em{Format} permet de prévisualiser votre présentation pour un format donné, en garantissant que la région affichée sera toujours entièrement visible quel que soit l'écran utilisé.}
+◊block-quote{Au moment de concevoir une nouvelle présentation, nous ne savons pas toujours à l'avance sur quel format d'écran elle sera affichée. Le champ ◊em{Format} permet de prévisualiser votre présentation pour un format donné, en garantissant que la région affichée sera toujours entièrement visible quel que soit l'écran utilisé.}
 
-◊subsection{Première vue : "Fait amusant"}
+◊subsection{Suscitons l'intérêt en commençant par un "Fait amusant"}
 
 Créez une nouvelle vue en pressant le bouton ◊key{+} en bas à gauche de la fenêtre. Une nouvelle colonne apparaît dans la chronologie avec le titre "New frame".
 Dans le panneau des propriétés, éditez le champ ◊em{Titre} et remplacez son contenu par "Fait amusant".
-Dans le panneau de prévisualisation, utilisez la souris pour positionner la caméra sur la région représentée sur la capture d'écran ci-dessous. Les actions que vous pouvez effectuer sont :
+Dans le panneau de prévisualisation, utilisez la souris pour positionner la caméra sur la région représentée sur la capture d'écran ci-dessous. Les déplacements que vous pouvez effectuer dans cette étape sont :
 
 ◊itemize{
-    Déplacer la caméra : presser le bouton gauche de la souris dans la zone de prévisualisation ; déplacer la souris en maintenant le bouton pressé ; relâcher le bouton lorsque la position souhaitée est atteinte.
+    Translation : pressez le bouton gauche de la souris dans la zone de prévisualisation ; déplacez la souris en maintenant le bouton pressé ; relâchez le bouton lorsque la position souhaitée est atteinte.
 
-    Zoom avant ou arrière : faire tourner la molette de la souris, vers l'avant ou vers l'arrière, au-dessus de la zone de prévisualisation.
+    Zoom avant ou arrière : faites tourner la molette de la souris, vers l'avant ou vers l'arrière, au-dessus de la zone de prévisualisation.
 }
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-fait-amusant.png" #:alt "La première vue de la présentation : Fait amusant"]
 
-◊warning{Dans la suite de ce chapitre, j'utiliserai le terme "cliquer-glisser" pour désigner la séquence :
+◊block-quote{Dans la suite de ce chapitre, j'utiliserai le terme "cliquer-glisser" pour désigner la séquence :
 
 ◊enumerate{
     Presser le bouton gauche de la souris.
@@ -74,7 +74,7 @@ Dans le panneau de prévisualisation, utilisez la souris pour positionner la cam
     Relâcher le bouton gauche de la souris.
 }}
 
-◊subsection{Deuxième vue : "Déclaration controversée"}
+◊subsection{Ouvrons le débat avec une "Déclaration controversée"}
 
 Créez une nouvelle vue en pressant le bouton ◊key{+}. Dans le panneau des propriétés, donnez-lui le titre "Déclaration controversée".
 Dans le panneau de prévisualisation, positionnez la caméra pour reproduire la capture d'écran ci-dessous. Je vous propose de procéder dans cet ordre :
@@ -89,7 +89,15 @@ Dans le panneau de prévisualisation, positionnez la caméra pour reproduire la 
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-declaration-controversee.png" #:alt "La deuxième vue de la présentation : Déclaration controversée"]
 
-◊subsection{Troisième vue : "Point important"}
+Prévisualisez la transition entre les deux premières vues : cliquez successivement dans la première et la seconde colonne de la chronologie de la présentation, ou pressez les touches ◊key{←} et ◊key{→} du clavier pour passer d'une vue à l'autre.
+
+◊block-quote{La disposition des objets graphiques, et les mouvements de caméra qui en découlent, peuvent servir différents propos. Dans certains cas, on cherchera à obtenir des effets visuels ◊em{percutants}, au risque de donner le vertige aux spectateurs ! On pourra également mettre cette disposition au service du discours.
+
+Dans cet exemple, je joue sur la transformation du "i" (pour "information") en un point d'exclamation. Le renversement de l'image fait écho au mot "controversée".
+
+En pratique, je n'utilise presque jamais de rotations dans mes présentations. Il y a deux raisons à cela : d'abord parce que cela rend l'édition du document de base plus laborieuse, mais surtout parce que cela présente peu d'intérêt pour le type de contenu que je dois présenter.}
+
+◊subsection{Recentrons la réflexion sur un "Point important"}
 
 L'interface de Sozi offre d'autres modes d'utilisation de la souris pour positionner la caméra. L'action ◊em{cliquer-glisser} dans le panneau de prévisualisation aura un effet différent selon le mode dans lequel on se trouve. Le choix du mode s'effectue à l'aide de trois boutons de la barre d'outils, éventuellement associés à certaines touches du clavier :
 
@@ -105,19 +113,21 @@ Créez une nouvelle vue et donnez-lui le titre "Point important". Positionnez la
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-point-important.png" #:alt "La troisième vue de la présentation : Point important"]
 
-◊subsection{Quatrième vue : "Vue d'ensemble"}
+◊subsection{Prenons du recul et considérons la "Vue d'ensemble"}
 
 Créez une nouvelle vue et donnez-lui le titre "Vue d'ensemble".
+Parfois, nous avons du mal à nous repérer pour positionner la vue suivante. Il est utile de réinitialiser la caméra pour qu'elle affiche l'intégralité du document source.
+Dans le panneau des propriétés, sous le titre ◊em{Calque}, pressez le bouton ◊key{◊icon["eraser"]}. Utilisez ensuite les actions que vous connaissez pour reproduire la capture d'écran ci-dessous :
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-vue-densemble.png" #:alt "La quatrième vue de la présentation : Vue d'ensemble"]
 
-◊subsection{Cinquième vue : "Pensée profonde"}
+◊subsection{Alimentons la réflexion avec une "Pensée profonde"}
 
 Créez une nouvelle vue et donnez-lui le titre "Pensée profonde".
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-pensee-profonde.png" #:alt "La cinquième vue de la présentation : Pensée profonde"]
 
-◊subsection{Sixième vue : "Idée lumineuse"}
+◊subsection{Et concluons sur une "Idée lumineuse"}
 
 Créez une dernière vue et donnez-lui le titre "Idée lumineuse".
 
