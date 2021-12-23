@@ -252,6 +252,7 @@ footer hr {
 
 blockquote {
     font-style: italic;
+    margin-right: 0;
     ◊with-border[◊quote-color]
 }
 
@@ -263,6 +264,7 @@ aside.warning {
     background: ◊warning-bg-color;
     padding: 0.5rem;
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     ◊with-border[◊warning-color]
 }
 
