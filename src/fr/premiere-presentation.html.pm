@@ -131,3 +131,19 @@ Créez deux nouvelles vues intitulées "Pensée profonde" et "Idée lumineuse". 
 
 ◊block-quote{La vue "Idée lumineuse" exploite le zoom avant afin de focaliser l'attention sur un élément précis de la vue précédente.
 Dans la vue intitulée "Vue d'ensemble", au contraire, nous avons utilisé le zoom arrière pour faire la synthèse de plusieurs vues précédentes.}
+
+◊section{Enregistrons la présentation et contemplons le résultat}
+
+◊warning{Cette section est en cours de rédaction}
+
+◊section{Acquérons la maîtrise du temps et de l'espace}
+
+◊warning{Cette section est en cours de rédaction}
+
+À cette étape, on gère la durée des transitions, les fonctions de temps et le clipping.
+
+◊section{Reprenons le contrôle}
+
+◊warning{Cette section est en cours de rédaction}
+
+À cette étape, on définit des transitions automatiques et on désactive les actions à la souris.
