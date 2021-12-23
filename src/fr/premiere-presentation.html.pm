@@ -2,7 +2,7 @@
 
 ◊define-meta[lang]{fr}
 
-◊chapter{Ma première présentation}
+◊chapter{Première présentation : mettons en valeur nos Grandes Idées}
 
 ◊warning{Ce chapitre est encore à l'état de brouillon. Revenez dans quelques jours pour lire une version plus aboutie.}
 
@@ -97,7 +97,7 @@ Dans cet exemple, je joue sur la transformation du "i" (pour "information") en u
 
 En pratique, je n'utilise presque jamais de rotations dans mes présentations. Il y a deux raisons à cela : d'abord parce que cela rend l'édition du document de base plus laborieuse, mais surtout parce que cela présente peu d'intérêt pour le type de contenu que je dois présenter.}
 
-◊subsection{Recentrons la réflexion sur un "Point important"}
+◊subsection{Recentrons le discours sur un "Point important"}
 
 L'interface de Sozi offre d'autres modes d'utilisation de la souris pour positionner la caméra. L'action ◊em{cliquer-glisser} dans le panneau de prévisualisation aura un effet différent selon le mode dans lequel on se trouve. Le choix du mode s'effectue à l'aide de trois boutons de la barre d'outils, éventuellement associés à certaines touches du clavier :
 
@@ -121,14 +121,13 @@ Dans le panneau des propriétés, sous le titre ◊em{Calque}, pressez le bouton
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-vue-densemble.png" #:alt "La quatrième vue de la présentation : Vue d'ensemble"]
 
-◊subsection{Alimentons la réflexion avec une "Pensée profonde"}
+◊subsection{Méditons cette "Pensée profonde" pour faire éclore une "Idée lumineuse"}
 
-Créez une nouvelle vue et donnez-lui le titre "Pensée profonde".
+Créez deux nouvelles vues intitulées "Pensée profonde" et "Idée lumineuse". Utilisez ensuite les actions que vous connaissez pour reproduire les captures d'écran ci-dessous :
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-pensee-profonde.png" #:alt "La cinquième vue de la présentation : Pensée profonde"]
 
-◊subsection{Et concluons sur une "Idée lumineuse"}
-
-Créez une dernière vue et donnez-lui le titre "Idée lumineuse".
-
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-idee-lumineuse.png" #:alt "La sixième vue de la présentation : Idée lumineuse"]
+
+◊block-quote{La vue "Idée lumineuse" exploite le zoom avant afin de focaliser l'attention sur un élément précis de la vue précédente.
+Dans la vue intitulée "Vue d'ensemble", au contraire, nous avons utilisé le zoom arrière pour faire la synthèse de plusieurs vues précédentes.}

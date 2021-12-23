@@ -77,6 +77,10 @@ h1.chapter, h1.toc {
     margin: 0;
 }
 
+.subtitle {
+    font-size: 75%;
+}
+
 h2.section {
     font-size: 170%;
     margin-top: 2.5rem;
@@ -86,6 +90,8 @@ h2.section {
 
 h3.subsection {
     font-size: 130%;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
     ◊with-border[◊subsection-color]
 }
 
@@ -268,7 +274,7 @@ img {
     max-width: 100%;
     display: block;
     text-indent: 0;
-    margin: auto;
+    margin: 1rem auto;
 }
 
 .key {
