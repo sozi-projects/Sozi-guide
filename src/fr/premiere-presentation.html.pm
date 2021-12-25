@@ -109,21 +109,22 @@ L'interface de Sozi offre d'autres modes d'utilisation de la souris pour positio
     Mode ◊em{rotation} (◊key{◊icon["rotate-left"]}, ou ◊key{◊icon["arrows"]}+◊key{⇧ Maj}) : ◊em{cliquer-glisser} pour tourner autour du centre de la vue courante.
 }
 
-Créez une nouvelle vue et donnez-lui le titre "Point important". Positionnez la caméra de manière à reproduire la capture d'écran ci-dessous.
+Créez une nouvelle vue et donnez-lui le titre "Point important".
+Entraînez-vous à passer d'un mode à l'autre et positionnez la caméra de manière à reproduire la capture d'écran ci-dessous.
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-03-point-important.png" #:alt "La troisième vue de la présentation : Point important"]
 
 ◊subsection{Prenons du recul et considérons la "Vue d'ensemble"}
 
-Créez une nouvelle vue et donnez-lui le titre "Vue d'ensemble".
 Parfois, nous avons du mal à nous repérer pour positionner la vue suivante. Il est utile de réinitialiser la caméra pour qu'elle affiche l'intégralité du document source.
-Dans le panneau des propriétés, sous le titre ◊em{Calque}, pressez le bouton ◊key{◊icon["eraser"]}. Utilisez ensuite les actions que vous connaissez pour reproduire la capture d'écran ci-dessous :
+Créez une nouvelle vue et donnez-lui le titre "Vue d'ensemble".
+Dans le panneau des propriétés, sous le titre ◊em{Calque}, pressez le bouton ◊key{◊icon["eraser"]}. Utilisez ensuite les actions que vous connaissez pour reproduire la capture d'écran ci-dessous.
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-04-vue-densemble.png" #:alt "La quatrième vue de la présentation : Vue d'ensemble"]
 
 ◊subsection{Méditons cette "Pensée profonde" pour faire éclore une "Idée lumineuse"}
 
-Créez deux nouvelles vues intitulées "Pensée profonde" et "Idée lumineuse". Utilisez ensuite les actions que vous connaissez pour reproduire les captures d'écran ci-dessous :
+Créez deux nouvelles vues intitulées "Pensée profonde" et "Idée lumineuse". Pour chacune de ces deux vues, positionnez la caméra en respectant les captures d'écran ci-dessous.
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-05-pensee-profonde.png" #:alt "La cinquième vue de la présentation : Pensée profonde"]
 
