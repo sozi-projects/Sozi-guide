@@ -62,7 +62,7 @@ Dans le panneau de prévisualisation, utilisez la souris pour positionner la cam
     Zoom avant ou arrière : faites tourner la molette de la souris, vers l'avant ou vers l'arrière, au-dessus de la zone de prévisualisation.
 }
 
-◊image["../assets/fr/grandes-idees-images/grandes-idees-fait-amusant.png" #:alt "La première vue de la présentation : Fait amusant"]
+◊image["../assets/fr/grandes-idees-images/grandes-idees-01-fait-amusant.png" #:alt "La première vue de la présentation : Fait amusant"]
 
 ◊block-quote{Dans la suite de ce chapitre, j'utiliserai le terme "cliquer-glisser" pour désigner la séquence :
 
@@ -87,7 +87,7 @@ Dans le panneau de prévisualisation, positionnez la caméra pour reproduire la 
     Ajustez l'échelle en actionnant la molette de la souris seule.
 }
 
-◊image["../assets/fr/grandes-idees-images/grandes-idees-declaration-controversee.png" #:alt "La deuxième vue de la présentation : Déclaration controversée"]
+◊image["../assets/fr/grandes-idees-images/grandes-idees-02-declaration-controversee.png" #:alt "La deuxième vue de la présentation : Déclaration controversée"]
 
 Prévisualisez la transition entre les deux premières vues : cliquez successivement dans la première et la seconde colonne de la chronologie de la présentation, ou pressez les touches ◊key{←} et ◊key{→} du clavier pour passer d'une vue à l'autre.
 
@@ -111,7 +111,7 @@ L'interface de Sozi offre d'autres modes d'utilisation de la souris pour positio
 
 Créez une nouvelle vue et donnez-lui le titre "Point important". Positionnez la caméra de manière à reproduire la capture d'écran ci-dessous.
 
-◊image["../assets/fr/grandes-idees-images/grandes-idees-point-important.png" #:alt "La troisième vue de la présentation : Point important"]
+◊image["../assets/fr/grandes-idees-images/grandes-idees-03-point-important.png" #:alt "La troisième vue de la présentation : Point important"]
 
 ◊subsection{Prenons du recul et considérons la "Vue d'ensemble"}
 
@@ -119,15 +119,15 @@ Créez une nouvelle vue et donnez-lui le titre "Vue d'ensemble".
 Parfois, nous avons du mal à nous repérer pour positionner la vue suivante. Il est utile de réinitialiser la caméra pour qu'elle affiche l'intégralité du document source.
 Dans le panneau des propriétés, sous le titre ◊em{Calque}, pressez le bouton ◊key{◊icon["eraser"]}. Utilisez ensuite les actions que vous connaissez pour reproduire la capture d'écran ci-dessous :
 
-◊image["../assets/fr/grandes-idees-images/grandes-idees-vue-densemble.png" #:alt "La quatrième vue de la présentation : Vue d'ensemble"]
+◊image["../assets/fr/grandes-idees-images/grandes-idees-04-vue-densemble.png" #:alt "La quatrième vue de la présentation : Vue d'ensemble"]
 
 ◊subsection{Méditons cette "Pensée profonde" pour faire éclore une "Idée lumineuse"}
 
 Créez deux nouvelles vues intitulées "Pensée profonde" et "Idée lumineuse". Utilisez ensuite les actions que vous connaissez pour reproduire les captures d'écran ci-dessous :
 
-◊image["../assets/fr/grandes-idees-images/grandes-idees-pensee-profonde.png" #:alt "La cinquième vue de la présentation : Pensée profonde"]
+◊image["../assets/fr/grandes-idees-images/grandes-idees-05-pensee-profonde.png" #:alt "La cinquième vue de la présentation : Pensée profonde"]
 
-◊image["../assets/fr/grandes-idees-images/grandes-idees-idee-lumineuse.png" #:alt "La sixième vue de la présentation : Idée lumineuse"]
+◊image["../assets/fr/grandes-idees-images/grandes-idees-06-idee-lumineuse.png" #:alt "La sixième vue de la présentation : Idée lumineuse"]
 
 ◊block-quote{La vue "Idée lumineuse" exploite le zoom avant afin de focaliser l'attention sur un élément précis de la vue précédente.
 Dans la vue intitulée "Vue d'ensemble", au contraire, nous avons utilisé le zoom arrière pour faire la synthèse de plusieurs vues précédentes.}
