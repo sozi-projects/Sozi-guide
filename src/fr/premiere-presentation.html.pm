@@ -41,6 +41,8 @@ Ouvrez à présent le document ◊code{grandes-idees.svg} avec Sozi. La figure c
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-sozi-interface.svg" #:alt "Le document de base grandes-idees.svg ouvert dans Sozi"]
 
+◊; TODO Lien vers le manuel de référence.
+
 ◊section{Mettons de l'ordre dans nos "grandes idées"}
 
 ◊subsection{Délimitons le cadre}
@@ -136,6 +138,10 @@ Dans la vue intitulée "Vue d'ensemble", au contraire, nous avons utilisé le zo
 ◊section{Enregistrons la présentation et contemplons le résultat}
 
 ◊warning{Cette section est en cours de rédaction}
+
+Par défaut, Sozi enregistre la présentation à chaque fois que la fenêtre d'édition perd le ◊em{focus}, c'est-à-dire à chaque fois que nous basculons vers une autre fenêtre, ou au moment de quitter l'application. Vous pouvez modifier ce comportement dans les préférences de Sozi. ◊; TODO Lien vers le manuel de référence.
+
+En cas de doute, vous pouvez presser le bouton ◊key{◊icon["download"]} de la barre d'outils. S'il est grisé, c'est que la présentation a déjà été enregistrée.
 
 ◊section{Acquérons la maîtrise du temps et de l'espace}
 

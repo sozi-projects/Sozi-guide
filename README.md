@@ -11,6 +11,12 @@ Source code of the Sozi book.
 raco pkg install pollen
 ```
 
+3. Install `npm` and the required packages:
+
+```
+npm install
+```
+
 ## Local project server
 
 Start the project server from the source folder of this repository:
