@@ -9,4 +9,20 @@
         fr/installation.html
         fr/premiere-presentation.html
     }
+    ◊fr/reference.html{
+        ◊fr/editeur.html{
+            fr/barre-outils.html
+            fr/proprietes.html
+            fr/preferences.html
+            fr/previsualisation.html
+            fr/chronologie.html
+            fr/conversion.html
+        }
+        ◊fr/visionnage.html{
+            fr/visionnage-direct.html
+            fr/console-presentateur.html
+            fr/integration.html
+            fr/diffusion.html
+        }
+    }
 }
