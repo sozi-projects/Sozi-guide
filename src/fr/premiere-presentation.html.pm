@@ -139,9 +139,28 @@ Dans la vue intitulée "Vue d'ensemble", au contraire, nous avons utilisé le zo
 
 ◊warning{Cette section est en cours de rédaction}
 
-Par défaut, Sozi enregistre la présentation à chaque fois que la fenêtre d'édition perd le ◊em{focus}, c'est-à-dire à chaque fois que nous basculons vers une autre fenêtre, ou au moment de quitter l'application. Vous pouvez modifier ce comportement dans les préférences de Sozi. ◊; TODO Lien vers le manuel de référence.
+Par défaut, Sozi enregistre la présentation à chaque fois que la fenêtre d'édition perd le ◊em{focus}, c'est-à-dire à chaque fois que nous basculons vers une autre fenêtre, ou au moment de quitter l'application. Ce comportement est modifiable dans les préférences de Sozi. ◊; TODO Lien vers le manuel de référence.
 
-En cas de doute, vous pouvez presser le bouton ◊key{◊icon["download"]} de la barre d'outils. S'il est grisé, c'est que la présentation a déjà été enregistrée.
+
+En cas de doute, nous pouvons forcer l'enregistrement en pressant le bouton ◊key{◊icon["download"]} de la barre d'outils. S'il est grisé, c'est que la présentation a déjà été enregistrée.
+
+Notre dossier de travail contient à présent quatre documents :
+
+◊itemize{
+    ◊code{grandes-idees.svg} est le document graphique de base.
+
+    ◊code{grandes-idees.sozi.json} contient les données de la présentation.
+
+    ◊code{grandes-idees.sozi.html} contient la présentation complète affichable dans un navigateur web. Il rassemble une copie du document SVG de base, les données de la présentation, le programme de visionnage.
+
+    ◊code{grandes-idees-presenter.sozi.html} contient la ◊em{console du présentateur}. Son utilisation est facultative et sera expliquée ultérieurement. ◊; TODO lien vers la section "jouer une présentation"
+}
+
+◊; TODO Ajouter une capture d'écran
+
+◊warning{Les fichiers ◊code{.svg} et ◊code{.json} sont les fichiers ◊em{sources} de la présentation. Si l'un de ces deux fichiers est perdu ou altéré, Sozi ne pourra pas restaurer votre présentation.}
+
+Les fichiers ◊code{.html} sont produits par Sozi à partir des deux précédents. Dans l'exemple que nous venons de construire, le résultat est entièrement contenu dans le fichier ◊code{grandes-idees.sozi.html} qui peut être utilisé de différentes manières : on peut l'ouvrir dans un navigateur web pour visionner la présentation ; on peut le partager avec d'autres personnes qui le visionneront chacune de son côté ; on peut l'héberger comme n'importe quelle page web.
 
 ◊section{Acquérons la maîtrise du temps et de l'espace}
 
