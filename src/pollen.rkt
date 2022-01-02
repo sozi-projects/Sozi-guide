@@ -48,6 +48,9 @@
 (define (current-lang)
   (select-from-metas 'lang (current-metas)))
 
+(define (current-ptree)
+  (get-pagetree (format "../~a.ptree" (current-lang))))
+
 ; Transform a document root into an HTML main element.
 ; Apply typographical transformations to the document body.
 (define (root . body)
@@ -111,7 +114,7 @@
 ; ------------------------------------------------------------------------------
 
 (define (make-toc doc [root 'pagetree-root])
-  (define ptree (get-pagetree "index.ptree"))
+  (define ptree (current-ptree))
 
   (define (make-toc-item node)
     (txexpr* 'a `((href ,(to-url node))) (get-title node)))

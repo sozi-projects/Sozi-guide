@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
-◊(define ptree (get-pagetree "index.ptree"))
 ◊(define lang  (select-from-metas 'lang  metas))
+◊(define ptree (get-pagetree (format "../~a.ptree" lang)))
 ◊(define title (get-title doc))
 ◊(define prev-page (previous here ptree))
 ◊(define next-page (next     here ptree))
