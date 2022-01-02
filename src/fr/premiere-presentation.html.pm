@@ -30,18 +30,18 @@ Une fois le téléchargement terminé, vous pouvez ouvrir le document ◊code{gr
 Ouvrez à présent le document ◊code{grandes-idees.svg} avec Sozi. La figure ci-dessous met en évidence les principales régions de l'interface utilisateur.
 
 ◊itemize{
-    Le ◊em{panneau de prévisualisation} affiche ce que voit la caméra. Lors de la première ouverture d'un document SVG, elle affiche le document entier.
+    Le ◊link["previsualisation.html"]{panneau de prévisualisation} affiche ce que voit la caméra. Lors de la première ouverture d'un document SVG, elle affiche le document entier.
 
-    Le ◊em{panneau des propriétés} permet d'éditer les paramètres de la présentation, des vues sélectionnées et des transitions entre vues.
+    Le ◊link["proprietes.html"]{panneau des propriétés} permet d'éditer les paramètres de la présentation, des vues sélectionnées et des transitions entre vues.
 
-    La ◊em{barre d'outils} permet de sélectionner le mode d'édition de la vue courante et d'effectuer différentes opérations : annuler/refaire la dernière action, enregistrer la présentation, etc. Survolez chaque bouton avec la souris pour afficher une bulle d'aide.
+    La ◊link["barre-outils.html"]{barre d'outils} permet de sélectionner le mode d'édition de la vue courante et d'effectuer différentes opérations : annuler/refaire la dernière action, enregistrer la présentation, etc. Survolez chaque bouton avec la souris pour afficher une bulle d'aide.
 
-    La ◊em{chronologie de la présentation} affiche la séquence des vues. Elle permet d'ajouter ou de supprimer des vues, de les sélectionner, de les réordonner.
+    La ◊link["chronologie.html"]{chronologie de la présentation} affiche la séquence des vues. Elle permet d'ajouter ou de supprimer des vues, de les sélectionner, de les réordonner.
 }
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-sozi-interface.svg" #:alt "Le document de base grandes-idees.svg ouvert dans Sozi"]
 
-◊; TODO Lien vers le manuel de référence.
+◊block-quote{Le contenu de ces régions est expliqué en détail dans la partie ◊link["editeur.html"]{Interface de l'éditeur de présentations} de ce livre. La lecture de cette partie n'est pas nécessaire pour comprendre la suite.}
 
 ◊section{Mettons de l'ordre dans nos "grandes idées"}
 
@@ -153,7 +153,7 @@ Notre dossier de travail contient à présent quatre documents :
 
     ◊code{grandes-idees.sozi.html} contient la présentation complète affichable dans un navigateur web. Il rassemble une copie du document SVG de base, les données de la présentation, le programme de visionnage.
 
-    ◊code{grandes-idees-presenter.sozi.html} contient la ◊em{console du présentateur}. Son utilisation est facultative et sera expliquée ultérieurement. ◊; TODO lien vers la section "jouer une présentation"
+    ◊code{grandes-idees-presenter.sozi.html} contient la ◊link["console-presentateur.html"]{console du présentateur}. Son utilisation est facultative et ne sera pas abordée pour le moment.
 }
 
 ◊; TODO Ajouter une capture d'écran

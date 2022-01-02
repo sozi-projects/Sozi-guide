@@ -11,6 +11,7 @@
     }
     ◊fr/reference.html{
         ◊fr/editeur.html{
+            fr/fenetre.html
             fr/barre-outils.html
             fr/proprietes.html
             fr/preferences.html
