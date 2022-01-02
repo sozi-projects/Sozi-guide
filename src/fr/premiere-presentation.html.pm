@@ -48,9 +48,9 @@ Ouvrez à présent le document ◊code{grandes-idees.svg} avec Sozi. La figure c
 ◊subsection{Délimitons le cadre}
 
 Par défaut, le format de la zone de prévisualisation est 4:3. C'est un format passe-partout qui convient à de nombreux usages. Mais pour que cette première présentation soit à la mesure de nos ◊em{grandes idées}, je vous propose d'élargir notre champ de vision avec un format de 16:10.
-Dans la barre d'outils, éditez le champ ◊em{Format} en saisissant "16" à gauche et "10" à droite.
+Dans la barre d'outils, éditez les champs situés après le mot ◊em{Format} en saisissant "16" à gauche et "10" à droite.
 
-◊block-quote{Au moment de concevoir une nouvelle présentation, nous ne savons pas toujours à l'avance sur quel format d'écran elle sera affichée. Le champ ◊em{Format} permet de prévisualiser votre présentation pour un format donné, en garantissant que la région affichée sera toujours entièrement visible quel que soit l'écran utilisé.}
+◊block-quote{Au moment de concevoir une nouvelle présentation, nous ne savons pas toujours à l'avance sur quel format d'écran elle sera affichée. Le réglage du ◊em{Format} permet de prévisualiser votre présentation pour un format donné, en garantissant que la région affichée sera toujours entièrement visible quel que soit l'écran utilisé.}
 
 ◊subsection{Suscitons l'intérêt en commençant par un "Fait amusant"}
 

@@ -23,6 +23,8 @@
 ◊(define code-bg-color    "rgba(0, 0, 0, 7%)")
 ◊(define key-border-color "rgba(0, 0, 0, 50%)")
 ◊(define key-bg-color     "rgba(0, 0, 0, 7%)")
+◊(define th-bg-color      "rgb(204, 204, 204)")
+◊(define td-bg-color      "rgb(224, 224, 224)")
 
 
 ◊(define (with-border color)
@@ -157,6 +159,24 @@ ul.itemize li {
 
 ul.itemize li:before {
     content: "\2014\2002";
+}
+
+table {
+    margin: 0.5rem auto 0.7rem auto;
+}
+
+th {
+    font-family: ◊heading-font;
+    font-weight: normal;
+    background: ◊th-bg-color;
+}
+
+td {
+    background: ◊td-bg-color;
+}
+
+th, td {
+    padding: 0.2rem 0.5rem;
 }
 
 nav.toc {

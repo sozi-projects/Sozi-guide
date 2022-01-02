@@ -31,6 +31,7 @@
   itemize
   itemize-icons
   enumerate
+  table
   link
   image
   link-image
@@ -187,7 +188,7 @@
 ; Define custom markup for a given HTML list tag.
 ; with a given optional list of class names.
 ; The given function name is automatically added as a class name to the result.
-(define-syntax-rule (define-list-function name tag class-name ...)
+(define-syntax-rule (define-list-function name tag item-tag class-name ...)
   (define-tag-function (name attrs body)
     ; Merge newlines and remove list item separators at the beginning.
     (define body-merged (~> body
@@ -210,7 +211,7 @@
                               (loop (cons r acc) l)))))
         ; Wrap each item body in an HTML list item element.
     (~> (for/list ([it (in-list item-bodies)])
-          (txexpr 'li empty it))
+          (txexpr item-tag empty it))
         ; Wrap all list items in an HTML list element with the given tag.
         (txexpr tag attrs _)
         ; Add class names to the list element.
@@ -221,9 +222,10 @@
 ; ◊itemize:       unordered list
 ; ◊itemize-icons: unordered list with icons instead of bullets
 ; ◊enumerate:     ordered list
-(define-list-function itemize       'ul)
-(define-list-function itemize-icons 'ul "fa-ul")
-(define-list-function enumerate     'ol)
+(define-list-function itemize       'ul    'li)
+(define-list-function itemize-icons 'ul    'li "fa-ul")
+(define-list-function enumerate     'ol    'li)
+(define-list-function table         'table 'tr)
 
 ; ------------------------------------------------------------------------------
 ; Links, images and iframes

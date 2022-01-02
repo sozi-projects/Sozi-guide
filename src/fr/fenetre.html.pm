@@ -11,7 +11,7 @@ La figure ci-dessous met en évidence les principales régions de l'interface ut
 ◊itemize{
     Le ◊link["previsualisation.html"]{panneau de prévisualisation} affiche ce que voit la caméra. Lors de la première ouverture d'un document SVG, elle affiche le document entier.
 
-    Le ◊em{panneau des propriétés} peut avoir trois usages : éditer les ◊link["proprietes.html"]{paramètres de la présentation}, éditer les ◊link["preferences.html"]{préférences de l'application}, ◊likn["conversion.html"]{convertir une présentation vers un autre format}.
+    Le ◊em{panneau des propriétés} peut avoir trois usages : éditer les ◊link["proprietes.html"]{paramètres de la présentation}, éditer les ◊link["preferences.html"]{préférences de l'application}, ◊link["conversion.html"]{convertir une présentation vers un autre format}.
 
     La ◊link["barre-outils.html"]{barre d'outils} permet de sélectionner le mode d'édition de la vue courante et d'effectuer différentes opérations : annuler/refaire la dernière action, enregistrer la présentation, etc. Survolez chaque bouton avec la souris pour afficher une bulle d'aide.
 
