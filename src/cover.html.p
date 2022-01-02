@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 
 ◊(define lang  (select-from-metas 'lang  metas))
+◊(define ptree (get-pagetree (format "../~a.ptree" lang)))
 ◊(define title (get-title doc))
-◊(define prev-page (previous here "index.ptree"))
-◊(define next-page (next     here "index.ptree"))
+◊(define prev-page (previous here ptree))
+◊(define next-page (next     here ptree))
 ◊(define prev-page-title (and prev-page (get-title prev-page)))
 ◊(define next-page-title (and next-page (get-title next-page)))
 
