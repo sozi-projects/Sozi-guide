@@ -139,7 +139,7 @@ Dans la vue intitulée "Vue d'ensemble", au contraire, nous avons utilisé le zo
 
 ◊draft{Cette section est en cours de rédaction}
 
-Par défaut, Sozi enregistre la présentation à chaque fois que la fenêtre d'édition perd le ◊em{focus}, c'est-à-dire à chaque fois que nous basculons vers une autre fenêtre, ou au moment de quitter l'application. Ce comportement est modifiable dans les préférences de Sozi. ◊; TODO Lien vers le manuel de référence.
+Par défaut, Sozi enregistre la présentation automatiquement à chaque fois que la fenêtre d'édition perd le ◊em{focus}, c'est-à-dire à chaque fois que nous basculons vers une autre fenêtre, ou au moment de quitter l'application. Ce comportement est modifiable dans les ◊link["preferences.html"]{préférences de Sozi}.
 
 
 En cas de doute, nous pouvons forcer l'enregistrement en pressant le bouton ◊key{◊icon["download"]} de la barre d'outils. S'il est grisé, c'est que la présentation a déjà été enregistrée.
