@@ -15,6 +15,8 @@
 ◊(define chapter-color    "rgb(0, 204, 255)")
 ◊(define section-color    "rgb(255, 102, 0)")
 ◊(define subsection-color "rgb(255, 204, 0)")
+◊(define draft-color      "rgb(160, 150, 100)")
+◊(define draft-bg-color   "rgb(230, 220, 170)")
 ◊(define warning-color    "rgb(221, 175, 233)")
 ◊(define warning-bg-color "rgb(247, 235, 250)")
 ◊(define quote-color      "rgb(204, 204, 204)")
@@ -140,6 +142,7 @@ br {
 
 ol, ul.itemize {
     margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
 }
 
 ul.itemize {
@@ -260,15 +263,23 @@ blockquote em {
     font-style: normal;
 }
 
-aside.warning {
-    background: ◊warning-bg-color;
+aside {
     padding: 0.5rem;
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.draft {
+    background: ◊draft-bg-color;
+    ◊with-border[◊draft-color]
+}
+
+.warning {
+    background: ◊warning-bg-color;
     ◊with-border[◊warning-color]
 }
 
-aside.warning p {
+aside p {
     text-align: justify;
 }
 

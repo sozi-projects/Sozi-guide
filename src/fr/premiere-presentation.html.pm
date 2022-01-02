@@ -4,7 +4,7 @@
 
 ◊chapter{Première présentation : mettons en valeur nos Grandes Idées}
 
-◊warning{Ce chapitre est encore à l'état de brouillon. Revenez dans quelques jours pour lire une version plus aboutie.}
+◊draft{Ce chapitre est encore à l'état de brouillon. Revenez dans quelques jours pour lire une version plus aboutie.}
 
 La première présentation que nous allons construire ensemble s'intitule "Grandes idées". Pour vous mettre en appétit, je vous montre tout de suite le résultat que vous allez obtenir si vous suivez mes instructions.
 Cliquez n'importe où dans l'image ci-dessous et laissez la présentation se dérouler.
@@ -108,7 +108,7 @@ L'interface de Sozi offre d'autres modes d'utilisation de la souris pour positio
 
     Mode ◊em{zoom} (◊key{◊icon["expand"]}, ou ◊key{◊icon["arrows"]}+◊key{Alt}) : ◊em{cliquer-glisser} en s'éloignant du centre pour agrandir, en se rapprochant du centre pour rétrécir.
 
-    Mode ◊em{rotation} (◊key{◊icon["rotate-left"]}, ou ◊key{◊icon["arrows"]}+◊key{⇧ Maj}) : ◊em{cliquer-glisser} pour tourner autour du centre de la vue courante.
+    Mode ◊em{rotation} (◊key{◊icon["rotate-left"]}, ou ◊key{◊icon["arrows"]} + ◊key{⇧ Maj}) : ◊em{cliquer-glisser} pour tourner autour du centre de la vue courante.
 }
 
 Créez une nouvelle vue et donnez-lui le titre "Point important".
@@ -137,7 +137,7 @@ Dans la vue intitulée "Vue d'ensemble", au contraire, nous avons utilisé le zo
 
 ◊section{Enregistrons la présentation et contemplons le résultat}
 
-◊warning{Cette section est en cours de rédaction}
+◊draft{Cette section est en cours de rédaction}
 
 Par défaut, Sozi enregistre la présentation à chaque fois que la fenêtre d'édition perd le ◊em{focus}, c'est-à-dire à chaque fois que nous basculons vers une autre fenêtre, ou au moment de quitter l'application. Ce comportement est modifiable dans les préférences de Sozi. ◊; TODO Lien vers le manuel de référence.
 
@@ -164,12 +164,12 @@ Les fichiers ◊code{.html} sont produits par Sozi à partir des deux précéden
 
 ◊section{Acquérons la maîtrise du temps et de l'espace}
 
-◊warning{Cette section est en cours de rédaction}
+◊draft{Cette section est en cours de rédaction}
 
 À cette étape, on gère la durée des transitions, les fonctions de temps et le clipping.
 
 ◊section{Reprenons le contrôle}
 
-◊warning{Cette section est en cours de rédaction}
+◊draft{Cette section est en cours de rédaction}
 
 À cette étape, on définit des transitions automatiques et on désactive les actions à la souris.

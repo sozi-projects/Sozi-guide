@@ -4,7 +4,7 @@
 
 ◊chapter{Agencement de la fenêtre}
 
-◊warning{Ce chapitre est encore à l'état de brouillon. Revenez dans quelques jours pour lire une version plus aboutie.}
+◊draft{Ce chapitre est encore à l'état de brouillon. Revenez dans quelques jours pour lire une version plus aboutie.}
 
 La figure ci-dessous met en évidence les principales régions de l'interface utilisateur.
 

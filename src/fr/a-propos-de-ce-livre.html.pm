@@ -4,7 +4,7 @@
 
 ◊chapter{À propos de ce livre}
 
-◊warning{Ce livre est en cours de rédaction. De nouveaux chapitres sont ajoutés dès qu'ils sont prêts, sans suivre un calendrier précis. En attendant, la documentation officielle de Sozi reste consultable sur ◊link["https://sozi.baierouge.fr/"]{le site du projet}.
+◊draft{Ce livre est en cours de rédaction. De nouveaux chapitres sont ajoutés dès qu'ils sont prêts, sans suivre un calendrier précis. En attendant, la documentation officielle de Sozi reste consultable sur ◊link["https://sozi.baierouge.fr/"]{le site du projet}.
 Merci pour votre patience et pour votre soutien.}
 
 ◊section{Un livre "ouvert"}

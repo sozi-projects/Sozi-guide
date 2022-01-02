@@ -4,7 +4,7 @@
 
 ◊chapter{Notions de base}
 
-◊warning{Ce chapitre est encore à l'état de brouillon. Revenez dans quelques jours pour lire une version plus aboutie.}
+◊draft{Ce chapitre est encore à l'état de brouillon. Revenez dans quelques jours pour lire une version plus aboutie.}
 
 ◊section{Créer, visionner, publier une présentation avec Sozi}
 

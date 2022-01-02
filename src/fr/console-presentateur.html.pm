@@ -4,4 +4,4 @@
 
 ◊chapter{Affichage en mode présentateur}
 
-◊warning{Ce chapitre est encore à l'état de brouillon. Revenez dans quelques jours pour lire une version plus aboutie.}
+◊draft{Ce chapitre est encore à l'état de brouillon. Revenez dans quelques jours pour lire une version plus aboutie.}

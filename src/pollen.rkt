@@ -22,6 +22,7 @@
   subsection
   sozi
   author
+  draft
   warning
   block-quote
   abbr
@@ -151,6 +152,7 @@
 (define-simple-tag-function section       h2)
 (define-simple-tag-function subsection    h3)
 (define-simple-tag-function author        address)
+(define-simple-tag-function draft         aside)
 (define-simple-tag-function warning       aside)
 (define-simple-tag-function block-quote   blockquote)
 (define-simple-tag-function key           span)
