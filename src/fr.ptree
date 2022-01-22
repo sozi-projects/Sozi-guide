@@ -9,6 +9,12 @@
         fr/installation.html
         fr/premiere-presentation.html
     }
+    ◊fr/aller-plus-loin.html{
+        fr/utiliser-les-calques.html
+    }
+    ◊fr/depasser-les-limites.html{
+        fr/integrer-les-polices.html
+    }
     ◊fr/reference.html{
         ◊fr/editeur.html{
             fr/fenetre.html
