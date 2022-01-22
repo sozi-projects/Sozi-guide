@@ -221,9 +221,37 @@ Revenez dans la fenêtre du navigateur, revenez sur la première vue de la prés
 
 ◊block-quote{En activant une transition automatique après la dernière vue, nous obtenons une présentation qui tourne en boucle.}
 
-◊subsection{Ajoutons un effet d'accélération et de décélération}
+◊subsection{Ajustons le temps des transitions}
 
-◊draft{Cette section est en cours de rédaction}
+Dans la section ◊em{Transition} du panneau des propriétés, on trouve les réglages qui concernent l'animation du déplacement de la caméra entre la vue ◊strong{précédente} et la vue courante. Pour chaque vue, nous allons modifier les champs suivants :
+
+◊itemize{
+    ◊em{Durée (secondes)} : la durée du déplacement.
+
+    ◊em{Fonction de progression} : une fonction qui règle la vitesse de déplacement de la caméra à chaque instant de la transition.
+}
+
+Voici un récapitulatif des réglages que je vous propose d'utiliser, mais vous pouvez en essayer d'autres pour les comparer. Dans la suite de ce livre, une page est dédiée aux ◊link["fonctions-de-progression.html"]{fonctions de progression} :
+
+◊table{
+    ◊th{Vues} ◊th{Durée (secondes)} ◊th{Fonction de progression}
+
+    ◊td{1}   ◊td{0}                ◊td{Instantanée au début (step start)}
+
+    ◊td{2}   ◊td{0.5}              ◊td{Linéaire}
+
+    ◊td{3}   ◊td{0.5}              ◊td{Linéaire}
+
+    ◊td{4}   ◊td{0.5}              ◊td{Accélérer puis ralentir (ease)}
+
+    ◊td{5}   ◊td{2}                ◊td{Accélérer puis ralentir (ease-in-out)}
+
+    ◊td{6}   ◊td{0.5}              ◊td{Accélérer puis ralentir (ease)}
+}
+
+◊image["../assets/fr/grandes-idees-images/grandes-idees-transition.png" #:alt "Réglage d'une transition"]
+
+Revenez dans la fenêtre du navigateur, rafraîchissez la page et observez la manière dont se déplace la caméra avec ces nouveaux réglages.
 
 ◊section{Reprenons le contrôle}
 
