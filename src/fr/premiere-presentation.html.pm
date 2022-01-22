@@ -185,7 +185,6 @@ Dans cette présentation, nous allons simplement activer le rognage pour que la 
     Dans la section ◊em{Calque} du panneau des propriétés, pressez le bouton ◊key{◊icon["crop"]}. Le rognage est maintenant activé sur toutes les vues sélectionnées.
 }
 
-◊; TODO refaire cette capture avec les bonnes icones
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-rogner.png" #:alt "Activer le rognage sur toutes les vues"]
 
 Revenez dans la fenêtre du navigateur et rafraîchissez la page. Le champ de la caméra respecte désormais le format de 16:10 que nous avons réglé dans Sozi, même si la fenêtre a un format différent :
