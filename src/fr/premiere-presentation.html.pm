@@ -120,7 +120,7 @@ Entraînez-vous à passer d'un mode à l'autre et positionnez la caméra de mani
 
 Parfois, nous avons du mal à nous repérer pour positionner la vue suivante. Il est utile de réinitialiser la caméra pour qu'elle affiche l'intégralité du document source.
 Créez une nouvelle vue et donnez-lui le titre "Vue d'ensemble".
-Dans le panneau des propriétés, sous le titre ◊em{Calque}, pressez le bouton ◊key{◊icon["eraser"]}. Utilisez ensuite les actions que vous connaissez pour reproduire la capture d'écran ci-dessous.
+Dans la section ◊em{Calque} du panneau des propriétés, pressez le bouton ◊key{◊icon["eraser"]}. Utilisez ensuite les actions que vous connaissez pour reproduire la capture d'écran ci-dessous.
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-04-vue-densemble.png" #:alt "La quatrième vue de la présentation : Vue d'ensemble"]
 
@@ -138,7 +138,6 @@ Dans la vue intitulée "Vue d'ensemble", au contraire, nous avons utilisé le zo
 ◊section{Enregistrons la présentation et contemplons le résultat}
 
 Par défaut, Sozi enregistre la présentation automatiquement à chaque fois que la fenêtre d'édition perd le ◊em{focus}, c'est-à-dire à chaque fois que nous basculons vers une autre fenêtre, ou au moment de quitter l'application. Ce comportement est modifiable dans les ◊link["preferences.html"]{préférences de Sozi}.
-
 
 En cas de doute, nous pouvons forcer l'enregistrement en pressant le bouton ◊key{◊icon["download"]} de la barre d'outils. S'il est grisé, c'est que la présentation a déjà été enregistrée.
 
@@ -160,7 +159,7 @@ Notre dossier de travail contient à présent quatre documents :
 
 Les fichiers ◊code{.html} sont produits par Sozi à partir des deux précédents. Dans l'exemple que nous venons de construire, le résultat est entièrement contenu dans le fichier ◊code{grandes-idees.sozi.html} qui peut être utilisé de différentes manières : on peut l'ouvrir dans un navigateur web pour visionner la présentation ; on peut le partager avec d'autres personnes qui le visionneront chacune de son côté ; on peut l'héberger comme n'importe quelle page web.
 
-Ouvrez le document ◊code{grandes-idees.sozi.html} dans votre navigateur web préféré. Faites avancer la présentation en cliquant dans la fenêtre.
+Ouvrez le document ◊code{grandes-idees.sozi.html} dans votre navigateur web préféré. Faites avancer la présentation en cliquant dans la fenêtre ou en pressant la touche ◊key{Espace} (pour une description détaillée des actions possibles, consultez le chapitre ◊link["visionnage-direct.html"]{Affichage direct d’une présentation}).
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-chromium.png" #:alt "La présentation ouverte dans le navigateur Chromium"]
 
@@ -170,11 +169,43 @@ Redimensionnez la fenêtre et comparez son contenu avec la vue affichée dans So
 
 Comme dans la capture d'écran ci-dessus, cela peut faire apparaître des éléments que nous ne souhaitions pas afficher. Nous allons maintenant apprendre comment les cacher.}
 
-◊section{Acquérons la maîtrise du temps et de l'espace}
+◊section{Acquérons la maîtrise de l'espace et du temps}
+
+Revenez dans Sozi en gardant ouverte la fenêtre du navigateur web. Au cours des étapes suivantes, nous ferons régulièrement des allers-retours entre les deux logiciels.
+
+◊subsection{Ajustons le champ de vision}
+
+La fonction ◊em{Rogner} permet de limiter le champ de la caméra à une région rectangulaire de notre choix. Par défaut, cette région correspond à la totalité du panneau de prévisualisation de Sozi mais il est possible de la modifier.
+
+Dans cette présentation, nous allons simplement activer le rognage pour que la région affichée dans le navigateur soit exactement celle affichée dans Sozi :
+
+◊enumerate{
+    Dans la chronologie de la présentation, cliquez sur la case ◊em{Par défaut}. Cette action sélectionne toutes les vues.
+
+    Dans la section ◊em{Calque} du panneau des propriétés, pressez le bouton ◊key{◊icon["crop"]}. Le rognage est maintenant activé sur toutes les vues sélectionnées.
+}
+
+◊image["../assets/fr/grandes-idees-images/grandes-idees-rogner.png" #:alt "Activer le rognage sur toutes les vues"]
+
+Revenez dans la fenêtre du navigateur et rafraîchissez la page. Le champ de la caméra respecte désormais le format de 16:10 que nous avons réglé dans Sozi, même si la fenêtre a un format différent :
+
+◊image["../assets/fr/grandes-idees-images/grandes-idees-rogner-chromium.png" #:alt "Effet du rognage après ouverture dans Chromium"]
+
+◊block-quote{Il existe deux boutons ◊key{◊icon["crop"]} dans l'interface de Sozi et cela peut être une source de confusion :
+
+◊itemize{
+    Le bouton que vous venez d'utiliser, dans le panneau des propriétés, sert à activer ou à désactiver le rognage sur les vues sélectionnées.
+
+    Le bouton situé dans la barre d'outils permet de passer en mode ◊em{Édition de la région à rogner}. Dans ce mode, vous pouvez utiliser la souris dans la fenêtre de prévisualisation pour redimensionner le rectangle de rognage.
+}}
+
+◊subsection{Automatisons les transitions}
 
 ◊draft{Cette section est en cours de rédaction}
 
-À cette étape, on gère la durée des transitions, les fonctions de temps et le clipping.
+◊subsection{Ajoutons un effet d'accélération et de décélération}
+
+◊draft{Cette section est en cours de rédaction}
 
 ◊section{Reprenons le contrôle}
 
