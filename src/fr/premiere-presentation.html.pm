@@ -185,6 +185,7 @@ Dans cette présentation, nous allons simplement activer le rognage pour que la 
     Dans la section ◊em{Calque} du panneau des propriétés, pressez le bouton ◊key{◊icon["crop"]}. Le rognage est maintenant activé sur toutes les vues sélectionnées.
 }
 
+◊; TODO refaire cette capture avec les bonnes icones
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-rogner.png" #:alt "Activer le rognage sur toutes les vues"]
 
 Revenez dans la fenêtre du navigateur et rafraîchissez la page. Le champ de la caméra respecte désormais le format de 16:10 que nous avons réglé dans Sozi, même si la fenêtre a un format différent :
@@ -201,7 +202,25 @@ Revenez dans la fenêtre du navigateur et rafraîchissez la page. Le champ de la
 
 ◊subsection{Automatisons les transitions}
 
-◊draft{Cette section est en cours de rédaction}
+Dans la présentation affichée en haut de cette page, seul le passage de la première à la deuxième vue nécessite une action de l'utilisateur. À partir de la deuxième vue, les transitions se font automatiquement toutes les trois secondes.
+
+Pour obtenir ce résultat, nous devons régler un ◊em{délai} sur les vues 2 à 6 de la présentation :
+
+◊enumerate{
+    Dans la chronologie de la présentation, cliquez sur la colonne 2 pour sélectionner la vue "Déclaration controversée".
+
+    Maintenez la touche ◊key{⇧ Maj} pressée et cliquez sur la colonne 6 pour étendre la sélection jusqu'à la vue "Idée lumineuse".
+
+    Dans le panneau des propriétés, pressez le bouton ◊key{◊icon["clock-o"]} pour activer le passage automatique à la vue suivante après un délai.
+
+    Saisissez la valeur "3" dans le champ ◊em{Délai (secondes)}.
+}
+
+◊image["../assets/fr/grandes-idees-images/grandes-idees-delai.png" #:alt "Réglage des transitions automatiques"]
+
+Revenez dans la fenêtre du navigateur, revenez sur la première vue de la présentation et rafraîchissez la page. Cliquez dans la fenêtre ou pressez la touche ◊key{Espace} pour passer à la deuxième vue ; ensuite, vous pouvez laisser la présentation se dérouler. Vous pouvez également passer d'une vue à la suivante manuellement en cliquant ou en pressant la touche ◊key{Espace} avant la fin du délai.
+
+◊block-quote{En activant une transition automatique après la dernière vue, nous obtenons une présentation qui tourne en boucle.}
 
 ◊subsection{Ajoutons un effet d'accélération et de décélération}
 
