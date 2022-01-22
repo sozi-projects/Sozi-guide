@@ -156,7 +156,7 @@ Notre dossier de travail contient à présent quatre documents :
     ◊code{grandes-idees-presenter.sozi.html} contient la ◊link["console-presentateur.html"]{console du présentateur}. Son utilisation est facultative et ne sera pas abordée pour le moment.
 }
 
-◊; TODO Ajouter une capture d'écran
+◊image["../assets/fr/grandes-idees-images/grandes-idees-dossier-final.png" #:alt "Le contenu final du dossier sozi-grandes-idees"]
 
 ◊warning{Les fichiers ◊code{.svg} et ◊code{.json} sont les fichiers ◊em{sources} de la présentation. Si l'un de ces deux fichiers est perdu ou altéré, Sozi ne pourra pas restaurer votre présentation.}
 
