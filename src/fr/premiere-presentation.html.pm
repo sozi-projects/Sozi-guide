@@ -137,8 +137,6 @@ Dans la vue intitulée "Vue d'ensemble", au contraire, nous avons utilisé le zo
 
 ◊section{Enregistrons la présentation et contemplons le résultat}
 
-◊draft{Cette section est en cours de rédaction}
-
 Par défaut, Sozi enregistre la présentation automatiquement à chaque fois que la fenêtre d'édition perd le ◊em{focus}, c'est-à-dire à chaque fois que nous basculons vers une autre fenêtre, ou au moment de quitter l'application. Ce comportement est modifiable dans les ◊link["preferences.html"]{préférences de Sozi}.
 
 
@@ -161,6 +159,16 @@ Notre dossier de travail contient à présent quatre documents :
 ◊warning{Les fichiers ◊code{.svg} et ◊code{.json} sont les fichiers ◊em{sources} de la présentation. Si l'un de ces deux fichiers est perdu ou altéré, Sozi ne pourra pas restaurer votre présentation.}
 
 Les fichiers ◊code{.html} sont produits par Sozi à partir des deux précédents. Dans l'exemple que nous venons de construire, le résultat est entièrement contenu dans le fichier ◊code{grandes-idees.sozi.html} qui peut être utilisé de différentes manières : on peut l'ouvrir dans un navigateur web pour visionner la présentation ; on peut le partager avec d'autres personnes qui le visionneront chacune de son côté ; on peut l'héberger comme n'importe quelle page web.
+
+Ouvrez le document ◊code{grandes-idees.sozi.html} dans votre navigateur web préféré. Faites avancer la présentation en cliquant dans la fenêtre.
+
+◊image["../assets/fr/grandes-idees-images/grandes-idees-chromium.png" #:alt "La présentation ouverte dans le navigateur Chromium"]
+
+◊block-quote{Souvenez-vous que nous avons choisi d'afficher les vues avec un format de 16:10 dans Sozi. Que se passe-t-il si, au moment du visionnage, la fenêtre du navigateur a un format différent ?
+
+Redimensionnez la fenêtre et comparez son contenu avec la vue affichée dans Sozi. Vous devez observer que la fenêtre du navigateur affiche toujours l'intégralité de la vue courante, en élargissant le champ de vision verticalement ou horizontalement, mais sans jamais la tronquer.
+
+Comme dans la capture d'écran ci-dessus, cela peut faire apparaître des éléments que nous ne souhaitions pas afficher. Nous allons maintenant apprendre comment les cacher.}
 
 ◊section{Acquérons la maîtrise du temps et de l'espace}
 
