@@ -4,7 +4,7 @@
 
 ◊chapter{Première présentation : mettons en valeur nos Grandes Idées}
 
-◊draft{Ce chapitre est encore à l'état de brouillon. Revenez dans quelques jours pour lire une version plus aboutie.}
+◊draft{Ce chapitre s'appuie sur une version de Sozi qui n'a pas encore été publiée. Certaines icones et le nom de certaines fonctions utilisées dans cette page ne correspondent pas à la version courante de Sozi.}
 
 La première présentation que nous allons construire ensemble s'intitule "Grandes idées". Pour vous mettre en appétit, je vous montre tout de suite le résultat que vous allez obtenir si vous suivez mes instructions.
 Cliquez n'importe où dans l'image ci-dessous et laissez la présentation se dérouler.
@@ -199,28 +199,6 @@ Revenez dans la fenêtre du navigateur et rafraîchissez la page. Le champ de la
     Le bouton situé dans la barre d'outils permet de passer en mode ◊em{Édition de la région à rogner}. Dans ce mode, vous pouvez utiliser la souris dans la fenêtre de prévisualisation pour redimensionner le rectangle de rognage.
 }}
 
-◊subsection{Automatisons les transitions}
-
-Dans la présentation affichée en haut de cette page, seul le passage de la première à la deuxième vue nécessite une action de l'utilisateur. À partir de la deuxième vue, les transitions se font automatiquement toutes les trois secondes.
-
-Pour obtenir ce résultat, nous devons régler un ◊em{délai} sur les vues 2 à 6 de la présentation :
-
-◊enumerate{
-    Dans la chronologie de la présentation, cliquez sur la colonne 2 pour sélectionner la vue "Déclaration controversée".
-
-    Maintenez la touche ◊key{⇧ Maj} pressée et cliquez sur la colonne 6 pour étendre la sélection jusqu'à la vue "Idée lumineuse".
-
-    Dans le panneau des propriétés, pressez le bouton ◊key{◊icon["clock-o"]} pour activer le passage automatique à la vue suivante après un délai.
-
-    Saisissez la valeur "3" dans le champ ◊em{Délai (secondes)}.
-}
-
-◊image["../assets/fr/grandes-idees-images/grandes-idees-delai.png" #:alt "Réglage des transitions automatiques"]
-
-Revenez dans la fenêtre du navigateur, revenez sur la première vue de la présentation et rafraîchissez la page. Cliquez dans la fenêtre ou pressez la touche ◊key{Espace} pour passer à la deuxième vue ; ensuite, vous pouvez laisser la présentation se dérouler. Vous pouvez également passer d'une vue à la suivante manuellement en cliquant ou en pressant la touche ◊key{Espace} avant la fin du délai.
-
-◊block-quote{En activant une transition automatique après la dernière vue, nous obtenons une présentation qui tourne en boucle.}
-
 ◊subsection{Ajustons le temps des transitions}
 
 Dans la section ◊em{Transition} du panneau des propriétés, on trouve les réglages qui concernent l'animation du déplacement de la caméra entre la vue ◊strong{précédente} et la vue courante. Pour chaque vue, nous allons modifier les champs suivants :
@@ -231,7 +209,7 @@ Dans la section ◊em{Transition} du panneau des propriétés, on trouve les ré
     ◊em{Fonction de progression} : une fonction qui règle la vitesse de déplacement de la caméra à chaque instant de la transition.
 }
 
-Voici un récapitulatif des réglages que je vous propose d'utiliser, mais vous pouvez en essayer d'autres pour les comparer. Dans la suite de ce livre, une page est dédiée aux ◊link["fonctions-de-progression.html"]{fonctions de progression} :
+Voici un récapitulatif des réglages que je vous propose d'utiliser. Vous pouvez en essayer d'autres pour les comparer. Dans la suite de ce livre, une page est dédiée aux ◊link["fonctions-de-progression.html"]{fonctions de progression} :
 
 ◊table{
     ◊th{Vues} ◊th{Durée (secondes)} ◊th{Fonction de progression}
@@ -255,6 +233,60 @@ Revenez dans la fenêtre du navigateur, rafraîchissez la page et observez la ma
 
 ◊section{Reprenons le contrôle}
 
-◊draft{Cette section est en cours de rédaction}
+Dans la présentation affichée en haut de cette page, seul le passage de la première à la deuxième vue nécessite une action de l'utilisateur. À partir de la deuxième vue, les transitions se font automatiquement toutes les trois secondes pour les vues 2 à 5, et au bout de cinq secondes pour la dernière vue.
 
-À cette étape, on définit des transitions automatiques et on désactive les actions à la souris.
+Pour obtenir ce résultat, nous devons régler un ◊em{délai} sur les vues 2 à 6 de la présentation :
+
+◊enumerate{
+    Dans la chronologie de la présentation, cliquez sur la colonne 2 pour sélectionner la vue "Déclaration controversée".
+
+    Maintenez la touche ◊key{⇧ Maj} pressée et cliquez sur la colonne 6 pour étendre la sélection jusqu'à la vue "Idée lumineuse".
+
+    Dans le panneau des propriétés, pressez le bouton ◊key{◊icon["clock-o"]} pour activer le passage automatique à la vue suivante après un délai.
+
+    Saisissez la valeur "3" dans le champ ◊em{Délai (secondes)}.
+
+    Cliquez sur la colonne 6 pour sélectionner la vue "Idée lumineuse" seule.
+
+    Saisissez la valeur "5" dans le champ ◊em{Délai (secondes)}.
+}
+
+◊image["../assets/fr/grandes-idees-images/grandes-idees-delai.png" #:alt "Réglage des transitions automatiques"]
+
+Revenez dans la fenêtre du navigateur, revenez sur la première vue de la présentation et rafraîchissez la page. Cliquez dans la fenêtre ou pressez la touche ◊key{Espace} pour passer à la deuxième vue ; ensuite, vous pouvez laisser la présentation se dérouler. Vous pouvez également passer d'une vue à la suivante manuellement en cliquant ou en pressant la touche ◊key{Espace} avant la fin du délai.
+
+◊block-quote{En activant une transition automatique après la dernière vue, nous obtenons une présentation qui tourne en boucle.}
+
+◊section{Récapitulons}
+
+Nous avons construit ensemble une présentation complète avec Sozi. La conception du document SVG de base n'a pas été abordée car elle sort du cadre de ce manuel. Dans ce chapitre, nous avons appris à nous repérer dans l'interface de Sozi en utilisant les fonctions les plus courantes :
+
+◊itemize{
+    Choisir le rapport d'aspect du panneau de prévisualisation.
+
+    Créer une séquence de vues.
+
+    Leur donner un titre.
+
+    Déplacer la caméra par rotation, zoom et translation en utilisant différents modes d'interaction avec le panneau de prévisualisation.
+
+    Utiliser la fonction ◊em{Rogner} pour que le champ de la caméra corresponde à ce qui est affiché dans Sozi.
+
+    Régler la durée des transitions et utiliser différentes fonctions de progression.
+
+    Rendre automatiques certaines transitions après un délai.
+
+    Afficher une présentation dans un navigateur web.
+}
+
+Ma version de cette présentation est disponible en téléchargement ci-dessous. Attention à enregistrer les fichiers dans un dossier séparé pour ne pas perdre votre travail.
+
+◊itemize-icons{
+    ◊link["../assets/fr/grandes-idees/grandes-idees.svg" #:download #t]{◊item-icon["download"]◊code{grandes-idees.svg}}
+
+    ◊link["../assets/fr/grandes-idees/grandes-idees.sozi.json" #:download #t]{◊item-icon["download"]◊code{grandes-idees.sozi.json}}
+
+    ◊link["../assets/fr/grandes-idees/grandes-idees.sozi.html" #:download #t]{◊item-icon["download"]◊code{grandes-idees.sozi.html}}
+}
+
+◊warning{Dans cette présentation, les actions au clavier ont été désactivées pour faciliter son intégration à cette page. Vous pouvez les rétablir dans la section ◊em{Visionnage} du panneau des propriétés.}
