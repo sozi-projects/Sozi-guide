@@ -4,8 +4,6 @@
 
 ◊chapter{Première présentation : mettons en valeur nos Grandes Idées}
 
-◊draft{Ce chapitre s'appuie sur une version de Sozi qui n'a pas encore été publiée. Certaines icones et le nom de certaines fonctions utilisées dans cette page ne correspondent pas à la version courante de Sozi.}
-
 La première présentation que nous allons construire ensemble s'intitule "Grandes idées". Pour vous mettre en appétit, je vous montre tout de suite le résultat que vous allez obtenir si vous suivez mes instructions.
 Cliquez n'importe où dans l'image ci-dessous et laissez la présentation se dérouler.
 
