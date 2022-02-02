@@ -23,7 +23,7 @@ Une fois le téléchargement terminé, vous pouvez ouvrir le document ◊code{gr
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-inkscape.png" #:alt "Le document de base grandes-idees.svg ouvert dans Inkscape"]
 
-◊section{Prenons nos repères dans l'interface de Sozi}
+◊section{Faisons connaissance avec l'interface de Sozi}
 
 Ouvrez à présent le document ◊code{grandes-idees.svg} avec Sozi. La figure ci-dessous met en évidence les principales régions de l'interface utilisateur.
 
@@ -43,7 +43,7 @@ Ouvrez à présent le document ◊code{grandes-idees.svg} avec Sozi. La figure c
 
 ◊section{Mettons de l'ordre dans nos "grandes idées"}
 
-◊subsection{Délimitons le cadre}
+◊subsection{Élargissons notre champ de vision}
 
 Par défaut, le format de la zone de prévisualisation est 4:3. C'est un format passe-partout qui convient à de nombreux usages. Mais pour que cette première présentation soit à la mesure de nos ◊em{grandes idées}, je vous propose d'élargir notre champ de vision avec un format de 16:10.
 Dans la barre d'outils, éditez les champs situés après le mot ◊em{Format} en saisissant "16" à gauche et "10" à droite.
@@ -171,7 +171,7 @@ Comme dans la capture d'écran ci-dessus, cela peut faire apparaître des élém
 
 Revenez dans Sozi en gardant ouverte la fenêtre du navigateur web. Au cours des étapes suivantes, nous ferons régulièrement des allers-retours entre les deux logiciels.
 
-◊subsection{Ajustons le champ de vision}
+◊subsection{Adaptons le champ de la caméra}
 
 La fonction ◊em{Rogner} permet de limiter le champ de la caméra à une région rectangulaire de notre choix. Par défaut, cette région correspond à la totalité du panneau de prévisualisation de Sozi mais il est possible de la modifier.
 
@@ -229,7 +229,7 @@ Voici un récapitulatif des réglages que je vous propose d'utiliser. Vous pouve
 
 Revenez dans la fenêtre du navigateur, rafraîchissez la page et observez la manière dont se déplace la caméra avec ces nouveaux réglages.
 
-◊section{Reprenons le contrôle}
+◊subsection{Automatisons le déroulement de la présentation}
 
 Dans la présentation affichée en haut de cette page, seul le passage de la première à la deuxième vue nécessite une action de l'utilisateur. À partir de la deuxième vue, les transitions se font automatiquement toutes les trois secondes pour les vues 2 à 5, et au bout de cinq secondes pour la dernière vue.
 
