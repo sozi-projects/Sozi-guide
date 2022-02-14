@@ -187,7 +187,7 @@ Dans cette présentation, nous allons simplement activer le rognage pour que la 
 
 Revenez dans la fenêtre du navigateur et rafraîchissez la page. Le champ de la caméra respecte désormais le format de 16:10 que nous avons réglé dans Sozi, même si la fenêtre a un format différent :
 
-◊image["../assets/fr/grandes-idees-images/grandes-idees-rogner-chromium.png" #:alt "Effet du rognage après ouverture dans Chromium"]
+◊image["../assets/fr/grandes-idees-images/grandes-idees-rogner-chromium.png" #:alt "Effet du rognage après ouverture de la présentation dans Chromium"]
 
 ◊block-quote{Il existe deux boutons ◊key{◊icon["crop"]} dans l'interface de Sozi et cela peut être une source de confusion :
 
