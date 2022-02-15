@@ -9,4 +9,15 @@
         en/installation.html
         en/first-presentation.html
     }
+    ◊en/reference.html{
+        ◊en/editor.html{
+            en/window.html
+            en/toolbar.html
+            en/properties.html
+            en/preferences.html
+            en/preview.html
+            en/timeline.html
+            en/conversion.html
+        }
+    }
 }
