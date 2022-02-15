@@ -47,17 +47,34 @@ Now open the document ◊code{big-ideas.svg} with Sozi. The picture below highli
 
 ◊subsection{Broaden your field of vision}
 
-◊draft{This section has not been written yet.}
+The default aspect ratio of the preview area is 4:3. It is a generic format that can suit many use cases. But if we want this first presentation to be up to our ◊em{big ideas}, let us broaden our field of vision with a 16:10 aspect ratio.
+In the toolbar, edit the fields after the words ◊em{Aspect ratio}, typing "16" on the left, and "10" on the right.
 
-By default...
+◊block-quote{When designing a new presentation, we do not always anticipate the format of the screen it will be displayed on. The ◊em{Aspect ratio} setting allows to preview your presentation for a given format, ensuring that the displayed region will be entirely visible on any screen.}
 
 ◊subsection{Arouse interest with a "Fun fact"}
 
-◊draft{This section has not been written yet.}
+Press the ◊key{+} button at the bottom left of the window to create a new frame. A new column, titled "New frame", will appear in the timeline.
+In the properties pane, edit the field ◊em{Title} and replace its content with "Fun Fact".
+In the preview pane, use the mouse to place the camera in the same position as in the screenshot below. The movements that you can perform at this stage are:
 
-Create a new frame...
+◊itemize{
+    Translation: press the left mouse button in the preview area; move the mouse while keeping the button pressed; release the button when the desired location has been reached.
+
+    Zoom in or out: rotate the mouse wheel forward or backward above the preview area.
+}
 
 ◊image["../assets/en/big-ideas-images/big-ideas-01-fun-fact.png" #:alt "The first frame of the presentation: Fun fact"]
+
+◊block-quote{In the rest of this chapter, I will use the term "click-and-drag" to refer to the following sequence of actions:
+
+◊enumerate{
+    Press the left mouse button.
+
+    Move the mouse while keeping the button pressed.
+
+    Release the left mouse button.
+}}
 
 ◊subsection{Open the debate with a "Controversial Statement"}
 
