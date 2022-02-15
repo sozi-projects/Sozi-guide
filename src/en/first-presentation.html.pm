@@ -66,7 +66,7 @@ In the preview pane, use the mouse to place the camera in the same position as i
 
 ◊image["../assets/en/big-ideas-images/big-ideas-01-fun-fact.png" #:alt "The first frame of the presentation: Fun fact"]
 
-◊block-quote{In the rest of this chapter, I will use the term "click-and-drag" to refer to the following sequence of actions:
+◊block-quote{In the rest of this chapter, I will use the expression "click and drag" to refer to the following sequence of actions:
 
 ◊enumerate{
     Press the left mouse button.
@@ -78,11 +78,26 @@ In the preview pane, use the mouse to place the camera in the same position as i
 
 ◊subsection{Open the debate with a "Controversial Statement"}
 
-◊draft{This section has not been written yet.}
+Press the ◊key{+} button again to create a new frame. In the properties pane, change the frame title to "Controversial Statement".
+In the preview pane, move the camera to match the screenshot below. I suggest to proceed in this order:
 
-Create a new frame...
+◊enumerate{
+    Move the camera: ◊em{click and drag} to the left until the text "Controversial Statement" is entirely visible. While moving the mouse, you can press the ◊key{Ctrl} key to restrict the movement of the camera along a perfectly horizontal path.
+
+    Rotate the camera by 180 degrees: press and hold the ◊key{⇧ Shift} key while rotating the mouse wheel until you reach the desired orientation.
+
+    Adjust the scale by rotating the mouse wheel alone.
+}
 
 ◊image["../assets/en/big-ideas-images/big-ideas-02-controversial-statement.png" #:alt "The second frame of the presentation: Controversial Statement"]
+
+Preview the transition between the first two frames: click on the first and second columns of the timeline successively, or use the ◊key{←} and ◊key{→} keys of your keyboard to switch from one frame to the other.
+
+◊block-quote{The arrangement of the graphic elements, and the resulting camera movements, can serve different purposes. In certain cases, you will aim to create ◊em{striking} visual effects, at the risk of making your audience dizzy! But you can also make use of a specific arrangement to enhance the narrative of your presentation.
+
+In this example, I have played with the the transformation of the "i" (for "information") into an exclamation mark. Turning the image upside down relates to the word "controversial".
+
+In practice, I seldom use rotations in my presentations. There are two reasons for that: partly because I find that it makes editing the base document more difficult, but mostly because it is of little interest for the type of content that I usually present.}
 
 ◊subsection{Refocus your speech on an "Important Point"}
 

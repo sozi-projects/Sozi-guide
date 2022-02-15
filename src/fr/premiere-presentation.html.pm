@@ -80,7 +80,7 @@ Créez une nouvelle vue en pressant le bouton ◊key{+}. Dans le panneau des pro
 Dans le panneau de prévisualisation, positionnez la caméra pour reproduire la capture d'écran ci-dessous. Je vous propose de procéder dans cet ordre :
 
 ◊enumerate{
-    Déplacez la caméra : ◊em{cliquez-glissez} vers la gauche jusqu'à ce que le texte "Déclaration controversée" soit entièrement visible. Tout en déplaçant la souris, vous pouvez presser la touche ◊key{Ctrl} du clavier pour que le déplacement soit parfaitement horizontal.
+    Déplacez la caméra : ◊em{cliquez-glissez} vers la gauche jusqu'à ce que le texte "Déclaration controversée" soit entièrement visible. Tout en déplaçant la souris, vous pouvez presser la touche ◊key{Ctrl} du clavier pour contraindre le déplacement de la caméra à rester parfaitement horizontal.
 
     Faites tourner la caméra de 180 degrés : pressez et maintenez la touche ◊key{⇧ Maj} du clavier tout en faisant tourner la molette de la souris jusqu'à obtenir l'orientation souhaitée.
 
