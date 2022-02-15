@@ -97,7 +97,7 @@ Preview the transition between the first two frames: click on the first and seco
 
 In this example, I have played with the the transformation of the "i" (for "information") into an exclamation mark. Turning the image upside down relates to the word "controversial".
 
-In practice, I seldom use rotations in my presentations. There are two reasons for that: partly because I find that it makes editing the base document more difficult, but mostly because it is of little interest for the type of content that I usually present.}
+In practice, I seldom use rotations in my presentations. There are two reasons for that: partly because I find that it makes the base document more difficult to edit, but mostly because it is of little interest for the type of content that I usually present.}
 
 ◊subsection{Refocus your speech on an "Important Point"}
 
