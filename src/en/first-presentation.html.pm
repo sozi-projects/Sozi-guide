@@ -111,16 +111,16 @@ The interface of Sozi supports other modes for positioning the camera using the 
     ◊em{Rotation} mode (◊key{◊icon["rotate-left"]}, or ◊key{◊icon["arrows"]} + ◊key{⇧ Shift}): ◊em{click and drag} to rotate around the center of the current frame.
 }
 
-Create a new frame and change its title to "Important Point".
+Add a new frame and change its title to "Important Point".
 Practise switching from one mode to another and position the camera to match the screenshot below.
 
 ◊image["../assets/en/big-ideas-images/big-ideas-03-important-point.png" #:alt "The third frame of the presentation : Important Point"]
 
 ◊subsection{Take a step back and consider "The Big Picture"}
 
-◊draft{This section has not been written yet.}
-
-Sometimes...
+It can happen that we lose our bearings and have a hard time positioning the next frame. It may help to reset the camera so that it shows the whole source document.
+Add a new frame and change its title to "The Big Picture".
+In section ◊em{Layer} of the properties pane, click on the ◊key{◊icon["eraser"]} button. Then use the actions that you already know to move the camera and match the screenshot below.
 
 ◊image["../assets/en/big-ideas-images/big-ideas-04-big-picture.png" #:alt "The fourth frame of the presentation: The Big Picture"]
 
@@ -128,7 +128,7 @@ Sometimes...
 
 ◊draft{This section has not been written yet.}
 
-Create two new frames...
+Add two new frames...
 
 ◊image["../assets/en/big-ideas-images/big-ideas-05-deep-thought.png" #:alt "The fifth frame of the presentation: Deep Thought"]
 
