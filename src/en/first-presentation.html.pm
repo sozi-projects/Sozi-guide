@@ -126,13 +126,14 @@ In section ◊em{Layer} of the properties pane, click on the ◊key{◊icon["era
 
 ◊subsection{Meditate on this "Deep Thought" and come up with a "Bright Idea"}
 
-◊draft{This section has not been written yet.}
-
-Add two new frames...
+Add two new frames and change their titles to "Deep Tought" and "Bright Idea". For each of these frames, position the camera to match the screenshots below.
 
 ◊image["../assets/en/big-ideas-images/big-ideas-05-deep-thought.png" #:alt "The fifth frame of the presentation: Deep Thought"]
 
 ◊image["../assets/en/big-ideas-images/big-ideas-06-bright-idea.png" #:alt "The sixth frame of the presentation: Bright Idea"]
+
+◊block-quote{Frame "Bright Idea" makes use of the zoom-in effect to draw the attention to a specific element of the previous frame.
+On the contrary, in frame "The Big Picture", we used a zoom-out effect to show an overview of several preceding frames.}
 
 ◊section{Save the presentation and contemplate the result}
 
