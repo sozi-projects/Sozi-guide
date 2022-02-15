@@ -132,8 +132,7 @@ Add two new frames and change their titles to "Deep Tought" and "Bright Idea". F
 
 ◊image["../assets/en/big-ideas-images/big-ideas-06-bright-idea.png" #:alt "The sixth frame of the presentation: Bright Idea"]
 
-◊block-quote{Frame "Bright Idea" makes use of the zoom-in effect to draw the attention to a specific element of the previous frame.
-On the contrary, in frame "The Big Picture", we used a zoom-out effect to show an overview of several preceding frames.}
+◊block-quote{Frame "Bright Idea" makes use of the zoom-in effect to draw the attention to a specific element of the previous frame. On the contrary, in frame "The Big Picture", we used a zoom-out effect to show an overview of several preceding frames.}
 
 ◊section{Save the presentation and contemplate the result}
 

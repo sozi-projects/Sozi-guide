@@ -130,8 +130,7 @@ Créez deux nouvelles vues intitulées "Pensée profonde" et "Idée lumineuse". 
 
 ◊image["../assets/fr/grandes-idees-images/grandes-idees-06-idee-lumineuse.png" #:alt "La sixième vue de la présentation : Idée lumineuse"]
 
-◊block-quote{La vue "Idée lumineuse" exploite le zoom avant afin de focaliser l'attention sur un élément précis de la vue précédente.
-Dans la vue intitulée "Vue d'ensemble", au contraire, nous avons utilisé le zoom arrière pour faire la synthèse de plusieurs vues précédentes.}
+◊block-quote{La vue "Idée lumineuse" exploite le zoom avant afin de focaliser l'attention sur un élément précis de la vue précédente. Dans la vue intitulée "Vue d'ensemble", au contraire, nous avons utilisé le zoom arrière pour faire la synthèse de plusieurs vues précédentes.}
 
 ◊section{Enregistrons la présentation et contemplons le résultat}
 
