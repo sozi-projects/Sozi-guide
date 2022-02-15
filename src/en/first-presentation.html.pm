@@ -101,9 +101,18 @@ In practice, I seldom use rotations in my presentations. There are two reasons f
 
 ◊subsection{Refocus your speech on an "Important Point"}
 
-◊draft{This section has not been written yet.}
+The interface of Sozi supports other modes for positioning the camera using the mouse. The actual effect of the ◊em{click-and-drag} action in the preview pane depends on the current mode. To select a mode, you can use three buttons of the toolbar, possibly combined with certain keys of your keyboard:
 
-The interface of Sozi...
+◊itemize{
+    ◊em{Translation} mode (button ◊key{◊icon["arrows"]} on): ◊em{click and drag} to move the camera.
+
+    ◊em{Zoom} mode (◊key{◊icon["expand"]}, or ◊key{◊icon["arrows"]} + ◊key{Alt}): ◊em{click and drag} away from the center to expand, towards the center to shrink.
+
+    ◊em{Rotation} mode (◊key{◊icon["rotate-left"]}, or ◊key{◊icon["arrows"]} + ◊key{⇧ Shift}): ◊em{click and drag} to rotate around the center of the current frame.
+}
+
+Create a new frame and change its title to "Important Point".
+Practise switching from one mode to another and position the camera to match the screenshot below.
 
 ◊image["../assets/en/big-ideas-images/big-ideas-03-important-point.png" #:alt "The third frame of the presentation : Important Point"]
 

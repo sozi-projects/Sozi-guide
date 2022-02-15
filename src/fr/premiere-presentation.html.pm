@@ -104,7 +104,7 @@ L'interface de Sozi offre d'autres modes d'utilisation de la souris pour positio
 ◊itemize{
     Mode ◊em{translation} (bouton ◊key{◊icon["arrows"]} activé) : ◊em{cliquer-glisser} pour déplacer la caméra.
 
-    Mode ◊em{zoom} (◊key{◊icon["expand"]}, ou ◊key{◊icon["arrows"]}+◊key{Alt}) : ◊em{cliquer-glisser} en s'éloignant du centre pour agrandir, en se rapprochant du centre pour rétrécir.
+    Mode ◊em{zoom} (◊key{◊icon["expand"]}, ou ◊key{◊icon["arrows"]} + ◊key{Alt}) : ◊em{cliquer-glisser} en s'éloignant du centre pour agrandir, en se rapprochant du centre pour rétrécir.
 
     Mode ◊em{rotation} (◊key{◊icon["rotate-left"]}, ou ◊key{◊icon["arrows"]} + ◊key{⇧ Maj}) : ◊em{cliquer-glisser} pour tourner autour du centre de la vue courante.
 }
