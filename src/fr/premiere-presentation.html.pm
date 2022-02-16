@@ -193,7 +193,7 @@ Revenez dans la fenêtre du navigateur et rafraîchissez la page. Le champ de la
 ◊itemize{
     Le bouton que vous venez d'utiliser, dans le panneau des propriétés, sert à activer ou à désactiver le rognage sur les vues sélectionnées.
 
-    Le bouton situé dans la barre d'outils permet de passer en mode ◊em{Édition de la région à rogner}. Dans ce mode, vous pouvez utiliser la souris dans la fenêtre de prévisualisation pour redimensionner le rectangle de rognage.
+    Le bouton situé dans la barre d'outils permet de passer en mode ◊em{Édition de la région à rogner}. Dans ce mode, vous pouvez utiliser la souris dans le panneau de prévisualisation pour redimensionner le rectangle de rognage.
 }}
 
 ◊subsection{Ajustons le temps des transitions}

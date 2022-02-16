@@ -168,21 +168,33 @@ Like in the screenshot above, some elements that we did not intend to show may b
 
 ◊section{Take control of space and time}
 
-◊draft{This section has not been written yet.}
-
-Come back to Sozi...
+Come back to Sozi but keep the browser window open. In the following steps, we will switch between both applications several times.
 
 ◊subsection{Adjust the camera's field of view}
 
-◊draft{This section has not been written yet.}
+The ◊em{Clip} function allows to restrict the field of the camera to a user-defined rectangular region. By default, this region maps to the entire preview pane but you can modify it if you want.
 
-The ◊em{Clip} function...
+In the current presentation, we will just enable the clipping effect to make the web browser display exactly the same region as Sozi:
+
+◊enumerate{
+    In the timeline, click the ◊em{Default} cell. This action selects all frames.
+
+    In section ◊em{Layer} of the properties pane, click on the ◊key{◊icon["crop"]} button. Clipping is now enabled in all selected frames.
+}
 
 ◊image["../assets/en/big-ideas-images/big-ideas-clip.png" #:alt "Enable clipping in all frames"]
 
-Come back to the browser window...
+Come back to the browser window and reload the page. The field of the camera now respects the 16:10 aspect ratio that we have set up in Sozi, even if the window has a different format:
 
 ◊image["../assets/en/big-ideas-images/big-ideas-clip-chromium.png" #:alt "Clipping effect after opening the presentation in Chromium"]
+
+◊block-quote{There are two ◊key{◊icon["crop"]} buttons in the interface of Sozi and it can be confusing:
+
+◊itemize{
+    The button that you have just used, in the properties pane, enables or disables clipping in the selected frames.
+
+    With the button located in the toolbar, you can switch to the ◊em{Clipping region edit mode}. In this mode, you can use the mouse in the preview pane to resize the clipping rectangle.
+}}
 
 ◊subsection{Tweak the transition timing}
 
