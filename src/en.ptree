@@ -19,5 +19,9 @@
             en/timeline.html
             en/conversion.html
         }
+        ◊en/playing.html{
+            en/playing-direct.html
+            en/presenter-console.html
+        }
     }
 }

@@ -138,13 +138,35 @@ Add two new frames and change their titles to "Deep Tought" and "Bright Idea". F
 
 ◊draft{This section has not been written yet.}
 
-By default...
+You can save the presentation by clicking on the ◊key{◊icon["download"]} button in the toolbar. If it is greyed out, it means that the presentation has already been saved.
+
+By default, Sozi saves the presentation automatically every time the editor window loses the ◊em{focus}, i.e. every time you switch to another window, or when closing the application. This behavior can be modified in the ◊link["preferences.html"]{preferences of Sozi}.
+
+Our work folder now contains four documents:
+
+◊itemize{
+    ◊code{big-ideas.svg} is the base graphic document.
+
+    ◊code{big-ideas.sozi.json} contains the presentation data.
+
+    ◊code{big-ideas.sozi.html} contains the complete presentation that can be displayed in a web browser. It is composed of: a copy of the base SVG document, the presentation data, the player software.
+
+    ◊code{big-ideas-presenter.sozi.html} contains the ◊link["presenter-console.html"]{presenter's console}. Its use is optional and is out of the scope of the current chapter.
+}
 
 ◊image["../assets/en/big-ideas-images/big-ideas-final-folder.png" #:alt "The final content of the folder sozi-big-ideas"]
 
-Open the document...
+◊warning{The files with extensions ◊code{.svg} and ◊code{.json} are the ◊em{source files} of your presentation. If one of these two files is lost or damaged, Sozi will not be able to restore your presentation.}
+
+Open the document ◊code{big-ideas.sozi.html} in your favorite web browser. Click inside the window or press the ◊key{Space} key to advance the presentation (for a detailed description of the available actions, read chapter ◊link["playing-direct.html"]{Playing a presentation in direct mode}).
 
 ◊image["../assets/en/big-ideas-images/big-ideas-chromium.png" #:alt "The presentation opened in the Chromium browser"]
+
+◊block-quote{Remember that we have chosen to display the frames with a 16:10 aspect ratio in Sozi. When playing the presentation, what happens if the browser window has a different aspect ratio?
+
+Resize the window and compare its content with the preview pane of Sozi. You should observe that the browser window always displays the current frame entirely, extending the field of view vertically or horizontally, but with no clipping.
+
+Like in the screenshot above, some elements that we did not intend to show may become visible. Let us learn how to hide them.}
 
 ◊section{Take control of space and time}
 

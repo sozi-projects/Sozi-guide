@@ -134,9 +134,9 @@ Créez deux nouvelles vues intitulées "Pensée profonde" et "Idée lumineuse". 
 
 ◊section{Enregistrons la présentation et contemplons le résultat}
 
-Par défaut, Sozi enregistre la présentation automatiquement à chaque fois que la fenêtre d'édition perd le ◊em{focus}, c'est-à-dire à chaque fois que nous basculons vers une autre fenêtre, ou au moment de quitter l'application. Ce comportement est modifiable dans les ◊link["preferences.html"]{préférences de Sozi}.
+Vous pouvez enregistrer la présentation en pressant le bouton ◊key{◊icon["download"]} de la barre d'outils. S'il est grisé, c'est que la présentation a déjà été enregistrée.
 
-En cas de doute, nous pouvons forcer l'enregistrement en pressant le bouton ◊key{◊icon["download"]} de la barre d'outils. S'il est grisé, c'est que la présentation a déjà été enregistrée.
+Par défaut, Sozi enregistre la présentation automatiquement à chaque fois que la fenêtre d'édition perd le ◊em{focus}, c'est-à-dire à chaque fois que nous basculons vers une autre fenêtre, ou au moment de quitter l'application. Ce comportement est modifiable dans les ◊link["preferences.html"]{préférences de Sozi}.
 
 Notre dossier de travail contient à présent quatre documents :
 
@@ -162,7 +162,7 @@ Ouvrez le document ◊code{grandes-idees.sozi.html} dans votre navigateur web pr
 
 ◊block-quote{Souvenez-vous que nous avons choisi d'afficher les vues avec un format de 16:10 dans Sozi. Que se passe-t-il si, au moment du visionnage, la fenêtre du navigateur a un format différent ?
 
-Redimensionnez la fenêtre et comparez son contenu avec la vue affichée dans Sozi. Vous devez observer que la fenêtre du navigateur affiche toujours l'intégralité de la vue courante, en élargissant le champ de vision verticalement ou horizontalement, mais sans jamais la tronquer.
+Redimensionnez la fenêtre et comparez son contenu avec la vue affichée dans Sozi. Vous devez observer que la fenêtre du navigateur affiche toujours l'intégralité de la vue courante, en élargissant le champ de vision verticalement ou horizontalement, sans jamais la tronquer.
 
 Comme dans la capture d'écran ci-dessus, cela peut faire apparaître des éléments que nous ne souhaitions pas afficher. Nous allons maintenant apprendre comment les cacher.}
 
