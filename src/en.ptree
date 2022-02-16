@@ -9,6 +9,10 @@
         en/installation.html
         en/first-presentation.html
     }
+    ◊en/going-further.html{
+        en/using-layers.html
+        en/timing-functions.html
+    }
     ◊en/reference.html{
         ◊en/editor.html{
             en/window.html

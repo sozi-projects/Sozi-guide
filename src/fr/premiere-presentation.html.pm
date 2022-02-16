@@ -177,7 +177,7 @@ La fonction ◊em{Rogner} permet de limiter le champ de la caméra à une régio
 Dans cette présentation, nous allons simplement activer le rognage pour que la région affichée dans le navigateur soit exactement celle affichée dans Sozi :
 
 ◊enumerate{
-    Dans la chronologie de la présentation, cliquez sur la case ◊em{Par défaut}. Cette action sélectionne toutes les vues.
+    Dans la chronologie de la présentation, cliquez sur la case ◊em{Par défaut} située tout à gauche. Cette action sélectionne toutes les vues.
 
     Dans la section ◊em{Calque} du panneau des propriétés, pressez le bouton ◊key{◊icon["crop"]}. Le rognage est maintenant activé sur toutes les vues sélectionnées.
 }
@@ -198,18 +198,18 @@ Revenez dans la fenêtre du navigateur et rafraîchissez la page. Le champ de la
 
 ◊subsection{Ajustons le temps des transitions}
 
-Dans la section ◊em{Transition} du panneau des propriétés, on trouve les réglages qui concernent l'animation du déplacement de la caméra entre la vue ◊strong{précédente} et la vue courante. Pour chaque vue, nous allons modifier les champs suivants :
+Dans la section ◊em{Transition} du panneau des propriétés, on trouve les réglages qui concernent le déplacement de la caméra entre la vue ◊strong{précédente} et la vue courante. Pour chaque vue, nous allons modifier les champs suivants :
 
 ◊itemize{
     ◊em{Durée (secondes)} : la durée du déplacement.
 
-    ◊em{Fonction de progression} : une fonction qui règle la vitesse de déplacement de la caméra à chaque instant de la transition.
+    ◊em{Fonction de progression} : une fonction qui définit la distance parcourue par la caméra à chaque instant de la transition. Les fonctions proposées par Sozi permettent d'obtenir différents effets d'accélération ou de décélération.
 }
 
-Voici un récapitulatif des réglages que je vous propose d'utiliser. Vous pouvez en essayer d'autres pour les comparer. Dans la suite de ce livre, une page est dédiée aux ◊link["fonctions-de-progression.html"]{fonctions de progression} :
+Voici un récapitulatif des réglages que je vous propose d'utiliser dans notre présentation. Vous pouvez en essayer d'autres pour les comparer. Dans la suite de ce livre, une page est dédiée aux ◊link["fonctions-de-progression.html"]{fonctions de progression} :
 
 ◊table{
-    ◊th{Vues} ◊th{Durée (secondes)} ◊th{Fonction de progression}
+    ◊th{Vue} ◊th{Durée (secondes)} ◊th{Fonction de progression}
 
     ◊td{1}   ◊td{0}                ◊td{Instantanée au début (step start)}
 

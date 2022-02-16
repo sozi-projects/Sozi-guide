@@ -177,7 +177,7 @@ The ◊em{Clip} function allows to restrict the field of the camera to a user-de
 In the current presentation, we will just enable the clipping effect to make the web browser display exactly the same region as Sozi:
 
 ◊enumerate{
-    In the timeline, click the ◊em{Default} cell. This action selects all frames.
+    In the timeline, click in the ◊em{Default} cell on the left. This action selects all frames.
 
     In section ◊em{Layer} of the properties pane, click on the ◊key{◊icon["crop"]} button. Clipping is now enabled in all selected frames.
 }
@@ -198,13 +198,35 @@ Come back to the browser window and reload the page. The field of the camera now
 
 ◊subsection{Tweak the transition timing}
 
-◊draft{This section has not been written yet.}
+In section ◊em{Transition} of the properties pane, you can find the settings that control the camera movement between the ◊strong{previous} frame and the current frame. For each frame, we will modify the following fields:
 
-In section ◊em{Transition}...
+◊itemize{
+    ◊em{Duration (seconds)}: the duration of the movement.
+
+    ◊em{Timing function}: a function that defines the distance travelled by the camera at each moment of the transition. The functions available in Sozi allow to achieve different speed-up or slow-down effects.
+}
+
+Here is a recap of the settings that I suggest to use in the current presentation. You can try other values for the sake of comparison. Another page of this book is dedicated to the ◊link["timing-functions.html"]{timing functions}:
+
+◊table{
+    ◊th{Frame} ◊th{Duration (seconds)} ◊th{Timing function}
+
+    ◊td{1}     ◊td{0}                  ◊td{Step start}
+
+    ◊td{2}     ◊td{0.5}                ◊td{Linar}
+
+    ◊td{3}     ◊td{0.5}                ◊td{Linar}
+
+    ◊td{4}     ◊td{0.5}                ◊td{Ease}
+
+    ◊td{5}     ◊td{2}                  ◊td{Ease-in-out}
+
+    ◊td{6}     ◊td{0.5}                ◊td{Ease}
+}
 
 ◊image["../assets/en/big-ideas-images/big-ideas-transition.png" #:alt "Setting up a transition"]
 
-Come back to the browser window...
+Come back to the browser window, reload the page and observe how the camera moves with these new settings.
 
 ◊subsection{Automate the presentation process}
 
