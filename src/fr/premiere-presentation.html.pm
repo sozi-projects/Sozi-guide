@@ -243,7 +243,7 @@ Pour obtenir ce résultat, nous devons régler un ◊em{délai} sur les vues 2 �
 
     Saisissez la valeur "3" dans le champ ◊em{Délai (secondes)}.
 
-    Cliquez sur la colonne 6 pour sélectionner la vue "Idée lumineuse" seule.
+    Cliquez sur la colonne 6 de la chronologie pour sélectionner la vue "Idée lumineuse" seule.
 
     Saisissez la valeur "5" dans le champ ◊em{Délai (secondes)}.
 }

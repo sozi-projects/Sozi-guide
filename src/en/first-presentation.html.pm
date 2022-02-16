@@ -230,13 +230,29 @@ Come back to the browser window, reload the page and observe how the camera move
 
 ◊subsection{Automate the presentation process}
 
-◊draft{This section has not been written yet.}
+In the presentation embedded at the top of this page, only the transition from the first to the second frame requires an action from the user. After the second frame, transitions happen automatically, every three seconds for frames 2 to 5, and after five seconds for the last frame.
 
-In the presentation...
+In order to achieve this result, we need to set up a ◊em{timeout} in frames 2 to 6 of the presentation:
+
+◊enumerate{
+    In the timeline, click inside column 2 to select frame "Controversial Statement".
+
+    Keep the ◊key{⇧ Shift} key pressed and click in column 6 to extend the selection to frame "Bright Idea".
+
+    In the properties pane, click on the ◊key{◊icon["clock-o"]} button to enable the automatic transition to the next frame after a delay.
+
+    Set the ◊em{Timeout (seconds)} field to "3".
+
+    Click inside column 6 of the timeline to select frame "Bright Idea" alone.
+
+    Set the ◊em{Timeout (seconds)} field to "5".
+}
 
 ◊image["../assets/en/big-ideas-images/big-ideas-timeout.png" #:alt "Setting up automatic transitions"]
 
-Come back to the browser window...
+Come back to the browser window, navigate to the first frame of the presentation and reload the page. Click inside the window or press the ◊key{Space} key to move to the second frame; then you can let the presentation play. You can also move from a frame to the next by clicking or pressing the ◊key{Space} key before the timeout.
+
+◊block-quote{When we set up an automatic transition after the last frame, we get a presentation that plays in a loop.}
 
 ◊section{Recap}
 
