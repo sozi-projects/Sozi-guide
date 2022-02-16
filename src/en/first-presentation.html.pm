@@ -136,8 +136,6 @@ Add two new frames and change their titles to "Deep Tought" and "Bright Idea". F
 
 ◊section{Save the presentation and contemplate the result}
 
-◊draft{This section has not been written yet.}
-
 You can save the presentation by clicking on the ◊key{◊icon["download"]} button in the toolbar. If it is greyed out, it means that the presentation has already been saved.
 
 By default, Sozi saves the presentation automatically every time the editor window loses the ◊em{focus}, i.e. every time you switch to another window, or when closing the application. This behavior can be modified in the ◊link["preferences.html"]{preferences of Sozi}.
@@ -166,7 +164,7 @@ Open the document ◊code{big-ideas.sozi.html} in your favorite web browser. Cli
 
 Resize the window and compare its content with the preview pane of Sozi. You should observe that the browser window always displays the current frame entirely, extending the field of view vertically or horizontally, but with no clipping.
 
-Like in the screenshot above, some elements that we did not intend to show may become visible. Let us learn how to hide them.}
+Like in the screenshot above, some elements that we did not intend to show may become visible. Now let me explain how to hide them.}
 
 ◊section{Take control of space and time}
 
