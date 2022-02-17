@@ -1,6 +1,6 @@
-# Sozi-book
+# Sozi Guide
 
-Source code of the Sozi book.
+Source code of the [Sozi Guide](http://sozi.guide).
 
 ## Build tools and dependencies
 
@@ -28,7 +28,7 @@ raco pollen start src
 Then open a web browser at:
 
 * http://localhost:8080/fr/ for the French version
-* http://localhost:8080/fr/ for the English version
+* http://localhost:8080/en/ for the English version
 
 ## Publishing
 
