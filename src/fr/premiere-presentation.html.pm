@@ -256,7 +256,9 @@ Revenez dans la fenêtre du navigateur, revenez sur la première vue de la prés
 
 ◊section{Récapitulons}
 
-Nous avons construit ensemble une présentation complète avec Sozi. La conception du document SVG de base n'a pas été abordée car elle sort du cadre de ce manuel. Dans ce chapitre, nous avons appris à nous repérer dans l'interface de Sozi en utilisant les fonctions les plus courantes :
+Dans ce chapitre, nous avons découvert et mis en pratique les principales fonctionnalités de Sozi pour créer une présentation à partir d'un document SVG. Je n'ai pas expliqué les techniques que j'ai utilisées pour dessiner ce document SVG car elles sortent du cadre de ce manuel.
+
+Nous avons appris à nous repérer dans l'interface de Sozi en utilisant les fonctions les plus courantes :
 
 ◊itemize{
     Choisir le rapport d'aspect du panneau de prévisualisation.
@@ -286,4 +288,4 @@ Ma version de cette présentation est disponible en téléchargement ci-dessous.
     ◊link["../assets/fr/grandes-idees/grandes-idees.sozi.html" #:download #t]{◊item-icon["download"]◊code{grandes-idees.sozi.html}}
 }
 
-◊warning{Dans cette présentation, les actions au clavier ont été désactivées pour faciliter son intégration à cette page. Vous pouvez les rétablir dans la section ◊em{Visionnage} du panneau des propriétés.}
+◊warning{Dans cette présentation, les actions au clavier ont été désactivées en prévision de son intégration à cette page. Vous pouvez les rétablir dans la section ◊em{Visionnage} du panneau des propriétés.}

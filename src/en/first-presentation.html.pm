@@ -256,9 +256,29 @@ Come back to the browser window, navigate to the first frame of the presentation
 
 ◊section{Recap}
 
-◊draft{This section has not been written yet.}
+In this chapter, you have discovered and practised the main features of Sozi to create a presentation from an SVG document. I have not explained the techniques that I have used to draw this SVG document because they are out of the scope of this manual.
 
-We have made a complete presentation with Sozi...
+You have learnt to find your way in the interface of Sozi by using the most common functions:
+
+◊itemize{
+    Assign an aspect ratio to the preview pane.
+
+    Create a sequence of frames.
+
+    Give a title to each frame.
+
+    Move the camera by means of rotation, zoom and translation, using various interaction modes with the preview pane.
+
+    Use the ◊em{Clip} function to restrict the field of the camera so that it matches the preview pane.
+
+    Change the transition time and use various timing functions.
+
+    Trigger certain transitions automatically after a delay.
+
+    Play a presentation in a web browser.
+}
+
+My own version of this presentation can be downloaded from the links below. Take care to save the files in a separate folder to avoid overwriting yours.
 
 ◊itemize-icons{
     ◊link["../assets/en/big-ideas/big-ideas.svg" #:download #t]{◊item-icon["download"]◊code{big-ideas.svg}}
@@ -267,3 +287,5 @@ We have made a complete presentation with Sozi...
 
     ◊link["../assets/en/big-ideas/big-ideas.sozi.html" #:download #t]{◊item-icon["download"]◊code{big-ideas.sozi.html}}
 }
+
+◊warning{In this presentation, keyboard actions have been disabled prior to embedding into this page. You can restore them in section ◊em{Player} of the properties pane.}
