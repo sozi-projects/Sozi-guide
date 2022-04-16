@@ -11,35 +11,35 @@ Click anywhere in the image below and let the presentation play.
 
 ◊sozi["../assets/en/big-ideas/big-ideas.sozi.html"]
 
-◊section{Discover the base document}
+◊section{Discover the base image}
 
-This presentation is based on an SVG document that I have created for you using ◊link["https://inkscape.org"]{Inkscape}. Follow the link below to download it, and save it to your preferred location. I recommend to save it in a new folder ◊code{sozi-big-ideas} that will gather all the files of this presentation.
+This presentation is based on an SVG image file that I have created for you using ◊link["https://inkscape.org"]{Inkscape}. Follow the link below to download it and save it to your preferred location. I recommend to save it in a new folder ◊code{sozi-big-ideas} that will gather all the files of this presentation.
 
 ◊itemize-icons{
     ◊link["../assets/en/big-ideas/big-ideas.svg" #:download #t]{◊item-icon["download"]◊code{big-ideas.svg}}
 }
 
-◊image["../assets/en/big-ideas-images/big-ideas-initial-folder.png" #:alt "The base document big-ideas.svg in its folder sozi-big-ideas"]
+◊image["../assets/en/big-ideas-images/big-ideas-initial-folder.png" #:alt "The base graphic file big-ideas.svg in its folder sozi-big-ideas"]
 
-Once the download process is complete, you can open the document ◊code{big-ideas.svg} with Inkscape, inspect its content and modify it to your taste. In the rest of this chapter, we will make modifications to observe the interactions between Inkscape and Sozi.
+Once the download process is complete, you can open the file ◊code{big-ideas.svg} with Inkscape, inspect its content and modify it to your taste. In the rest of this chapter, we will make modifications to observe the interactions between Inkscape and Sozi.
 
-◊image["../assets/en/big-ideas-images/big-ideas-inkscape.png" #:alt "The base document big-ideas.svg opened in Inkscape"]
+◊image["../assets/en/big-ideas-images/big-ideas-inkscape.png" #:alt "The base image big-ideas.svg opened in Inkscape"]
 
-◊section{Get acquainted with the interface of Sozi}
+◊section{Get to know the interface of Sozi}
 
-Now open the document ◊code{big-ideas.svg} with Sozi. The picture below highlights the main areas of the user interface.
+Now open the file ◊code{big-ideas.svg} with Sozi. The picture below highlights the main areas of the user interface.
 
 ◊itemize{
-    The ◊link["preview.html"]{preview pane} shows what the camera can see. After opening an SVG document for the first time, it shows the whole document.
+    The ◊link["preview.html"]{preview pane} shows what the camera can see. After opening an image file for the first time, it shows the whole page.
 
-    The ◊link["properties.html"]{properties pane} allows you to edit the parameters of the presentation, of the selected frames, and of the transitions between frames.
+    The ◊link["properties.html"]{properties pane} allows you to edit the parameters of the presentation, of the selected frames and of the transitions between frames.
 
     The ◊link["toolbar.html"]{toolbar} allows you to select the edition mode for the current frame and to perform various operations: undo/redo the last action, save the presentation, etc. Hover over each button with the mouse cursor to show a tooltip.
 
     The ◊link["timeline.html"]{timeline} shows the frame sequence. It allows to add, delete, select or reorder frames.
 }
 
-◊image["../assets/en/big-ideas-images/big-ideas-sozi-interface.svg" #:alt "The base document big-ideas.svg opened in Sozi"]
+◊image["../assets/en/big-ideas-images/big-ideas-sozi-interface.svg" #:alt "The base image big-ideas.svg opened in Sozi"]
 
 ◊block-quote{The content of these areas is explained in more detail in part ◊link["editor.html"]{Interface of the presentation editor} of this book. Reading that part is not necessary to understand the rest of this page.}
 
@@ -97,7 +97,7 @@ Preview the transition between the first two frames: click on the first and seco
 
 In this example, I have played with the the transformation of the "i" (for "information") into an exclamation mark. Turning the image upside down relates to the word "controversial".
 
-In practice, I seldom use rotations in my presentations. There are two reasons for that: partly because I find that it makes the base document more difficult to edit, but mostly because it is of little interest for the type of content that I usually present.}
+In practice, I seldom use rotations in my presentations. There are two reasons for that: partly because I find that it makes the base graphic file more difficult to edit, but mostly because it is of little interest for the type of content that I usually present.}
 
 ◊subsection{Refocus your speech on an "Important Point"}
 
@@ -112,13 +112,13 @@ The interface of Sozi supports other modes for positioning the camera using the 
 }
 
 Add a new frame and change its title to "Important Point".
-Practise switching from one mode to another and position the camera to match the screenshot below.
+Practice switching from one mode to another and position the camera to match the screenshot below.
 
 ◊image["../assets/en/big-ideas-images/big-ideas-03-important-point.png" #:alt "The third frame of the presentation : Important Point"]
 
 ◊subsection{Take a step back and consider "The Big Picture"}
 
-It can happen that we lose our bearings and have a hard time positioning the next frame. It may help to reset the camera so that it shows the whole source document.
+Sometimes, when creating a new frame, it can be easier to position the camera if we can see the whole page.
 Add a new frame and change its title to "The Big Picture".
 In section ◊em{Layer} of the properties pane, click on the ◊key{◊icon["eraser"]} button. Then use the actions that you already know to move the camera and match the screenshot below.
 
@@ -140,14 +140,14 @@ You can save the presentation by clicking on the ◊key{◊icon["download"]} but
 
 By default, Sozi saves the presentation automatically every time the editor window loses the ◊em{focus}, i.e. every time you switch to another window, or when closing the application. This behavior can be modified in the ◊link["preferences.html"]{preferences of Sozi}.
 
-Our work folder now contains four documents:
+Our work folder now contains four files:
 
 ◊itemize{
-    ◊code{big-ideas.svg} is the base graphic document.
+    ◊code{big-ideas.svg} is the base graphic file.
 
     ◊code{big-ideas.sozi.json} contains the presentation data.
 
-    ◊code{big-ideas.sozi.html} contains the complete presentation that can be displayed in a web browser. It is composed of: a copy of the base SVG document, the presentation data, the player software.
+    ◊code{big-ideas.sozi.html} contains the complete presentation that can be displayed in a web browser. It is composed of: a copy of the base graphic file, a copy of the presentation data, and a copy the player software.
 
     ◊code{big-ideas-presenter.sozi.html} contains the ◊link["presenter-console.html"]{presenter's console}. Its use is optional and is out of the scope of the current chapter.
 }
@@ -156,7 +156,7 @@ Our work folder now contains four documents:
 
 ◊warning{The files with extensions ◊code{.svg} and ◊code{.json} are the ◊em{source files} of your presentation. If one of these two files is lost or damaged, Sozi will not be able to restore your presentation.}
 
-Open the document ◊code{big-ideas.sozi.html} in your favorite web browser. Click inside the window or press the ◊key{Space} key to advance the presentation (for a detailed description of the available actions, read chapter ◊link["playing-direct.html"]{Playing a presentation in direct mode}).
+Open the file ◊code{big-ideas.sozi.html} in your favorite web browser. Click inside the window or press the ◊key{Space} key to advance the presentation (for a detailed description of the available actions, read chapter ◊link["playing-direct.html"]{Playing a presentation in direct mode}).
 
 ◊image["../assets/en/big-ideas-images/big-ideas-chromium.png" #:alt "The presentation opened in the Chromium browser"]
 
@@ -256,7 +256,7 @@ Come back to the browser window, navigate to the first frame of the presentation
 
 ◊section{Recap}
 
-In this chapter, you have discovered and practised the main features of Sozi to create a presentation from an SVG document. I have not explained the techniques that I have used to draw this SVG document because they are out of the scope of this manual.
+In this chapter, you have discovered and practised the main features of Sozi to create a presentation from a graphic file in the SVG format. I have not explained the techniques that I have used to draw the original graphics because they are out of the scope of this manual.
 
 You have learnt to find your way in the interface of Sozi by using the most common functions:
 
