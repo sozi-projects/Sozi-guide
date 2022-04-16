@@ -289,3 +289,5 @@ Ma version de cette présentation est disponible en téléchargement ci-dessous.
 }
 
 ◊warning{Dans cette présentation, les actions au clavier ont été désactivées en prévision de son intégration à cette page. Vous pouvez les rétablir dans la section ◊em{Visionnage} du panneau des propriétés.}
+
+◊draft{Voulez-vous m'aider à améliorer le guide de Sozi ? Faites-moi part de vos remarques dans ◊link["https://github.com/sozi-projects/Sozi-guide/discussions/3"]{la conversation dédiée à ce chapitre sur le forum de discussion}.}

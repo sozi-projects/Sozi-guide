@@ -4,8 +4,6 @@
 
 ◊chapter{First presentation: show off your Big Ideas}
 
-◊draft{This chapter is still a draft. Please come back in a few days to read a more complete version.}
-
 The first presentation that we will make together is titled "Big Ideas". As a teaser, let me show you the result that you will get if you follow my instructions.
 Click anywhere in the image below and let the presentation play.
 
@@ -289,3 +287,5 @@ My own version of this presentation can be downloaded from the links below. Take
 }
 
 ◊warning{In this presentation, keyboard actions have been disabled prior to embedding into this page. You can restore them in section ◊em{Player} of the properties pane.}
+
+◊draft{Would you like to help me improve the Sozi Guide? Join the ◊link["https://github.com/sozi-projects/Sozi-guide/discussions/2"]{discussion about this chapter in the forum} and add a comment.}
