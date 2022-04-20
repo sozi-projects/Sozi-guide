@@ -4,7 +4,9 @@
 
 ◊chapter{Installation des logiciels}
 
-Pour utiliser Sozi, vous aurez besoin de trois logiciels :
+◊section{Quels logiciels devons-nous installer ?}
+
+Pour utiliser Sozi, nous aurons besoin de trois logiciels :
 
 ◊itemize{
     Pour dessiner le contenu graphique d'une présentation : un logiciel de dessin vectoriel capable d'enregistrer au format SVG. Je recommande le logiciel libre ◊link["https://inkscape.org/fr/?switchlang=fr"]{Inkscape}, disponible pour GNU/Linux, Windows et macOS.
@@ -16,51 +18,63 @@ Pour utiliser Sozi, vous aurez besoin de trois logiciels :
 
 ◊section{Où trouver la dernière version de Sozi ?}
 
-La seule source officielle pour télécharger Sozi est le dépôt GitHub du projet : ◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{ouvrez ce lien dans un nouvel onglet pour accéder à la page de téléchargement de la dernière version}. Descendez jusqu'à la section ◊em{Assets} et repérez le fichier qui correspond à votre système d'exploitation :
+◊warning{Le ◊link["https://github.com/sozi-projects/Sozi"]{projet Sozi sur GitHub} est la seule source officielle pour télécharger Sozi.}
+
+◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{Ouvrez ce lien dans un nouvel onglet} pour accéder à la page de téléchargement de la dernière version. Descendez jusqu'à la section ◊em{Assets} et repérez le fichier qui correspond à votre système d'exploitation :
 
 ◊table{
-    ◊th{Systèmes d'exploitation} ◊th{Extension du fichier à télécharger}
+    ◊th{Système d'exploitation} ◊th{Fichier à télécharger}
 
-    ◊td{Windows}                                     ◊td{◊code{.exe}}
+    ◊td{Windows} ◊td{◊code{Sozi.Setup.VERSION.exe}}
 
-    ◊td{macOS}                                       ◊td{◊code{-mac.tar.xz}}
+    ◊td{macOS} ◊td{◊code{Sozi-VERSION-mac.tar.xz}}
 
-    ◊td{Debian, Ubuntu et dérivées}                  ◊td{◊code{.deb}}
+    ◊td{Debian, Ubuntu et dérivées} ◊td{◊code{sozi_VERSION_amd64.deb}}
 
-    ◊td{Fedora, OpenSUSE}                            ◊td{◊code{.rpm}}
+    ◊td{Fedora, OpenSUSE} ◊td{◊code{sozi-VERSION.x86_64.rpm}}
 
-    ◊td{Archlinux, Manjaro (voir remarque plus bas)} ◊td{◊code{.pacman}}
+    ◊td{Archlinux, Manjaro (voir remarque plus bas)} ◊td{◊code{sozi-VERSION.pacman}}
 
-    ◊td{Toutes distributions GNU/Linux}              ◊td{◊code{.AppImage}}
+    ◊td{Toutes distributions GNU/Linux} ◊td{◊code{Sozi-VERSION.AppImage}}
 }
 
-Les utilisateurs d'Archlinux ou d'une distribution dérivée peuvent aussi installer Sozi depuis le dépôt AUR (◊em{Archlinux User Repository}). Il existe deux paquets : ◊link["https://aur.archlinux.org/packages/sozi"]{sozi} s'installe à partir des fichiers sources ; ◊link["https://aur.archlinux.org/packages/sozi-bin"]{sozi-bin} installe le fichier ◊code{.pacman} officiel.
+◊blockquote{
+    Dans le tableau ci-dessus, ◊code{VERSION} représente le numéro de version de Sozi. Référez-vous à la section ◊link["a-propos-de-sozi.html#sec-6"]{Que signifient les numéros de version de Sozi ?} pour en savoir plus.
+}
+
+Les utilisateurs d'Archlinux ou d'une distribution dérivée peuvent aussi installer Sozi depuis le dépôt AUR (◊em{Archlinux User Repository}). Il existe deux options d'installation : ◊link["https://aur.archlinux.org/packages/sozi"]{sozi} construit Sozi à partir de son dépôt de code source ; ◊link["https://aur.archlinux.org/packages/sozi-bin"]{sozi-bin} télécharge et installe le fichier ◊code{.pacman} officiel.
 
 ◊warning{
     Sozi est uniquement disponible pour l'architecture x86-64.
 }
 
-◊section{Installons Sozi sous Windows}
+◊section{Comment installer Sozi...}
 
-Dans la ◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{page de téléchargement de Sozi}, choisissez le fichier dont l'extension est ◊code{.exe}. Une fois téléchargé, vous devrez peut-être signaler ce fichier comme fiable avant de pouvoir l'enregistrer.
+◊subsection{... sous Windows}
 
-Ouvrez votre dossier ◊code{Téléchargements} et double-cliquez sur le fichier ◊code{Sozi.Setup.VERSION.exe}, où ◊code{VERSION} est le numéro de la version de Sozi à installer.
+Dans la ◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{page de téléchargement de Sozi}, choisissez le fichier dont l'extension est ◊code{.exe}.
+Quand le fichier a été entièrement téléchargé, ouvrez votre dossier ◊code{Téléchargements} et double-cliquez sur l'icône du fichier ◊code{Sozi.Setup.VERSION.exe}.
 
 ◊warning{
-    Si vous obtenez le message "Windows a protégé votre ordinateur...", choisissez ◊em{Informations complémentaires}, et pressez le bouton ◊em{Exécuter quand même}.
+    Si vous obtenez le message "Windows a protégé votre ordinateur...", choisissez ◊em{Informations complémentaires} et pressez le bouton ◊em{Exécuter quand même}.
 }
 
 À la fin de l'installation, Sozi peut être lancé à partir du menu des applications.
 
-◊section{Installons Sozi sous macOS}
+◊blockquote{Passons directement à la suite et ◊link["premiere-presentation.html"]{créons notre première présentation}.}
+
+◊subsection{... sous macOS}
 
 Dans la ◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{page de téléchargement de Sozi}, choisissez le fichier dont le nom se termine par ◊code{-mac.tar.xz}.
+Dans votre dossier ◊code{Téléchargements}, double-cliquez sur le fichier ◊code{Sozi-VERSION-mac.tar.xz} pour le désarchiver. Vous devez obtenir un dossier ◊code{Sozi.app}.
+Faites-le glisser dans votre dossier ◊code{Applications}.
 
-Dans votre dossier de téléchargements, double-cliquez sur le fichier ◊code{Sozi-VERSION-mac.tar.xz} pour le désarchiver. Vous devez obtenir un dossier ◊code{Sozi.app}. Faites-le glisser dans votre dossier d'applications.
+◊blockquote{Sozi est prêt à ◊link["premiere-presentation.html"]{créer votre première présentation}.}
 
-◊section{Installons Sozi sous Debian, Ubuntu et leurs dérivées}
+◊subsection{... sous Debian, Ubuntu et leurs dérivées}
 
-Dans la ◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{page de téléchargement de Sozi}, choisissez le fichier dont l'extension est ◊code{.deb} et enregistrez-le dans votre dossier ◊code{Téléchargements}. Ouvrez un terminal et exécutez la commande suivante, en remplaçant ◊code{VERSION} par le numéro de version qui figure dans le nom du fichier :
+Dans la ◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{page de téléchargement de Sozi}, choisissez le fichier dont l'extension est ◊code{.deb} et enregistrez-le dans votre dossier ◊code{Téléchargements}.
+Ouvrez un terminal et exécutez la commande suivante, en remplaçant ◊code{VERSION} par le numéro de version qui figure dans le nom du fichier :
 
 ◊pre{
     sudo dpkg -i $HOME/Téléchargements/sozi_VERSION_amd64.deb
@@ -68,9 +82,12 @@ Dans la ◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{page de
 
 Si tout s'est bien passé, vous pouvez démarrer Sozi à partir du menu des applications ou en tapant ◊code{sozi} dans un terminal.
 
-◊section{Installons Sozi sous Fedora}
+◊blockquote{Qu'attendons-nous pour ◊link["premiere-presentation.html"]{créer notre première présentation} ?}
 
-Dans la ◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{page de téléchargement de Sozi}, choisissez le fichier dont l'extension est ◊code{.rpm} et enregistrez-le dans votre dossier ◊code{Téléchargements}. Ouvrez un terminal et exécutez la commande suivante, en remplaçant ◊code{VERSION} par le numéro de version qui figure dans le nom du fichier :
+◊subsection{... sous Fedora}
+
+Dans la ◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{page de téléchargement de Sozi}, choisissez le fichier dont l'extension est ◊code{.rpm} et enregistrez-le dans votre dossier ◊code{Téléchargements}.
+Ouvrez un terminal et exécutez la commande suivante, en remplaçant ◊code{VERSION} par le numéro de version qui figure dans le nom du fichier :
 
 ◊pre{
     sudo dnf install $HOME/Téléchargements/sozi-VERSION.x86_64.rpm
@@ -78,21 +95,26 @@ Dans la ◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{page de
 
 Si tout s'est bien passé, vous pouvez démarrer Sozi à partir du menu des applications ou en tapant ◊code{/opt/Sozi/sozi} dans un terminal.
 
-◊section{Installons Sozi sous OpenSUSE}
+◊blockquote{C'est le moment idéal pour ◊link["premiere-presentation.html"]{créer notre première présentation}.}
 
-Dans la ◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{page de téléchargement de Sozi}, choisissez le fichier dont l'extension est ◊code{.rpm} et ouvrez-le avec YaST.
+◊subsection{... sous OpenSUSE}
+
+Dans la ◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{page de téléchargement de Sozi}, choisissez le fichier dont l'extension est ◊code{.rpm}.
+Une fois téléchargé, ouvrez-le avec YaST.
 
 ◊warning{
-    Si vous obtenez le message "rien ne fournit 'libuuid' ...", choisissez : "casser sozi-[...].x86_64 en ignorant certaines de ses dépendances". Pressez ensuite le bouton ◊em{OK - Essayer à nouveau}.
-
+    Si vous obtenez le message "rien ne fournit 'libuuid' ...", choisissez : "casser sozi-VERSION.x86_64 en ignorant certaines de ses dépendances". Pressez ensuite le bouton ◊em{OK - Essayer à nouveau}.
     Si vous obtenez le message "Le paquet Sozi est brisé, la vérification d'intégrité a échoué.", pressez le bouton ◊em{Ignorer}.
 }
 
 À la fin de l'installation, vous pouvez démarrer Sozi à partir du menu des applications ou en tapant ◊code{/opt/Sozi/sozi} dans un terminal.
 
-◊section{Installons Sozi sous Archlinux ou Manjaro}
+◊blockquote{Fêtons ce succès en ◊link["premiere-presentation.html"]{créant notre première présentation}.}
 
-Dans la ◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{page de téléchargement de Sozi}, choisissez le fichier dont l'extension est ◊code{.pacman} et enregistrez-le dans votre dossier ◊code{Téléchargements}. Ouvrez un terminal et exécutez la commande suivante, en remplaçant ◊code{VERSION} par le numéro de version qui figure dans le nom du fichier :
+◊subsection{... sous Archlinux ou Manjaro}
+
+Dans la ◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{page de téléchargement de Sozi}, choisissez le fichier dont l'extension est ◊code{.pacman} et enregistrez-le dans votre dossier ◊code{Téléchargements}.
+Ouvrez un terminal et exécutez la commande suivante, en remplaçant ◊code{VERSION} par le numéro de version qui figure dans le nom du fichier :
 
 ◊pre{
     sudo pacman -U $HOME/Téléchargements/sozi-VERSION.pacman
@@ -100,9 +122,12 @@ Dans la ◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{page de
 
 Si tout s'est bien passé, vous pouvez démarrer Sozi à partir du menu des applications ou en tapant ◊code{sozi} dans un terminal.
 
-◊section{Installons Sozi à partir d'un paquet au format AppImage}
+◊blockquote{Sans plus tarder, allons ◊link["premiere-presentation.html"]{créer notre première présentation}.}
 
-Dans la ◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{page de téléchargement de Sozi}, choisissez le fichier dont l'extension est ◊code{.AppImage} et enregistrez-le dans votre dossier ◊code{Téléchargements}. Ouvrez un terminal et exécutez la commande suivante, en remplaçant ◊code{VERSION} par le numéro de version qui figure dans le nom du fichier :
+◊subsection{... sous GNU/Linux à partir d'un paquet au format AppImage}
+
+Dans la ◊link["https://github.com/sozi-projects/Sozi/releases/latest"]{page de téléchargement de Sozi}, choisissez le fichier dont l'extension est ◊code{.AppImage} et enregistrez-le dans votre dossier ◊code{Téléchargements}.
+Ouvrez un terminal et exécutez la commande suivante, en remplaçant ◊code{VERSION} par le numéro de version qui figure dans le nom du fichier :
 
 ◊pre{
     chmod u+x $HOME/Téléchargements/Sozi-VERSION.AppImage
@@ -113,5 +138,7 @@ Pour démarrer Sozi, il suffit d'exécuter le fichier AppImage, par exemple en t
 ◊pre{
     $HOME/Téléchargements/Sozi-VERSION.AppImage
 }
+
+◊blockquote{Toutes les conditions sont remplies pour que nous puissions ◊link["premiere-presentation.html"]{créer notre première présentation}.}
 
 ◊draft{Voulez-vous m'aider à améliorer le guide de Sozi ? Faites-moi part de vos remarques dans ◊link["https://github.com/sozi-projects/Sozi-guide/discussions/4"]{la conversation dédiée à ce chapitre sur le forum de discussion}.}

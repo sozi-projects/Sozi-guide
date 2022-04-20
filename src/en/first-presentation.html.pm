@@ -132,7 +132,7 @@ Add two new frames and change their titles to "Deep Tought" and "Bright Idea". F
 
 ◊block-quote{Frame "Bright Idea" makes use of the zoom-in effect to draw the attention to a specific element of the previous frame. On the contrary, in frame "The Big Picture", we used a zoom-out effect to show an overview of several preceding frames.}
 
-◊section{Save the presentation and contemplate the result}
+◊section{Save the presentation and admire the result}
 
 You can save the presentation by clicking on the ◊key{◊icon["download"]} button in the toolbar. If it is greyed out, it means that the presentation has already been saved.
 
