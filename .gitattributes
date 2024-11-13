@@ -1,0 +1,4 @@
+*.p linguist-language=Racket
+*.pp linguist-language=Racket
+*.pm linguist-language=Racket
+*.ptree linguist-language=Racket
